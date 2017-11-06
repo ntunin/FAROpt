@@ -8,7 +8,7 @@
 using namespace std;
 
 int main(int argc, char **argv) {
-	srand(time(NULL));
+	srand(time(NULL)); //Github test
 	try {
 		NecIn *in = new NecIn;
 		NecInParser(string(argv[1]), in);
