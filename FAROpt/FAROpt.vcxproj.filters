@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Nec">
+      <UniqueIdentifier>{a4e55294-e9b2-4390-afe4-3820487a8f3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Nec\NecIn">
+      <UniqueIdentifier>{72479bf7-4445-45e2-b3a7-f11f0a60001d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Nec\NecOut">
+      <UniqueIdentifier>{6c3d5979-0027-42fd-b943-48bf0f8c4cb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Nec">
+      <UniqueIdentifier>{6f165f77-47ea-4266-ae71-422eaac585c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Nec\NecOut">
+      <UniqueIdentifier>{221edf7c-141a-45cf-b74b-9e200fe6679d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Nec\NecIn">
+      <UniqueIdentifier>{1a5671df-9837-4bb0-9d1c-40248fc977b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Nec\NecIn\NecCommand">
+      <UniqueIdentifier>{4deece3d-6524-43e1-a7a7-9acb570d1784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Nec\NecIn\NecCommand">
+      <UniqueIdentifier>{028b590b-14c2-4db4-b4ca-89d822015478}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Complex.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="AntenaInputsKeywordsHandler.h">
+      <Filter>Файлы заголовков\Nec\NecOut</Filter>
+    </ClInclude>
+    <ClInclude Include="RadiationKeywordsHandler.h">
+      <Filter>Файлы заголовков\Nec\NecOut</Filter>
+    </ClInclude>
+    <ClInclude Include="NecOut.h">
+      <Filter>Файлы заголовков\Nec\NecOut</Filter>
+    </ClInclude>
+    <ClInclude Include="NecOutParser.h">
+      <Filter>Файлы заголовков\Nec\NecOut</Filter>
+    </ClInclude>
+    <ClInclude Include="NecIn.h">
+      <Filter>Файлы заголовков\Nec\NecIn</Filter>
+    </ClInclude>
+    <ClInclude Include="NecInParser.h">
+      <Filter>Файлы заголовков\Nec\NecIn</Filter>
+    </ClInclude>
+    <ClInclude Include="TableValueParser.h">
+      <Filter>Файлы заголовков\Nec</Filter>
+    </ClInclude>
+    <ClInclude Include="KeywordsHandler.h">
+      <Filter>Файлы заголовков\Nec</Filter>
+    </ClInclude>
+    <ClInclude Include="FileParser.h">
+      <Filter>Файлы заголовков\Nec</Filter>
+    </ClInclude>
+    <ClInclude Include="FileException.h">
+      <Filter>Файлы заголовков\Nec</Filter>
+    </ClInclude>
+    <ClInclude Include="CE.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="CM.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="NecCommand.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="GW.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="GN.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="FR.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="EX.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="PT.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="RP.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="EN.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeMap.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="CEHandler.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="CMHandler.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="ENHandler.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="FileStreamHandler.h">
+      <Filter>Файлы заголовков\Nec</Filter>
+    </ClInclude>
+    <ClInclude Include="StringHandler.h">
+      <Filter>Файлы заголовков\Nec</Filter>
+    </ClInclude>
+    <ClInclude Include="FileStructure.h">
+      <Filter>Файлы заголовков\Nec</Filter>
+    </ClInclude>
+    <ClInclude Include="EXHandler.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="FRHandler.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="GNHandler.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="GWHandler.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="PTHandler.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="RPHandler.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="OneSourceNecInWritterException.h">
+      <Filter>Файлы заголовков\Nec</Filter>
+    </ClInclude>
+    <ClInclude Include="GE.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="GEHandler.h">
+      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="OneSourceThread.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="OneSourceNecInWritter.h">
+      <Filter>Файлы заголовков\Nec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="FAROpt.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Complex.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="AntenaInputsKeywordsHandler.cpp">
+      <Filter>Исходные файлы\Nec\NecOut</Filter>
+    </ClCompile>
+    <ClCompile Include="NecOut.cpp">
+      <Filter>Исходные файлы\Nec\NecOut</Filter>
+    </ClCompile>
+    <ClCompile Include="NecOutParser.cpp">
+      <Filter>Исходные файлы\Nec\NecOut</Filter>
+    </ClCompile>
+    <ClCompile Include="RadiationKeywordsHandler.cpp">
+      <Filter>Исходные файлы\Nec\NecOut</Filter>
+    </ClCompile>
+    <ClCompile Include="NecIn.cpp">
+      <Filter>Исходные файлы\Nec\NecIn</Filter>
+    </ClCompile>
+    <ClCompile Include="NecInParser.cpp">
+      <Filter>Исходные файлы\Nec\NecIn</Filter>
+    </ClCompile>
+    <ClCompile Include="FileParser.cpp">
+      <Filter>Исходные файлы\Nec</Filter>
+    </ClCompile>
+    <ClCompile Include="FileException.cpp">
+      <Filter>Исходные файлы\Nec</Filter>
+    </ClCompile>
+    <ClCompile Include="KeywordsHandler.cpp">
+      <Filter>Исходные файлы\Nec</Filter>
+    </ClCompile>
+    <ClCompile Include="TableValueParser.cpp">
+      <Filter>Исходные файлы\Nec</Filter>
+    </ClCompile>
+    <ClCompile Include="CE.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="CM.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="GW.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="GN.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="FR.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="EX.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="PT.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="RP.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="EN.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="NecCommand.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeMap.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="CEHandler.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="CMHandler.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="ENHandler.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="FileStreamHandler.cpp">
+      <Filter>Исходные файлы\Nec</Filter>
+    </ClCompile>
+    <ClCompile Include="FileStructure.cpp">
+      <Filter>Исходные файлы\Nec</Filter>
+    </ClCompile>
+    <ClCompile Include="EXHandler.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="FRHandler.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="GNHandler.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="GWHandler.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="PTHandler.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="RPHandler.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="StringHandler.cpp">
+      <Filter>Исходные файлы\Nec</Filter>
+    </ClCompile>
+    <ClCompile Include="OneSourceNecInWritterException.cpp">
+      <Filter>Исходные файлы\Nec</Filter>
+    </ClCompile>
+    <ClCompile Include="GE.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="GEHandler.cpp">
+      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="OneSourceThread.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="OneSourceNecInWritter.cpp">
+      <Filter>Исходные файлы\Nec</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

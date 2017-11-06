@@ -1,0 +1,4 @@
+﻿  OneSourceThread.cpp
+c:\users\николай\source\repos\faropt\faropt\onesourcethread.cpp(139): warning C4101: chBuf: неиспользованная локальная переменная
+  FAROpt.vcxproj -> C:\Users\Николай\source\repos\FAROpt\Debug\FAROpt.exe
+  FAROpt.vcxproj -> C:\Users\Николай\source\repos\FAROpt\Debug\FAROpt.pdb (Partial PDB)
