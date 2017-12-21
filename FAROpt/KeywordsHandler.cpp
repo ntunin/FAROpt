@@ -18,7 +18,7 @@ void KeywordsHandler::setKeywords(const char *keywords) {
 }
 
 bool KeywordsHandler::checkString(string str) {
-	return str.find(*this->keywords) != string::npos;
+	return str.find(this->keywords) != string::npos;
 }
 
 

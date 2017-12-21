@@ -21,7 +21,7 @@ void RPHandler::readContent(string str, FileStructure *structure) {
 	int mode = p.getInt();
 	int thetaNumber = p.getInt();
 	int phiNumner = p.getInt();
-	string XNDA = p.getString();
+	string XNDA = p.getString(true);
 	double theta0 = p.getDouble();
 	double phi0 = p.getDouble();
 	double thetaInc = p.getDouble();

@@ -19,7 +19,7 @@ void RadiationKeywordsHandler::readContent(ifstream *file, FileStructure *struct
 	TableValueParser p = TableValueParser(buffer);
 	while (buffer != "") {
 		getline(*file, buffer);
-		p.setInput(buffer);
+ 		p.setInput(buffer);
 		double theta = p.getDouble();
 		double phi = p.getDouble();
 		double verticalGain = p.getDouble();
@@ -27,7 +27,7 @@ void RadiationKeywordsHandler::readContent(ifstream *file, FileStructure *struct
 		double totalGain = p.getDouble();
 		double axialPolarisation = p.getDouble();
 		double polarisationTilt = p.getDouble();
-		string polarisationSense = p.getString();
+		string polarisationSense = p.getString(false);
 		double eThetaMagnitude = p.getDouble();
 		double eThetaPhase = p.getDouble();
 		double ePhiMagnitude = p.getDouble();

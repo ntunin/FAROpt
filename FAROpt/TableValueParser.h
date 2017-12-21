@@ -7,6 +7,7 @@ public:
 	int getInt();
 	double getDouble();
 	std::string getString();
+	std::string getString(bool alowBeginFromDigit);
 	void setInput(std::string str);
 private:
 	int index;
@@ -20,7 +21,7 @@ private:
 	void parseMantissa(char c);
 	void parseExponenta(char c);
 	void skipSpaces(char c);
-	void parseString(char c);
+	void parseString(char c, bool alowBeginFromDigit);
 	void parseInput();
 };
 

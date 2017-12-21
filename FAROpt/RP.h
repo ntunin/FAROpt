@@ -8,6 +8,10 @@ public:
 	RP(RP &rp);
 	~RP();
 	std::string toString();
+	int getThetaNumber();
+	int getPhiNumber();
+	int getThetaInc();
+	int getPhiInc();
 private:
 	int mode;
 	int thetaNumber;

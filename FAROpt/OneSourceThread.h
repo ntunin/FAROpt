@@ -1,35 +1,23 @@
 #pragma once
 #include "NecIn.h"
 #include "NecOut.h"
+#include "ProcessRunner.h"
 #include <thread>
 #include <string>
 
-class OneSourceThread
+class OneSourceThread: public ProcessRunner
 {
 public:
 	OneSourceThread();
 	OneSourceThread(NecIn *in, NecOut *out, int sourceNumber);
-	void calculate();
-	void wait();
+	void run();
 	~OneSourceThread();
+	std::string createName(std::thread::id id, int number);
+	void removeFile(std::string &name);
 private:
 	NecIn *in;
 	NecOut *out;
 	int sourceNumber;
-	std::thread thread;
-	HANDLE g_hChildStd_IN_Rd = NULL;
-	HANDLE g_hChildStd_IN_Wr = NULL;
-	HANDLE g_hChildStd_OUT_Rd = NULL;
-	HANDLE g_hChildStd_OUT_Wr = NULL;
-
-	HANDLE g_hInputFile = NULL;
-
-	void CreateChildProcess(LPWSTR cmd, std::string &input);
-	void WriteToPipe(std::string &str);
-	void ReadFromPipe(void);
-	void ErrorExit(PTSTR); 
-	void nec2(std::string &name);
-
-	
+	void randomize();	
 };
 

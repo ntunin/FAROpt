@@ -43,3 +43,19 @@ std::string RP::toString() {
 		<< ((NecCommand *)this)->toString(this->phiInc, 4, false);
 	return stream.str();
 }
+
+int RP::getThetaNumber() {
+	return this->thetaNumber;
+}
+
+int RP::getPhiNumber() {
+	return this->phiNumber;
+}
+
+int RP::getThetaInc() {
+	return (int)this->thetaInc;
+}
+
+int RP::getPhiInc() {
+	return (int)this->phiInc;
+}

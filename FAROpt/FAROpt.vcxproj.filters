@@ -37,6 +37,24 @@
     <Filter Include="Файлы заголовков\Nec\NecIn\NecCommand">
       <UniqueIdentifier>{028b590b-14c2-4db4-b4ca-89d822015478}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Math">
+      <UniqueIdentifier>{9bab106b-9e09-4d93-817b-971a603d3e67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Math">
+      <UniqueIdentifier>{a901e5d5-e090-429a-b636-ae7a78da852b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Lamda">
+      <UniqueIdentifier>{73981fa1-dd8d-4775-a88b-f33f04c8a982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Lamda">
+      <UniqueIdentifier>{2a68cf5e-187a-4290-8816-899e7708520c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Shared">
+      <UniqueIdentifier>{64c37d97-3bef-466b-88ca-45d1273294ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Shared">
+      <UniqueIdentifier>{2a66f0a4-ca5d-4ed2-b741-e3b77927f1c5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -46,9 +64,6 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Complex.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="AntenaInputsKeywordsHandler.h">
@@ -111,9 +126,6 @@
     <ClInclude Include="EN.h">
       <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
     </ClInclude>
-    <ClInclude Include="TreeMap.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="CEHandler.h">
       <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
     </ClInclude>
@@ -150,20 +162,65 @@
     <ClInclude Include="RPHandler.h">
       <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
     </ClInclude>
-    <ClInclude Include="OneSourceNecInWritterException.h">
-      <Filter>Файлы заголовков\Nec</Filter>
-    </ClInclude>
     <ClInclude Include="GE.h">
       <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
     </ClInclude>
     <ClInclude Include="GEHandler.h">
       <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
     </ClInclude>
-    <ClInclude Include="OneSourceThread.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="Complex.h">
+      <Filter>Файлы заголовков\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="ComplexMatrix.h">
+      <Filter>Файлы заголовков\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="ComplexVector.h">
+      <Filter>Файлы заголовков\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="ComplexVectorT.h">
+      <Filter>Файлы заголовков\Math</Filter>
     </ClInclude>
     <ClInclude Include="OneSourceNecInWritter.h">
+      <Filter>Файлы заголовков\Nec\NecIn</Filter>
+    </ClInclude>
+    <ClInclude Include="OneSourceNecInWritterException.h">
+      <Filter>Файлы заголовков\Nec\NecIn</Filter>
+    </ClInclude>
+    <ClInclude Include="AllSourceNecInWritter.h">
+      <Filter>Файлы заголовков\Nec\NecIn</Filter>
+    </ClInclude>
+    <ClInclude Include="AllSourceNecInWritterException.h">
+      <Filter>Файлы заголовков\Nec\NecIn</Filter>
+    </ClInclude>
+    <ClInclude Include="AllSourceThread.h">
       <Filter>Файлы заголовков\Nec</Filter>
+    </ClInclude>
+    <ClInclude Include="OneSourceThread.h">
+      <Filter>Файлы заголовков\Nec</Filter>
+    </ClInclude>
+    <ClInclude Include="LamdaOptimisator.h">
+      <Filter>Файлы заголовков\Lamda</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessRunner.h">
+      <Filter>Файлы заголовков\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleLog.h">
+      <Filter>Файлы заголовков\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="Shared.h">
+      <Filter>Файлы заголовков\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Файлы заголовков\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeMap.h">
+      <Filter>Файлы заголовков\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="NecOutPlotDrawer.h">
+      <Filter>Файлы заголовков\Nec</Filter>
+    </ClInclude>
+    <ClInclude Include="PlotWritter.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -171,9 +228,6 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="FAROpt.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Complex.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="AntenaInputsKeywordsHandler.cpp">
@@ -236,9 +290,6 @@
     <ClCompile Include="NecCommand.cpp">
       <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
     </ClCompile>
-    <ClCompile Include="TreeMap.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="CEHandler.cpp">
       <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
     </ClCompile>
@@ -275,20 +326,65 @@
     <ClCompile Include="StringHandler.cpp">
       <Filter>Исходные файлы\Nec</Filter>
     </ClCompile>
-    <ClCompile Include="OneSourceNecInWritterException.cpp">
-      <Filter>Исходные файлы\Nec</Filter>
-    </ClCompile>
     <ClCompile Include="GE.cpp">
       <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
     </ClCompile>
     <ClCompile Include="GEHandler.cpp">
       <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
     </ClCompile>
-    <ClCompile Include="OneSourceThread.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="Complex.cpp">
+      <Filter>Исходные файлы\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="ComplexMatrix.cpp">
+      <Filter>Исходные файлы\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="ComplexVector.cpp">
+      <Filter>Исходные файлы\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="ComplexVectorT.cpp">
+      <Filter>Исходные файлы\Math</Filter>
     </ClCompile>
     <ClCompile Include="OneSourceNecInWritter.cpp">
+      <Filter>Исходные файлы\Nec\NecIn</Filter>
+    </ClCompile>
+    <ClCompile Include="OneSourceNecInWritterException.cpp">
+      <Filter>Исходные файлы\Nec\NecIn</Filter>
+    </ClCompile>
+    <ClCompile Include="AllSourceNecInWritter.cpp">
+      <Filter>Исходные файлы\Nec\NecIn</Filter>
+    </ClCompile>
+    <ClCompile Include="AllSourceNecInWritterException.cpp">
+      <Filter>Исходные файлы\Nec\NecIn</Filter>
+    </ClCompile>
+    <ClCompile Include="AllSourceThread.cpp">
       <Filter>Исходные файлы\Nec</Filter>
+    </ClCompile>
+    <ClCompile Include="OneSourceThread.cpp">
+      <Filter>Исходные файлы\Nec</Filter>
+    </ClCompile>
+    <ClCompile Include="LamdaOptimisator.cpp">
+      <Filter>Исходные файлы\Lamda</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleLog.cpp">
+      <Filter>Исходные файлы\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Исходные файлы\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessRunner.cpp">
+      <Filter>Исходные файлы\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="Shared.cpp">
+      <Filter>Исходные файлы\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeMap.cpp">
+      <Filter>Исходные файлы\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="NecOutPlotDrawer.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="PlotWritter.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

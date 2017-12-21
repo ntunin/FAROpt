@@ -28,7 +28,7 @@ void write(ofstream &file, NecCommand *command) {
 void write(ofstream &file, vector<EX *> *commandsPointer, int sourceNumber) {
 	if (commandsPointer) {
 		vector<EX *> commands = *commandsPointer;
-		int size = commands.size();
+		int size = (int)commands.size();
 		for (int i = 0; i < size; i++) {
 			if (i == sourceNumber) {
 				NecCommand *command = commands[i];
@@ -47,7 +47,7 @@ void write(ofstream &file, vector<EX *> *commandsPointer, int sourceNumber) {
 void write(ofstream &file, vector<NecCommand *> *commandsPointer) {
 	if (commandsPointer) {
 		vector<NecCommand *> commands = *commandsPointer;
-		int size = commands.size();
+		int size = (int)commands.size();
 		for (int i = 0; i < size; i++) {
 			NecCommand *command = commands[i];
 			std::string str = command->toString();

@@ -79,7 +79,7 @@ double  TableValueParser::getDouble() {
 
 void TableValueParser::parseInput() {
 	this->input.append(" ");
-	int length = this->input.length();
+	int length = (int)this->input.length();
 	this->state = 0;
 	this->index = 0;
 	this->exponenta = 0;
@@ -106,7 +106,7 @@ void TableValueParser::parseInput() {
 }
 
 string  TableValueParser::getString() {
-	int length = this->input.length();
+	int length = (int)this->input.length();
 	this->state = 0;
 	this->index = 0;
 	this->buffer = "";
@@ -118,9 +118,32 @@ string  TableValueParser::getString() {
 				break;
 			}
 			case 1: {
-				this->parseString(c);
+				this->parseString(c, true);
 				break;
 			}
+		}
+	}
+	this->input.erase(0, this->index);
+	return this->buffer;
+}
+
+
+std::string TableValueParser::getString(bool alowBeginFromDigit) {
+	int length = (int)this->input.length();
+	this->state = 0;
+	this->index = 0;
+	this->buffer = "";
+	while (this->state < 3 && this->index < length) {
+		char c = this->input[this->index];
+		switch (this->state) {
+		case 0: {
+			this->skipSpaces(c);
+			break;
+		}
+		case 1: {
+			this->parseString(c, alowBeginFromDigit);
+			break;
+		}
 		}
 	}
 	this->input.erase(0, this->index);
@@ -136,14 +159,14 @@ void TableValueParser::skipSpaces(char c) {
 	}
 }
 
-void TableValueParser::parseString(char c) {
-	if (c == ' ') {
+void TableValueParser::parseString(char c, bool alowBeginFromDigit) {
+	if (c == ' ' || (!alowBeginFromDigit && c >= '0' && c <= '9' && !this->buffer.length())) {
 		this->state = 3;
 	}
 	else {
 		this->buffer += c;
+		this->index++;
 	}
-	this->index++;
 }
 
 void TableValueParser::setInput(string input) {

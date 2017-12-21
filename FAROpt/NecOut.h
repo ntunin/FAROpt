@@ -30,6 +30,11 @@ public:
 		RadiationPattern(double theta, double phi, double verticalGain, double horisontalGain, double totalGain, double axialPolarisation, double polarisationTilt, std::string polarisationSense, double eThetaMagnitude, double eThetaPhase, double ePhiMagnitude, double ePhiPhase);
 		~RadiationPattern();
 		RadiationPattern();
+		double getTheta();
+		double getPhi();
+		double getGain();
+		double getMagnitude();
+		double getPhase();
 		Complex getE();
 	
 	private:
@@ -52,12 +57,6 @@ public:
 
 	void addRadiationPattern(double theta, double phi, double verticalGain, double horisontalGain, double totalGain, double axialPolarisation, double polarisationTilt, std::string polarisationSense, double eThetaMagnitude, double eThetaPhase, double ePhiMagnitude, double ePhiPhase);
 	std::vector<NecOut::RadiationPattern> getRadiationPatterns();
-
-
-	Source **getTetragonalizedSorces(int width);
-	RadiationPattern **getTetragonalizedRadiation(int width);
-	Complex **getEMatrix(int width, int& height);
-	Complex **getYMatrix(int& size);
 
 private:
 	std::vector<NecOut::Source> sources;

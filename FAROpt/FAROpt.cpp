@@ -2,30 +2,57 @@
 //
 
 #include "stdafx.h"
-#include <iostream>
-#include <time.h>
 
 using namespace std;
 
+void printComplexVector(ComplexVector *v) {
+	int n = v->length();
+	for (int i = 0; i < n; i++) {
+		Complex c = (*v)[i];
+		cout << "(";
+		cout.width(10);
+		cout << c.Re() << ":";
+		cout.width(10);
+		cout << c.Im() << ");";
+	}
+}
+
+void printOptimisation(LamdaOptimisator::Optimisation *optimisation) {
+	cout << "d: " << optimisation->getD()
+		<< " uAu: " << optimisation->get_uAu()
+		<< " uBu: " << optimisation->get_uBu() << endl;
+	cout << "voltage: " << endl;
+	printComplexVector(optimisation->getV());
+	cout << endl;
+}
+
 int main(int argc, char **argv) {
-	srand(time(NULL)); //Github test
 	try {
-		NecIn *in = new NecIn;
-		NecInParser(string(argv[1]), in);
-		int count = in->getEX()->size();
-		OneSourceThread **threads = new OneSourceThread*[count];
-		NecOut **outs = new NecOut*[count];
-		for (int i = 0; i < count; i++) {
-			outs[i] = new NecOut;
-			threads[i] = new OneSourceThread(in, outs[i],  i);
-		}
-		for (int i = 0; i < count; i++) {
-			threads[i]->wait();
-		}
-		delete in;
+		Shared::bundle().log(new ConsoleLog());
+		char *fileName = argv[1];
+		LamdaOptimisator *optimisator = new LamdaOptimisator(fileName, 14, 9);
+		LamdaOptimisator::Optimisation *newOptimisation = optimisator->getNewOptimisation();
+		LamdaOptimisator::Optimisation *oldOptimisation = optimisator->getOldOptimisation();
+		cout << endl;
+		cout << "\n---- New Optimisation Algoritm ----\n" << endl;
+		printOptimisation(newOptimisation);
+		cout << endl;
+		cout << "\n---- Old Optimisation Algoritm ----\n" << endl;
+		printOptimisation(oldOptimisation);
+		cout << endl;
+		NecOut *out = new NecOut();
+		AllSourceThread *thread = new AllSourceThread(optimisator, newOptimisation, "optim", out);
+		thread->wait();
+		RP *rp = optimisator->getNecIn()->getRP();
+		NecOutPlotDrawer *drawer = new NecOutPlotDrawer(out, 14 * rp->getThetaInc(), 9 * rp->getPhiInc());
+		drawer->wait();
 		system("pause");
-	} catch (FileException e) {
-		cout << e.getMessage().c_str() << endl;
+		delete out;
+		delete thread;
+		delete drawer;
+		delete optimisator;
+	} catch (exception e) {
+		cout << e.what() << endl;
 	};
     return 0;
 }

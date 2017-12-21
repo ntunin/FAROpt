@@ -18,6 +18,14 @@ EX::EX(EX &ex) {
 	this->value = Complex(ex.value.Re(), ex.value.Im());
 }
 
+EX::EX(EX &ex, Complex &source) {
+	this->type = ex.type;
+	this->tag = ex.tag;
+	this->seg = ex.seg;
+	this->admittance = ex.admittance;
+	this->value = Complex(source.Re(), source.Im());
+}
+
 
 EX::EX(EX &ex, bool disabled) {
 	this->type = ex.type;
@@ -25,7 +33,7 @@ EX::EX(EX &ex, bool disabled) {
 	this->seg = ex.seg;
 	this->admittance = ex.admittance;
 	if (disabled) {
-		this->value = Complex(1e-6, 1e-6);	
+		this->value = Complex(1e-9, 0);	
 	} else {
 		this->value = Complex(ex.value.Re(), ex.value.Im());
 	}

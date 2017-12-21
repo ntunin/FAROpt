@@ -75,6 +75,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files\Windows Kits\8.1\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -89,6 +90,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(WindowsSdkDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -102,6 +104,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -146,12 +149,19 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AllSourceNecInWritter.h" />
+    <ClInclude Include="AllSourceNecInWritterException.h" />
+    <ClInclude Include="AllSourceThread.h" />
     <ClInclude Include="AntenaInputsKeywordsHandler.h" />
     <ClInclude Include="CE.h" />
     <ClInclude Include="CEHandler.h" />
     <ClInclude Include="CM.h" />
     <ClInclude Include="CMHandler.h" />
     <ClInclude Include="Complex.h" />
+    <ClInclude Include="ComplexMatrix.h" />
+    <ClInclude Include="ComplexVector.h" />
+    <ClInclude Include="ComplexVectorT.h" />
+    <ClInclude Include="ConsoleLog.h" />
     <ClInclude Include="EN.h" />
     <ClInclude Include="ENHandler.h" />
     <ClInclude Include="EX.h" />
@@ -169,19 +179,25 @@
     <ClInclude Include="GW.h" />
     <ClInclude Include="GWHandler.h" />
     <ClInclude Include="KeywordsHandler.h" />
+    <ClInclude Include="LamdaOptimisator.h" />
+    <ClInclude Include="Log.h" />
     <ClInclude Include="NecCommand.h" />
     <ClInclude Include="NecIn.h" />
     <ClInclude Include="NecInParser.h" />
     <ClInclude Include="NecOut.h" />
     <ClInclude Include="NecOutParser.h" />
+    <ClInclude Include="NecOutPlotDrawer.h" />
     <ClInclude Include="OneSourceNecInWritterException.h" />
     <ClInclude Include="OneSourceThread.h" />
     <ClInclude Include="OneSourceNecInWritter.h" />
+    <ClInclude Include="PlotWritter.h" />
+    <ClInclude Include="ProcessRunner.h" />
     <ClInclude Include="PT.h" />
     <ClInclude Include="PTHandler.h" />
     <ClInclude Include="RadiationKeywordsHandler.h" />
     <ClInclude Include="RP.h" />
     <ClInclude Include="RPHandler.h" />
+    <ClInclude Include="Shared.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="StringHandler.h" />
     <ClInclude Include="TableValueParser.h" />
@@ -189,12 +205,19 @@
     <ClInclude Include="TreeMap.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AllSourceNecInWritter.cpp" />
+    <ClCompile Include="AllSourceNecInWritterException.cpp" />
+    <ClCompile Include="AllSourceThread.cpp" />
     <ClCompile Include="AntenaInputsKeywordsHandler.cpp" />
     <ClCompile Include="CE.cpp" />
     <ClCompile Include="CEHandler.cpp" />
     <ClCompile Include="CM.cpp" />
     <ClCompile Include="CMHandler.cpp" />
     <ClCompile Include="Complex.cpp" />
+    <ClCompile Include="ComplexMatrix.cpp" />
+    <ClCompile Include="ComplexVector.cpp" />
+    <ClCompile Include="ComplexVectorT.cpp" />
+    <ClCompile Include="ConsoleLog.cpp" />
     <ClCompile Include="EN.cpp" />
     <ClCompile Include="ENHandler.cpp" />
     <ClCompile Include="EX.cpp" />
@@ -213,19 +236,25 @@
     <ClCompile Include="GW.cpp" />
     <ClCompile Include="GWHandler.cpp" />
     <ClCompile Include="KeywordsHandler.cpp" />
+    <ClCompile Include="LamdaOptimisator.cpp" />
+    <ClCompile Include="Log.cpp" />
     <ClCompile Include="NecCommand.cpp" />
     <ClCompile Include="NecIn.cpp" />
     <ClCompile Include="NecInParser.cpp" />
     <ClCompile Include="NecOut.cpp" />
     <ClCompile Include="NecOutParser.cpp" />
+    <ClCompile Include="NecOutPlotDrawer.cpp" />
     <ClCompile Include="OneSourceNecInWritterException.cpp" />
     <ClCompile Include="OneSourceThread.cpp" />
     <ClCompile Include="OneSourceNecInWritter.cpp" />
+    <ClCompile Include="PlotWritter.cpp" />
+    <ClCompile Include="ProcessRunner.cpp" />
     <ClCompile Include="PT.cpp" />
     <ClCompile Include="PTHandler.cpp" />
     <ClCompile Include="RadiationKeywordsHandler.cpp" />
     <ClCompile Include="RP.cpp" />
     <ClCompile Include="RPHandler.cpp" />
+    <ClCompile Include="Shared.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

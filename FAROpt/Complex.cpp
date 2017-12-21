@@ -82,4 +82,3 @@ Complex& Complex::inverse() {
 	double d = this->_im * this->_im + this->_re *this->_re;
 	return Complex(this->_re / d, this->_im / d);
 }
-
