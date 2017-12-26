@@ -3936,7 +3936,7 @@
 
                                 - - - MATRIX TIMING - - -
 
-                        FILL=   61.078 SEC.,  FACTOR=   51.313 SEC.
+                        FILL=   61.406 SEC.,  FACTOR=   53.469 SEC.
 
 
 
@@ -5342,4 +5342,4 @@
 
  ***** DATA CARD NO.  9   EN   0     0     0     0  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00
 
- RUN TIME =   115.750
+ RUN TIME =   118.328

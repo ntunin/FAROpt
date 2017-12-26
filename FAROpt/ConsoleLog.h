@@ -11,6 +11,8 @@ public:
 	void print(double *v, int size);
 	void print(std::string &m);
 	void print(const char *m);
+	void print(double d);
+	void reset();
 	~ConsoleLog();
 };
 

@@ -19,14 +19,20 @@ void PlotWritter::writeStream(ofstream &stream) {
 	vector<NecOut::RadiationPattern> patterns = this->out->getRadiationPatterns();
 	int length = patterns.size();
 	stream << "#   theta                      phi                   gain                        magnitude                  phase" << endl;
+	int firstSource = -1;
 	for (int i = 0; i < length; i++) {
 		NecOut::RadiationPattern pattern = patterns[i];
 		double theta = pattern.getTheta();
 		double phi = pattern.getPhi();
-		if (abs(theta - this->theta) < 1e-4) {
-			stream << pattern.getTheta() << "   " << pattern.getPhi() + 45 << "   " << pattern.getGain() << "   " << pattern.getMagnitude() << "   " << pattern.getPhase() << endl;
+		if (abs(theta - this->theta) < 1e-7) {
+			if (firstSource == -1) {
+				firstSource = i;
+			}
+			stream << pattern.getTheta() << "   " << pattern.getPhi() << "   " << pattern.getGain() << "   " << pattern.getMagnitude() << "   " << pattern.getPhase() << endl;
 		}
 	}
+	NecOut::RadiationPattern pattern = patterns[firstSource];
+	stream << pattern.getTheta() << "   " << pattern.getPhi() << "   " << pattern.getGain() << "   " << pattern.getMagnitude() << "   " << pattern.getPhase() << endl;
 }
 
 PlotWritter::~PlotWritter()

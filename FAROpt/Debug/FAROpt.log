@@ -1,9 +1,93 @@
-﻿Build started 05.12.2017 8:29:59.
-     1>Project "C:\Users\Николай\Documents\GitHub\FAROpt\FAROpt\FAROpt.vcxproj" on node 2 (Build target(s)).
-       Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.Cpp.Platform.targets(44,5): error MSB8020: The builds tools for v141 (Platform Toolset = 'v141') cannot be found. To build using the v141 build tools, either click the Project menu or right-click the solution, and then select "Update VC++ Projects...". Install v141 to build using the v141 build tools.
-     1>Done Building Project "C:\Users\Николай\Documents\GitHub\FAROpt\FAROpt\FAROpt.vcxproj" (Build target(s)) -- FAILED.
-
-Build FAILED.
-
-Time Elapsed 00:00:00.01
+﻿  stdafx.cpp
+  Utils.cpp
+  TreeMap.cpp
+  TableValueParser.cpp
+  StringHandler.cpp
+  Shared.cpp
+  Scanner.cpp
+  RPHandler.cpp
+  RP.cpp
+  RadiationKeywordsHandler.cpp
+  PTHandler.cpp
+  PT.cpp
+  ProcessRunner.cpp
+  PlotWritter.cpp
+  OneSourceNecInWritter.cpp
+  OneSourceThread.cpp
+  OneSourceOptimisationEnvirounment.cpp
+c:\users\николай\documents\github\faropt\faropt\onesourceoptimisationenvirounment.cpp(44): warning C4018: <: несоответствие типов со знаком и без знака
+  OneSourceNecInWritterException.cpp
+  OldLamdaOptimisationScreen.cpp
+  OldLamdaOptimisationAlgoritm.cpp
+  NewLamdaOptimisationScreen.cpp
+  Создание кода...
+  Компиляция...
+  NewLamdaOptimisationAlgoritm.cpp
+  NecOutPlotDrawer.cpp
+  NecOutParser.cpp
+  NecOut.cpp
+  NecInParser.cpp
+  NecIn.cpp
+c:\users\николай\documents\github\faropt\faropt\necin.cpp(20): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\николай\documents\github\faropt\faropt\necin.cpp(24): warning C4018: <: несоответствие типов со знаком и без знака
+  NecCommand.cpp
+  Log.cpp
+  LifeCycle.cpp
+  LamdaOptimisationScreen.cpp
+  LamdaOptimisationAlgoritm.cpp
+  KeywordsHandler.cpp
+  GWHandler.cpp
+  GW.cpp
+  GNHandler.cpp
+  GN.cpp
+  GEHandler.cpp
+  GE.cpp
+  FRHandler.cpp
+  FR.cpp
+  Создание кода...
+  Компиляция...
+  FileStructure.cpp
+  FileStreamHandler.cpp
+  FileParser.cpp
+  FileException.cpp
+  FAROpt.cpp
+  EXHandler.cpp
+  EX.cpp
+  ENHandler.cpp
+  EN.cpp
+  ConsoleScreen.cpp
+  ConsoleScanner.cpp
+  ConsoleLog.cpp
+  ComplexVectorT.cpp
+  ComplexVector.cpp
+  ComplexMatrix.cpp
+  Complex.cpp
+  CMHandler.cpp
+  CM.cpp
+  CEHandler.cpp
+  CE.cpp
+  Создание кода...
+c:\users\николай\documents\github\faropt\faropt\complex.cpp(18): warning C4172: возвращение адреса локальной или временной переменной
+c:\users\николай\documents\github\faropt\faropt\complex.cpp(14): warning C4172: возвращение адреса локальной или временной переменной
+c:\users\николай\documents\github\faropt\faropt\complex.cpp(22): warning C4172: возвращение адреса локальной или временной переменной
+c:\users\николай\documents\github\faropt\faropt\complex.cpp(26): warning C4172: возвращение адреса локальной или временной переменной
+c:\users\николай\documents\github\faropt\faropt\complex.cpp(30): warning C4172: возвращение адреса локальной или временной переменной
+c:\users\николай\documents\github\faropt\faropt\complex.cpp(43): warning C4172: возвращение адреса локальной или временной переменной
+c:\users\николай\documents\github\faropt\faropt\complex.cpp(38): warning C4172: возвращение адреса локальной или временной переменной
+c:\users\николай\documents\github\faropt\faropt\complex.cpp(34): warning C4172: возвращение адреса локальной или временной переменной
+c:\users\николай\documents\github\faropt\faropt\complex.cpp(83): warning C4172: возвращение адреса локальной или временной переменной
+c:\users\николай\documents\github\faropt\faropt\complexmatrix.cpp(85): warning C4172: возвращение адреса локальной или временной переменной : r
+c:\users\николай\documents\github\faropt\faropt\complexmatrix.cpp(119): warning C4172: возвращение адреса локальной или временной переменной : r
+c:\users\николай\documents\github\faropt\faropt\complexmatrix.cpp(106): warning C4172: возвращение адреса локальной или временной переменной : r
+c:\users\николай\documents\github\faropt\faropt\complexmatrix.cpp(133): warning C4172: возвращение адреса локальной или временной переменной : r
+c:\users\николай\documents\github\faropt\faropt\complexmatrix.cpp(146): warning C4172: возвращение адреса локальной или временной переменной : r
+c:\users\николай\documents\github\faropt\faropt\complexvector.cpp(46): warning C4172: возвращение адреса локальной или временной переменной
+c:\users\николай\documents\github\faropt\faropt\complexvector.cpp(42): warning C4172: возвращение адреса локальной или временной переменной : v
+c:\users\николай\documents\github\faropt\faropt\complexvectort.cpp(55): warning C4172: возвращение адреса локальной или временной переменной : r
+  Компиляция...
+  AntenaInputsKeywordsHandler.cpp
+  AllSourceThread.cpp
+  AllSourceNecInWritterException.cpp
+  AllSourceNecInWritter.cpp
+  Создание кода...
+  FAROpt.vcxproj -> C:\Users\Николай\Documents\GitHub\FAROpt\Debug\FAROpt.exe

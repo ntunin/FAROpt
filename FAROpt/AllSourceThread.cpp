@@ -12,9 +12,9 @@
 
 using namespace std;
 
-AllSourceThread::AllSourceThread(LamdaOptimisator *optimisator, LamdaOptimisator::Optimisation *optimisation, const char *fileName, NecOut *out) {
-	this->optimisator = optimisator;
-	this->optimisation = optimisation;
+AllSourceThread::AllSourceThread(NecIn *in, ComplexVector *sources, const char *fileName, NecOut *out) {
+	this->in = in;
+	this->sources = sources;
 	this->fileName = string(fileName);
 	this->out = out;
 	this->createThread();
@@ -23,14 +23,14 @@ AllSourceThread::AllSourceThread(LamdaOptimisator *optimisator, LamdaOptimisator
 void AllSourceThread::run() {
 	string inName = string(this->fileName).append(".nec");
 	string outName = string(this->fileName).append(".out");
-	AllSourceNecInWritter(this->optimisation->getV(), this->optimisator->getNecIn(), inName);
+	AllSourceNecInWritter(this->sources, this->in, inName);
 	stringstream command;
 	command << inName << endl;
 	command << outName << endl;
 	string commandString = command.str();
-	Shared::bundle().log()->print(string("Please wait while nec2 making calculations for optimased sources. i/o name: ").append(this->fileName));
+	Shared::bundle().log()->print(string("Please wait while nec2 making calculations for optimased sources. i/o name: ").append(this->fileName).append("\n"));
 	this->exe(string("nec2dxs11k.exe"), commandString);
-	Shared::bundle().log()->print(string("The nec2 finised. i/o name: ").append(this->fileName));
+	Shared::bundle().log()->print(string("The nec2 finised. i/o name: ").append(this->fileName).append("\n"));
 	NecOutParser(outName, out);
 }
 

@@ -39,9 +39,9 @@ void OneSourceThread::run() {
 	string outName = string(name).append(".out");
 	OneSourceNecInWritter(this->sourceNumber, this->in, inName);
 	string commandString = buildInOutArgs(inName, outName);
-	Shared::bundle().log()->print(string("Please wait while nec2 making calculations for one source enabled mod. Temporary i/o name: ").append(name));
+	Shared::bundle().log()->print(string("Temporary i/o name: ").append(name).append("\n"));
 	this->exe(string("nec2dxs11k.exe"), commandString);
-	Shared::bundle().log()->print(string("The nec2 finised. Temporary i/o name: ").append(name));
+	Shared::bundle().log()->print(string("The nec2 finised. Temporary i/o with name: ").append(name).append(" was removed\n"));
 	stringstream command;
 	command << "tmp-" << this->sourceNumber<<".out";
 	string tmpName = command.str();
@@ -60,7 +60,7 @@ string OneSourceThread::createName(thread::id id, int number) {
 
 void OneSourceThread::removeFile(string &name) {
 	if (remove(name.c_str()) != 0) {
-		Shared::bundle().log()->print(string("could not remove the file ").append(name));
+		Shared::bundle().log()->print(string("could not remove the file ").append(name).append("\n"));
 	}
 }
 

@@ -162,6 +162,8 @@
     <ClInclude Include="ComplexVector.h" />
     <ClInclude Include="ComplexVectorT.h" />
     <ClInclude Include="ConsoleLog.h" />
+    <ClInclude Include="ConsoleScanner.h" />
+    <ClInclude Include="ConsoleScreen.h" />
     <ClInclude Include="EN.h" />
     <ClInclude Include="ENHandler.h" />
     <ClInclude Include="EX.h" />
@@ -179,7 +181,9 @@
     <ClInclude Include="GW.h" />
     <ClInclude Include="GWHandler.h" />
     <ClInclude Include="KeywordsHandler.h" />
-    <ClInclude Include="LamdaOptimisator.h" />
+    <ClInclude Include="LamdaOptimisationAlgoritm.h" />
+    <ClInclude Include="LamdaOptimisationScreen.h" />
+    <ClInclude Include="LifeCycle.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="NecCommand.h" />
     <ClInclude Include="NecIn.h" />
@@ -187,7 +191,12 @@
     <ClInclude Include="NecOut.h" />
     <ClInclude Include="NecOutParser.h" />
     <ClInclude Include="NecOutPlotDrawer.h" />
+    <ClInclude Include="NewLamdaOptimisationAlgoritm.h" />
+    <ClInclude Include="NewLamdaOptimisationScreen.h" />
+    <ClInclude Include="OldLamdaOptimisationAlgoritm.h" />
+    <ClInclude Include="OldLamdaOptimisationScreen.h" />
     <ClInclude Include="OneSourceNecInWritterException.h" />
+    <ClInclude Include="OneSourceOptimisationEnvirounment.h" />
     <ClInclude Include="OneSourceThread.h" />
     <ClInclude Include="OneSourceNecInWritter.h" />
     <ClInclude Include="PlotWritter.h" />
@@ -197,12 +206,14 @@
     <ClInclude Include="RadiationKeywordsHandler.h" />
     <ClInclude Include="RP.h" />
     <ClInclude Include="RPHandler.h" />
+    <ClInclude Include="Scanner.h" />
     <ClInclude Include="Shared.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="StringHandler.h" />
     <ClInclude Include="TableValueParser.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="TreeMap.h" />
+    <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AllSourceNecInWritter.cpp" />
@@ -218,6 +229,8 @@
     <ClCompile Include="ComplexVector.cpp" />
     <ClCompile Include="ComplexVectorT.cpp" />
     <ClCompile Include="ConsoleLog.cpp" />
+    <ClCompile Include="ConsoleScanner.cpp" />
+    <ClCompile Include="ConsoleScreen.cpp" />
     <ClCompile Include="EN.cpp" />
     <ClCompile Include="ENHandler.cpp" />
     <ClCompile Include="EX.cpp" />
@@ -236,7 +249,9 @@
     <ClCompile Include="GW.cpp" />
     <ClCompile Include="GWHandler.cpp" />
     <ClCompile Include="KeywordsHandler.cpp" />
-    <ClCompile Include="LamdaOptimisator.cpp" />
+    <ClCompile Include="LamdaOptimisationAlgoritm.cpp" />
+    <ClCompile Include="LamdaOptimisationScreen.cpp" />
+    <ClCompile Include="LifeCycle.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="NecCommand.cpp" />
     <ClCompile Include="NecIn.cpp" />
@@ -244,7 +259,12 @@
     <ClCompile Include="NecOut.cpp" />
     <ClCompile Include="NecOutParser.cpp" />
     <ClCompile Include="NecOutPlotDrawer.cpp" />
+    <ClCompile Include="NewLamdaOptimisationAlgoritm.cpp" />
+    <ClCompile Include="NewLamdaOptimisationScreen.cpp" />
+    <ClCompile Include="OldLamdaOptimisationAlgoritm.cpp" />
+    <ClCompile Include="OldLamdaOptimisationScreen.cpp" />
     <ClCompile Include="OneSourceNecInWritterException.cpp" />
+    <ClCompile Include="OneSourceOptimisationEnvirounment.cpp" />
     <ClCompile Include="OneSourceThread.cpp" />
     <ClCompile Include="OneSourceNecInWritter.cpp" />
     <ClCompile Include="PlotWritter.cpp" />
@@ -254,6 +274,7 @@
     <ClCompile Include="RadiationKeywordsHandler.cpp" />
     <ClCompile Include="RP.cpp" />
     <ClCompile Include="RPHandler.cpp" />
+    <ClCompile Include="Scanner.cpp" />
     <ClCompile Include="Shared.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -264,6 +285,7 @@
     <ClCompile Include="StringHandler.cpp" />
     <ClCompile Include="TableValueParser.cpp" />
     <ClCompile Include="TreeMap.cpp" />
+    <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

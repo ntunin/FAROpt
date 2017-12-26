@@ -11,18 +11,24 @@ ConsoleLog::ConsoleLog()
 {
 }
 
+void ConsoleLog::print(double d) {
+	unique_lock<mutex> lck(mtx, defer_lock);
+	lck.lock();
+	std::cout << d;
+	lck.unlock();
+}
 
 void ConsoleLog::print(string &m) {
 	unique_lock<mutex> lck(mtx, defer_lock);
 	lck.lock();
-	std::cout << m << endl;
+	std::cout << m;
 	lck.unlock();
 }
 
 void ConsoleLog::print(const char *m) {
 	unique_lock<mutex> lck(mtx, defer_lock);
 	lck.lock();
-	std::cout << m << endl;
+	std::cout << m;
 	lck.unlock();
 }
 
@@ -52,7 +58,7 @@ void ConsoleLog::print(double **m, int size) {
 	lck.lock();
 	for (int i = 0; i < size; i++) {
 		for (int j = 0; j < size; j++) {
-			cout << ((int)(m[i][j] * 100000) / 100000.0);
+			cout << m[i][j];
 			if (j != size - 1) {
 				cout << ", ";
 			}
@@ -68,10 +74,10 @@ void ConsoleLog::print(ComplexVector &v) {
 	lck.lock();
 	for (int i = 0; i < v.length(); i++) {
 		cout.width(8);
-		cout << ((int)(v[i].Re()*10000)/10000);
+		cout << v[i].Re();
 		cout << "+";
 		cout.width(8);
-		cout << ((int)(v[i].Im() * 10000) / 10000);
+		cout << v[i].Im();
 		cout << "i";
 		if (i != v.length() - 1) {
 			cout << ", ";
@@ -90,6 +96,10 @@ void ConsoleLog::print(double *v, int size) {
 		}
 	}
 	lck.unlock();
+}
+
+void ConsoleLog::reset() {
+	system("cls");
 }
 
 ConsoleLog::~ConsoleLog()

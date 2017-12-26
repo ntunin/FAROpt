@@ -198,9 +198,6 @@
     <ClInclude Include="OneSourceThread.h">
       <Filter>Файлы заголовков\Nec</Filter>
     </ClInclude>
-    <ClInclude Include="LamdaOptimisator.h">
-      <Filter>Файлы заголовков\Lamda</Filter>
-    </ClInclude>
     <ClInclude Include="ProcessRunner.h">
       <Filter>Файлы заголовков\Shared</Filter>
     </ClInclude>
@@ -220,7 +217,43 @@
       <Filter>Файлы заголовков\Nec</Filter>
     </ClInclude>
     <ClInclude Include="PlotWritter.h">
+      <Filter>Файлы заголовков\Nec</Filter>
+    </ClInclude>
+    <ClInclude Include="LifeCycle.h">
       <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanner.h">
+      <Filter>Файлы заголовков\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleScanner.h">
+      <Filter>Файлы заголовков\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="OneSourceOptimisationEnvirounment.h">
+      <Filter>Файлы заголовков\Lamda</Filter>
+    </ClInclude>
+    <ClInclude Include="NewLamdaOptimisationScreen.h">
+      <Filter>Файлы заголовков\Lamda</Filter>
+    </ClInclude>
+    <ClInclude Include="LamdaOptimisationScreen.h">
+      <Filter>Файлы заголовков\Lamda</Filter>
+    </ClInclude>
+    <ClInclude Include="NewLamdaOptimisationAlgoritm.h">
+      <Filter>Файлы заголовков\Lamda</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleScreen.h">
+      <Filter>Файлы заголовков\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="LamdaOptimisationAlgoritm.h">
+      <Filter>Файлы заголовков\Lamda</Filter>
+    </ClInclude>
+    <ClInclude Include="OldLamdaOptimisationAlgoritm.h">
+      <Filter>Файлы заголовков\Lamda</Filter>
+    </ClInclude>
+    <ClInclude Include="OldLamdaOptimisationScreen.h">
+      <Filter>Файлы заголовков\Lamda</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -362,9 +395,6 @@
     <ClCompile Include="OneSourceThread.cpp">
       <Filter>Исходные файлы\Nec</Filter>
     </ClCompile>
-    <ClCompile Include="LamdaOptimisator.cpp">
-      <Filter>Исходные файлы\Lamda</Filter>
-    </ClCompile>
     <ClCompile Include="ConsoleLog.cpp">
       <Filter>Исходные файлы\Shared</Filter>
     </ClCompile>
@@ -380,11 +410,47 @@
     <ClCompile Include="TreeMap.cpp">
       <Filter>Исходные файлы\Shared</Filter>
     </ClCompile>
+    <ClCompile Include="PlotWritter.cpp">
+      <Filter>Исходные файлы\Nec</Filter>
+    </ClCompile>
     <ClCompile Include="NecOutPlotDrawer.cpp">
+      <Filter>Исходные файлы\Nec</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleScanner.cpp">
+      <Filter>Исходные файлы\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="Scanner.cpp">
+      <Filter>Исходные файлы\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="OneSourceOptimisationEnvirounment.cpp">
+      <Filter>Исходные файлы\Lamda</Filter>
+    </ClCompile>
+    <ClCompile Include="LamdaOptimisationScreen.cpp">
+      <Filter>Исходные файлы\Lamda</Filter>
+    </ClCompile>
+    <ClCompile Include="NewLamdaOptimisationScreen.cpp">
+      <Filter>Исходные файлы\Lamda</Filter>
+    </ClCompile>
+    <ClCompile Include="NewLamdaOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы\Lamda</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleScreen.cpp">
+      <Filter>Исходные файлы\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="LifeCycle.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="PlotWritter.cpp">
+    <ClCompile Include="Utils.cpp">
       <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="LamdaOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы\Lamda</Filter>
+    </ClCompile>
+    <ClCompile Include="OldLamdaOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы\Lamda</Filter>
+    </ClCompile>
+    <ClCompile Include="OldLamdaOptimisationScreen.cpp">
+      <Filter>Исходные файлы\Lamda</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
