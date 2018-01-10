@@ -3,13 +3,15 @@
 #include "NecOut.h"
 #include <thread>
 #include <string>
+#include <Windows.h>
 
 class ProcessRunner
 {
 public:
 	ProcessRunner();
-	virtual void run() = 0;
+	void run();
 	void wait();
+	virtual void dispatch() = 0;
 	~ProcessRunner();
 protected:
 	void exe(std::string &command, std::string &arguments);

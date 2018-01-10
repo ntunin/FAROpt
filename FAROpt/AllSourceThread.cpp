@@ -20,7 +20,8 @@ AllSourceThread::AllSourceThread(NecIn *in, ComplexVector *sources, const char *
 	this->createThread();
 }
 
-void AllSourceThread::run() {
+
+void AllSourceThread::dispatch() {
 	string inName = string(this->fileName).append(".nec");
 	string outName = string(this->fileName).append(".out");
 	AllSourceNecInWritter(this->sources, this->in, inName);

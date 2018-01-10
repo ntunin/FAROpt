@@ -10,10 +10,10 @@ class OneSourceThread: public ProcessRunner
 public:
 	OneSourceThread();
 	OneSourceThread(NecIn *in, NecOut *out, int sourceNumber);
-	void run();
 	~OneSourceThread();
 	std::string createName(std::thread::id id, int number);
 	void removeFile(std::string &name);
+	void dispatch();
 private:
 	NecIn *in;
 	NecOut *out;

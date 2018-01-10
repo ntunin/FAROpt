@@ -15,15 +15,6 @@ OneSourceThread::OneSourceThread(NecIn *in, NecOut *out, int sourceNumber) {
 	this->createThread();
 }
 
-void OneSourceThread::randomize() {
-	stringstream s;
-	this->thread.get_id()._To_text(s);
-	int i = atoi(s.str().c_str());
-	int t = time(NULL) % 10 + time(NULL) % 20 * 50 + time(NULL) % 50 * 20;
-	t *= i * 10 * (this->sourceNumber + 1);
-	srand(t);
-}
-
 string buildInOutArgs(string inName, string outName) {
 	stringstream command;
 	command << inName << endl;
@@ -32,7 +23,7 @@ string buildInOutArgs(string inName, string outName) {
 	return commandString;
 }
 
-void OneSourceThread::run() {
+void OneSourceThread::dispatch() {
 	randomize();
 	string name = createName(this->thread.get_id(), this->sourceNumber);
 	string inName = string(name).append(".nec");
@@ -43,11 +34,20 @@ void OneSourceThread::run() {
 	this->exe(string("nec2dxs11k.exe"), commandString);
 	Shared::bundle().log()->print(string("The nec2 finised. Temporary i/o with name: ").append(name).append(" was removed\n"));
 	stringstream command;
-	command << "tmp-" << this->sourceNumber<<".out";
+	command << "tmp-" << this->sourceNumber << ".out";
 	string tmpName = command.str();
 	NecOutParser(outName, out);
 	removeFile(inName);
 	removeFile(outName);
+}
+
+void OneSourceThread::randomize() {
+	stringstream s;
+	this->thread.get_id()._To_text(s);
+	int i = atoi(s.str().c_str());
+	int t = time(NULL) % 10 + time(NULL) % 20 * 50 + time(NULL) % 50 * 20;
+	t *= i * 10 * (this->sourceNumber + 1);
+	srand(t);
 }
 
 string OneSourceThread::createName(thread::id id, int number) {

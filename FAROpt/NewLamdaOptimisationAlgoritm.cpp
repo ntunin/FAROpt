@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "NewLamdaOptimisationAlgoritm.h"
 
-NewLamdaOptimisationAlgoritm::NewLamdaOptimisationAlgoritm(OneSourceOptimisationEnvirounment *envirounment) {
+NewLamdaOptimisationAlgoritm::NewLamdaOptimisationAlgoritm(OneLimitOptimisationEnvirounment *envirounment) {
 	NecIn *in = envirounment->getIn();
 	RP *rp = in->getRP();
 	double dTheta = rp->getThetaInc() * PI / 180;

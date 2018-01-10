@@ -5,28 +5,28 @@
 
 using namespace std;
 
-mutex mtx;
+mutex consoleMtx;
 
 ConsoleLog::ConsoleLog()
 {
 }
 
 void ConsoleLog::print(double d) {
-	unique_lock<mutex> lck(mtx, defer_lock);
+	unique_lock<mutex> lck(consoleMtx, defer_lock);
 	lck.lock();
 	std::cout << d;
 	lck.unlock();
 }
 
 void ConsoleLog::print(string &m) {
-	unique_lock<mutex> lck(mtx, defer_lock);
+	unique_lock<mutex> lck(consoleMtx, defer_lock);
 	lck.lock();
 	std::cout << m;
 	lck.unlock();
 }
 
 void ConsoleLog::print(const char *m) {
-	unique_lock<mutex> lck(mtx, defer_lock);
+	unique_lock<mutex> lck(consoleMtx, defer_lock);
 	lck.lock();
 	std::cout << m;
 	lck.unlock();
@@ -34,7 +34,7 @@ void ConsoleLog::print(const char *m) {
 
 
 void ConsoleLog::print(ComplexMatrix &m) {
-	unique_lock<mutex> lck(mtx, defer_lock);
+	unique_lock<mutex> lck(consoleMtx, defer_lock);
 	lck.lock();
 	for (int i = 0; i < m.length(); i++) {
 		for (int j = 0; j < m.width(); j++) {
@@ -54,7 +54,7 @@ void ConsoleLog::print(ComplexMatrix &m) {
 }
 
 void ConsoleLog::print(double **m, int size) {
-	unique_lock<mutex> lck(mtx, defer_lock);
+	unique_lock<mutex> lck(consoleMtx, defer_lock);
 	lck.lock();
 	for (int i = 0; i < size; i++) {
 		for (int j = 0; j < size; j++) {
@@ -70,7 +70,7 @@ void ConsoleLog::print(double **m, int size) {
 
 
 void ConsoleLog::print(ComplexVector &v) {
-	unique_lock<mutex> lck(mtx, defer_lock);
+	unique_lock<mutex> lck(consoleMtx, defer_lock);
 	lck.lock();
 	for (int i = 0; i < v.length(); i++) {
 		cout.width(8);
@@ -87,7 +87,7 @@ void ConsoleLog::print(ComplexVector &v) {
 }
 
 void ConsoleLog::print(double *v, int size) {
-	unique_lock<mutex> lck(mtx, defer_lock);
+	unique_lock<mutex> lck(consoleMtx, defer_lock);
 	lck.lock();
 	for (int i = 0; i < size; i++) {
 		cout << v[i];

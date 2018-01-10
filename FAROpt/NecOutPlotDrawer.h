@@ -9,7 +9,7 @@ public:
 	NecOutPlotDrawer();
 	NecOutPlotDrawer(NecOut *out, double theta, double phi);
 	~NecOutPlotDrawer();
-	void run();
+	void dispatch();
 private:
 	NecOut *out;
 	double theta;

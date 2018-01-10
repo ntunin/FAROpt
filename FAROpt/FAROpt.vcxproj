@@ -178,11 +178,14 @@
     <ClInclude Include="GEHandler.h" />
     <ClInclude Include="GN.h" />
     <ClInclude Include="GNHandler.h" />
+    <ClInclude Include="GradientAlgoritm.h" />
     <ClInclude Include="GW.h" />
     <ClInclude Include="GWHandler.h" />
     <ClInclude Include="KeywordsHandler.h" />
-    <ClInclude Include="LamdaOptimisationAlgoritm.h" />
-    <ClInclude Include="LamdaOptimisationScreen.h" />
+    <ClInclude Include="OneLimitGradientOptimisationAlgoritm.h" />
+    <ClInclude Include="OneLimitGradientOptimisationScreen.h" />
+    <ClInclude Include="OneLimitOptimisationAlgoritm.h" />
+    <ClInclude Include="OneLimitOptimisationScreen.h" />
     <ClInclude Include="LifeCycle.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="NecCommand.h" />
@@ -196,10 +199,11 @@
     <ClInclude Include="OldLamdaOptimisationAlgoritm.h" />
     <ClInclude Include="OldLamdaOptimisationScreen.h" />
     <ClInclude Include="OneSourceNecInWritterException.h" />
-    <ClInclude Include="OneSourceOptimisationEnvirounment.h" />
+    <ClInclude Include="OneLimitOptimisationEnvirounment.h" />
     <ClInclude Include="OneSourceThread.h" />
     <ClInclude Include="OneSourceNecInWritter.h" />
     <ClInclude Include="PlotWritter.h" />
+    <ClInclude Include="ProcessManager.h" />
     <ClInclude Include="ProcessRunner.h" />
     <ClInclude Include="PT.h" />
     <ClInclude Include="PTHandler.h" />
@@ -214,6 +218,7 @@
     <ClInclude Include="targetver.h" />
     <ClInclude Include="TreeMap.h" />
     <ClInclude Include="Utils.h" />
+    <ClInclude Include="WindowsProcessManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AllSourceNecInWritter.cpp" />
@@ -246,11 +251,14 @@
     <ClCompile Include="GEHandler.cpp" />
     <ClCompile Include="GN.cpp" />
     <ClCompile Include="GNHandler.cpp" />
+    <ClCompile Include="GradientAlgoritm.cpp" />
     <ClCompile Include="GW.cpp" />
     <ClCompile Include="GWHandler.cpp" />
     <ClCompile Include="KeywordsHandler.cpp" />
-    <ClCompile Include="LamdaOptimisationAlgoritm.cpp" />
-    <ClCompile Include="LamdaOptimisationScreen.cpp" />
+    <ClCompile Include="OneLimitGradientOptimisationAlgoritm.cpp" />
+    <ClCompile Include="OneLimitGradientOptimisationScreen.cpp" />
+    <ClCompile Include="OneLimitOptimisationAlgoritm.cpp" />
+    <ClCompile Include="OneLimitOptimisationScreen.cpp" />
     <ClCompile Include="LifeCycle.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="NecCommand.cpp" />
@@ -264,10 +272,11 @@
     <ClCompile Include="OldLamdaOptimisationAlgoritm.cpp" />
     <ClCompile Include="OldLamdaOptimisationScreen.cpp" />
     <ClCompile Include="OneSourceNecInWritterException.cpp" />
-    <ClCompile Include="OneSourceOptimisationEnvirounment.cpp" />
+    <ClCompile Include="OneLimitOptimisationEnvirounment.cpp" />
     <ClCompile Include="OneSourceThread.cpp" />
     <ClCompile Include="OneSourceNecInWritter.cpp" />
     <ClCompile Include="PlotWritter.cpp" />
+    <ClCompile Include="ProcessManager.cpp" />
     <ClCompile Include="ProcessRunner.cpp" />
     <ClCompile Include="PT.cpp" />
     <ClCompile Include="PTHandler.cpp" />
@@ -286,6 +295,7 @@
     <ClCompile Include="TableValueParser.cpp" />
     <ClCompile Include="TreeMap.cpp" />
     <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="WindowsProcessManager.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

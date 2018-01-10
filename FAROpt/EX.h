@@ -16,5 +16,6 @@ public:
 	EX(EX &ex, bool disabled);
 	~EX();
 	std::string toString();
+	Complex &getValue();
 };
 

@@ -27,3 +27,12 @@ Scanner *Shared::scanner() {
 void Shared::scanner(Scanner *scanner) {
 	this->scannerInstance = scanner;
 }
+
+
+ProcessManager * Shared::processManager() {
+	return this->processManagerInstance;
+}
+
+void  Shared::processManager(ProcessManager *manager) {
+	this->processManagerInstance = manager;
+}

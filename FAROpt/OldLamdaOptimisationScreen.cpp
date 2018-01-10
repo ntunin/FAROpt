@@ -14,7 +14,7 @@ void OldLamdaOptimisationScreen::printHead() {
 	print("\n");
 }
 
-LamdaOptimisationAlgoritm *OldLamdaOptimisationScreen::getAgoritm(OneSourceOptimisationEnvirounment *envirounment) {
+OneLimitOptimisationAlgoritm *OldLamdaOptimisationScreen::getAgoritm(OneLimitOptimisationEnvirounment *envirounment) {
 	return new OldLamdaOptimisationAlgoritm(envirounment);
 }
 

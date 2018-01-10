@@ -1,11 +1,11 @@
 #pragma once
-#include "LamdaOptimisationAlgoritm.h"
-#include "OneSourceOptimisationEnvirounment.h"
+#include "OneLimitOptimisationAlgoritm.h"
+#include "OneLimitOptimisationEnvirounment.h"
 
-class OldLamdaOptimisationAlgoritm: public LamdaOptimisationAlgoritm
+class OldLamdaOptimisationAlgoritm: public OneLimitOptimisationAlgoritm
 {
 public:
-	OldLamdaOptimisationAlgoritm(OneSourceOptimisationEnvirounment *envirounment);
+	OldLamdaOptimisationAlgoritm(OneLimitOptimisationEnvirounment *envirounment);
 	~OldLamdaOptimisationAlgoritm();
 };
 

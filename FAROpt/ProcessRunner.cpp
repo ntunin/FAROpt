@@ -21,8 +21,8 @@ void ProcessRunner::createThread() {
 	this->thread = std::thread(treamMethod, this);
 }
 
-void treamMethod(ProcessRunner *ProcessRunner) {
-	ProcessRunner->run();
+void treamMethod(ProcessRunner *processRunner) {
+	processRunner->run();
 }
 
 LPWSTR ConvertString(const std::string& instr) {
@@ -38,6 +38,10 @@ LPWSTR ConvertString(const std::string& instr) {
 
 void ProcessRunner::exe(string &command) {
 	this->exe(command, string());
+}
+
+void ProcessRunner::run() {
+	Shared::bundle().processManager()->run(this);
 }
 
 

@@ -14,7 +14,7 @@ NecOutPlotDrawer::NecOutPlotDrawer(NecOut *out, double theta, double phi) {
 	this->createThread();
 }
 
-void NecOutPlotDrawer::run() {
+void NecOutPlotDrawer::dispatch() {
 	PlotWritter("2plot.dat", this->out, this->theta, this->phi);
 	this->exe(string("gnuplot  --persist plot.ctl"));
 }

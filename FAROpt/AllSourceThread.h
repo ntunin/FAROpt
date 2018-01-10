@@ -7,9 +7,8 @@ class AllSourceThread: public ProcessRunner
 {
 public:
 	AllSourceThread(NecIn *in, ComplexVector *sources, const char *fileName, NecOut *out);
-	void run();
-	~AllSourceThread();
-
+	~AllSourceThread(); 
+	void dispatch();
 	NecOut *getOut();
 private:
 	NecIn *in;

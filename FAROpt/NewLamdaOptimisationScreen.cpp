@@ -13,7 +13,7 @@ void NewLamdaOptimisationScreen::printHead() {
 	print("\n");
 }
 
-LamdaOptimisationAlgoritm *NewLamdaOptimisationScreen::getAgoritm(OneSourceOptimisationEnvirounment *envirounment) {
+OneLimitOptimisationAlgoritm *NewLamdaOptimisationScreen::getAgoritm(OneLimitOptimisationEnvirounment *envirounment) {
 	return new NewLamdaOptimisationAlgoritm(envirounment);
 }
 

@@ -56,3 +56,7 @@ std::string EX::toString() {
 		<< ((NecCommand *)this)->toString(this->value.Im(), 12, true) << " ";
 	return stream.str();
 }
+
+Complex &EX::getValue() {
+	return this->value;
+}
