@@ -3,7 +3,6 @@
 #define PI 3.14159265359
 class OneLimitOptimisationAlgoritm
 {
-private:
 public:
 	void set_uAu(double uAu);
 	void set_uBu(double uBu);

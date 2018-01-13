@@ -18,9 +18,7 @@ void LifeCycle::printMain() {
 	print("----   Omsk, 2017     ----\n");
 	print("\n");
 	print("Select the action you want to apply:\n");
-	print("   1: 1-Limited new lamda-optimisation algoritm\n");
-	print("   2: 1-Limited old lamda-optimisation algoritm\n");
-	print("   3: 1-Limited gradient optimisation algoritm\n");
+	print("   1: 1-Limited optimisation\n");
 	print("   0: exit\n\n");
 }
 
@@ -30,13 +28,7 @@ void LifeCycle::run() {
 		int action = readInt("Enter your choice: > ");
 		switch (action) {
 		case 1:
-			NewLamdaOptimisationScreen();
-			break;
-		case 2:
-			OldLamdaOptimisationScreen();
-			break;
-		case 3:
-			OneLimitGradientOptimisationScreen();
+			OneLimitOptimisationMenuScreen();
 			break;
 		case 0:
 			this->exit();

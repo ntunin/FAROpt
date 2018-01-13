@@ -2,25 +2,16 @@
 #include "GradientAlgoritm.h"
 
 
-GradientAlgoritm::GradientAlgoritm()
-{
-}
-void GradientAlgoritm::setSize(int size) {
-	this->size = size;
-}
-
-void GradientAlgoritm::makeMaximisational() {
-	this->maximisation = true;
-}
-
-void GradientAlgoritm::setInitial(double *x) {
-	this->x = x;
+GradientAlgoritm::GradientAlgoritm() {
 }
 
 void GradientAlgoritm::solve() {
 	double lastF = 1e7;
 	double f = -1e7;
-	double *direction = new double[this->size];
+	bool maximisation = this->isMaximisational();
+	int size = this->getSize();
+	double *x = this->getCurrentSolution();
+	double *direction = new double[size];
 	double step = 1;
 	while (abs(lastF - f) > 1e-12) {
 		bool haveValidDirection = false;
@@ -29,8 +20,8 @@ void GradientAlgoritm::solve() {
 			direction[i] = 0;
 			double f = this->targetFunction(x);
 			double zero = x[i];
-			double plus = this->x[i] + step;
-			double minus = this->x[i] - step;
+			double plus = x[i] + step;
+			double minus = x[i] - step;
 			x[i] = plus;
 			double fPlus = targetFunction(x);
 			x[i] = minus;
@@ -76,15 +67,15 @@ void GradientAlgoritm::solve() {
 
 		do {
 			f = nextF;
-			for (int i = 0; i < this->size; i++) {
-				xTmp[i] = this->x[i];
+			for (int i = 0; i < size; i++) {
+				xTmp[i] = x[i];
 				x[i] += direction[i] * acceleration;
 			}
 			nextF = targetFunction(x);
 			acceleration *= 2;
 		} while (nextF > f);
 
-		for (int i = 0; i < this->size; i++) {
+		for (int i = 0; i < size; i++) {
 			x[i] = xTmp[i];
 		}
 
