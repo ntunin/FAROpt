@@ -2,6 +2,12 @@
 #include "ComplexMatrix.h"
 #include <math.h>
 
+ComplexMatrix::ComplexMatrix() {
+	this->_n = this->_m = 1;
+	this->_matrix = new Complex*[1];
+	this->_matrix[0] = new Complex[1];
+}
+
 ComplexMatrix::ComplexMatrix(int n) {
 	this->_n = this->_m = n;
 	this->_matrix = new Complex*[n];

@@ -26,6 +26,20 @@ int ConsoleScanner::readInt() {
 	return result;
 }
 
+double ConsoleScanner::readDouble(std::string message) {
+	int result;
+	cout << message;
+	cin >> result;
+	return result;
+}
+
+double ConsoleScanner::readDouble() {
+	int result;
+	cin >> result;
+	return result;
+}
+
+
 string ConsoleScanner::readString(std::string message) {
 	string result;
 	cout << message;

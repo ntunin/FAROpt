@@ -174,6 +174,9 @@
     <ClInclude Include="FileStructure.h" />
     <ClInclude Include="FR.h" />
     <ClInclude Include="FRHandler.h" />
+    <ClInclude Include="FullLimitDirectivityOptimisationAlgoritm.h" />
+    <ClInclude Include="FullLimitOptimisationAlgoritm.h" />
+    <ClInclude Include="FullLimitOptimisationMenuScreen.h" />
     <ClInclude Include="GE.h" />
     <ClInclude Include="GEHandler.h" />
     <ClInclude Include="GN.h" />
@@ -200,12 +203,14 @@
     <ClInclude Include="LamdaDirectivityOptimisationScreen.h" />
     <ClInclude Include="LamdaGainOptimisationAlgoritm.h" />
     <ClInclude Include="LamdaGainOptimisationScreen.h" />
-    <ClInclude Include="OneLimitVariationalOptimisationAlgoritm.h" />
+    <ClInclude Include="OneLimitSimulatedAnealingOptimisationAlgoritm.h" />
+    <ClInclude Include="OneLimitSimulatedAnealingScreen.h" />
     <ClInclude Include="OneSourceNecInWritterException.h" />
     <ClInclude Include="OneLimitOptimisationEnvirounment.h" />
     <ClInclude Include="OneSourceThread.h" />
     <ClInclude Include="OneSourceNecInWritter.h" />
     <ClInclude Include="OptimisationAlgoritm.h" />
+    <ClInclude Include="OptimisationEnvirounment.h" />
     <ClInclude Include="PlotWritter.h" />
     <ClInclude Include="ProcessManager.h" />
     <ClInclude Include="ProcessRunner.h" />
@@ -252,6 +257,9 @@
     <ClCompile Include="FileStructure.cpp" />
     <ClCompile Include="FR.cpp" />
     <ClCompile Include="FRHandler.cpp" />
+    <ClCompile Include="FullLimitDirectivityOptimisationAlgoritm.cpp" />
+    <ClCompile Include="FullLimitOptimisationAlgoritm.cpp" />
+    <ClCompile Include="FullLimitOptimisationMenuScreen.cpp" />
     <ClCompile Include="GE.cpp" />
     <ClCompile Include="GEHandler.cpp" />
     <ClCompile Include="GN.cpp" />
@@ -278,12 +286,14 @@
     <ClCompile Include="LamdaDirectivityOptimisationScreen.cpp" />
     <ClCompile Include="LamdaGainOptimisationAlgoritm.cpp" />
     <ClCompile Include="LamdaGainOptimisationScreen.cpp" />
-    <ClCompile Include="OneLimitVariationalOptimisationAlgoritm.cpp" />
+    <ClCompile Include="OneLimitSimulatedAnealingOptimisationAlgoritm.cpp" />
+    <ClCompile Include="OneLimitSimulatedAnealingScreen.cpp" />
     <ClCompile Include="OneSourceNecInWritterException.cpp" />
     <ClCompile Include="OneLimitOptimisationEnvirounment.cpp" />
     <ClCompile Include="OneSourceThread.cpp" />
     <ClCompile Include="OneSourceNecInWritter.cpp" />
     <ClCompile Include="OptimisationAlgoritm.cpp" />
+    <ClCompile Include="OptimisationEnvirounment.cpp" />
     <ClCompile Include="PlotWritter.cpp" />
     <ClCompile Include="ProcessManager.cpp" />
     <ClCompile Include="ProcessRunner.cpp" />
@@ -294,6 +304,7 @@
     <ClCompile Include="RPHandler.cpp" />
     <ClCompile Include="Scanner.cpp" />
     <ClCompile Include="Shared.cpp" />
+    <ClCompile Include="SimulatedAnealingAlgoritm.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

@@ -4,6 +4,7 @@
 
 OneLimitOptimisationMenuScreen::OneLimitOptimisationMenuScreen() {
 	printHead();
+	run();
 }
 
 void OneLimitOptimisationMenuScreen::printHead() {
@@ -32,6 +33,9 @@ void OneLimitOptimisationMenuScreen::run() {
 			break;
 		case 3:
 			OneLimitGradientOptimisationScreen();
+			break;
+		case 4:
+			OneLimitSimulatedAnealingScreen();
 			break;
 		case 0:
 			return;

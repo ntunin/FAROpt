@@ -6,6 +6,7 @@
 class ComplexMatrix
 {
 public:
+	ComplexMatrix();
 	ComplexMatrix(int);
 	ComplexMatrix(int, int);
 	ComplexMatrix(int, int, Complex*);
