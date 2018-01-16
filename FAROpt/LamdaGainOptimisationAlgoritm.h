@@ -1,11 +1,15 @@
 #pragma once
-#include "OneLimitOptimisationAlgoritm.h"
-#include "OneLimitOptimisationEnvirounment.h"
+#include "OneLimitGainOptimisationAlgoritm.h"
+#include "OptimisationEnvirounment.h"
+#include "LamdaOptimisationAlgoritm.h"
 
-class LamdaGainOptimisationAlgoritm: public OneLimitOptimisationAlgoritm
-{
+class LamdaGainOptimisationAlgoritm: 
+	public OneLimitGainOptimisationAlgoritm,
+	public LamdaOptimisationAlgoritm {
+
 public:
-	LamdaGainOptimisationAlgoritm(OneLimitOptimisationEnvirounment *envirounment);
+	void solveOptimisationTask(OptimisationEnvirounment *envirounment);
+	LamdaGainOptimisationAlgoritm(OptimisationEnvirounment *envirounment);
 	~LamdaGainOptimisationAlgoritm();
 };
 

@@ -1,25 +1,25 @@
 #pragma once
 #include "ComplexVector.h"
+#include "FAROptimisationAlgoritm.h"
 #define PI 3.14159265359
-class OneLimitOptimisationAlgoritm
-{
+class OneLimitOptimisationAlgoritm: public FAROptimisationAlgoritm {
 public:
-	void set_uAu(double uAu);
 	void set_uBu(double uBu);
-	void setD(double D);
-	void setV(int n, double *vEx);
-	double get_uAu();
 	double get_uBu();
-	double getD();
-	ComplexVector *getV();
-private:
-	double uAu;
-	double uBu;
-	double d;
-	ComplexVector *v;
-
-public:
 	OneLimitOptimisationAlgoritm();
 	~OneLimitOptimisationAlgoritm();
+protected:
+	int size;
+	double *vEx;
+	double **B;
+	double **BInverse;
+	double **AEx;
+	virtual double **calculateB(OptimisationEnvirounment *envirounment) = 0;
+	double calculate_uAu(double *vEx);
+	double calculate_uBu(double *vEx);
+	void solveOneLimitOptimisationTask(OptimisationEnvirounment *envirounment);
+	virtual void solveOptimisationTask(OptimisationEnvirounment *envirounment) = 0;
+private:
+	double uBu;
 };
 

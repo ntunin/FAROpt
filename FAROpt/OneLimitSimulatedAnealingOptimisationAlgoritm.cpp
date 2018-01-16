@@ -3,14 +3,14 @@
 
 using namespace std;
 
-OneLimitSimulatedAnealingOptimisationAlgoritm::OneLimitSimulatedAnealingOptimisationAlgoritm(OneLimitOptimisationEnvirounment *envirounment, double T, double coolDownSpeed, double radius) {
+OneLimitSimulatedAnealingOptimisationAlgoritm::OneLimitSimulatedAnealingOptimisationAlgoritm(OptimisationEnvirounment *envirounment, double T, double coolDownSpeed, double radius) {
 	this->TInitial = T;
 	this->coolDownSpeed = coolDownSpeed;
 	this->radius = radius;
-	solveDirectivityOptimisationTask(envirounment);
+	this->solveOneLimitOptimisationTask(envirounment);
 }
 
-void OneLimitSimulatedAnealingOptimisationAlgoritm::solveOptimisationTask(OneLimitOptimisationEnvirounment *envirounment) {
+void OneLimitSimulatedAnealingOptimisationAlgoritm::solveOptimisationTask(OptimisationEnvirounment *envirounment) {
 	NecIn *in = envirounment->getIn();
 	int sourceCount = envirounment->getSourceCount();
 	vector<EX *> *sources = in->getEX();

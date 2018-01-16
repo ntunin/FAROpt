@@ -168,6 +168,7 @@
     <ClInclude Include="ENHandler.h" />
     <ClInclude Include="EX.h" />
     <ClInclude Include="EXHandler.h" />
+    <ClInclude Include="FAROptimisationAlgoritm.h" />
     <ClInclude Include="FileException.h" />
     <ClInclude Include="FileParser.h" />
     <ClInclude Include="FileStreamHandler.h" />
@@ -185,12 +186,14 @@
     <ClInclude Include="GW.h" />
     <ClInclude Include="GWHandler.h" />
     <ClInclude Include="KeywordsHandler.h" />
+    <ClInclude Include="LamdaOptimisationAlgoritm.h" />
     <ClInclude Include="OneLimitDirectivityOptimisationAlgoritm.h" />
+    <ClInclude Include="OneLimitGainOptimisationAlgoritm.h" />
     <ClInclude Include="OneLimitGradientOptimisationAlgoritm.h" />
     <ClInclude Include="OneLimitGradientOptimisationScreen.h" />
     <ClInclude Include="OneLimitOptimisationAlgoritm.h" />
     <ClInclude Include="OneLimitOptimisationMenuScreen.h" />
-    <ClInclude Include="OneLimitOptimisationScreen.h" />
+    <ClInclude Include="OptimisationScreen.h" />
     <ClInclude Include="LifeCycle.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="NecCommand.h" />
@@ -206,7 +209,6 @@
     <ClInclude Include="OneLimitSimulatedAnealingOptimisationAlgoritm.h" />
     <ClInclude Include="OneLimitSimulatedAnealingScreen.h" />
     <ClInclude Include="OneSourceNecInWritterException.h" />
-    <ClInclude Include="OneLimitOptimisationEnvirounment.h" />
     <ClInclude Include="OneSourceThread.h" />
     <ClInclude Include="OneSourceNecInWritter.h" />
     <ClInclude Include="OptimisationAlgoritm.h" />
@@ -251,6 +253,7 @@
     <ClCompile Include="EX.cpp" />
     <ClCompile Include="EXHandler.cpp" />
     <ClCompile Include="FAROpt.cpp" />
+    <ClCompile Include="FAROptimisationAlgoritm.cpp" />
     <ClCompile Include="FileException.cpp" />
     <ClCompile Include="FileParser.cpp" />
     <ClCompile Include="FileStreamHandler.cpp" />
@@ -268,12 +271,14 @@
     <ClCompile Include="GW.cpp" />
     <ClCompile Include="GWHandler.cpp" />
     <ClCompile Include="KeywordsHandler.cpp" />
+    <ClCompile Include="LamdaOptimisationAlgoritm.cpp" />
     <ClCompile Include="OneLimitDirectivityOptimisationAlgoritm.cpp" />
+    <ClCompile Include="OneLimitGainOptimisationAlgoritm.cpp" />
     <ClCompile Include="OneLimitGradientOptimisationAlgoritm.cpp" />
     <ClCompile Include="OneLimitGradientOptimisationScreen.cpp" />
     <ClCompile Include="OneLimitOptimisationAlgoritm.cpp" />
     <ClCompile Include="OneLimitOptimisationMenuScreen.cpp" />
-    <ClCompile Include="OneLimitOptimisationScreen.cpp" />
+    <ClCompile Include="OptimisationScreen.cpp" />
     <ClCompile Include="LifeCycle.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="NecCommand.cpp" />
@@ -289,7 +294,6 @@
     <ClCompile Include="OneLimitSimulatedAnealingOptimisationAlgoritm.cpp" />
     <ClCompile Include="OneLimitSimulatedAnealingScreen.cpp" />
     <ClCompile Include="OneSourceNecInWritterException.cpp" />
-    <ClCompile Include="OneLimitOptimisationEnvirounment.cpp" />
     <ClCompile Include="OneSourceThread.cpp" />
     <ClCompile Include="OneSourceNecInWritter.cpp" />
     <ClCompile Include="OptimisationAlgoritm.cpp" />

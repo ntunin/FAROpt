@@ -10,8 +10,8 @@ protected:
 	double **BInverse;
 	double **AEx;
 	double calculate_uAu(double *vEx);
-	void solveDirectivityOptimisationTask(OneLimitOptimisationEnvirounment *envirounment);
-	virtual void solveOptimisationTask(OneLimitOptimisationEnvirounment *envirounment) = 0;
+	void solveDirectivityOptimisationTask(OptimisationEnvirounment *envirounment);
+	virtual void solveOptimisationTask(OptimisationEnvirounment *envirounment) = 0;
 public:
 	FullLimitDirectivityOptimisationAlgoritm();
 	~FullLimitDirectivityOptimisationAlgoritm();

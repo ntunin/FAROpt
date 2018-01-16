@@ -12,8 +12,8 @@ FullLimitDirectivityOptimisationAlgoritm::~FullLimitDirectivityOptimisationAlgor
 {
 }
 
-void FullLimitDirectivityOptimisationAlgoritm::solveDirectivityOptimisationTask(OneLimitOptimisationEnvirounment *envirounment) {
-	NecIn *in = envirounment->getIn();
+void FullLimitDirectivityOptimisationAlgoritm::solveDirectivityOptimisationTask(OptimisationEnvirounment *envirounment) {
+	/*NecIn *in = envirounment->getIn();
 	vector<EX *> *sources = in->getEX();
 	RP *rp = in->getRP();
 	double dTheta = rp->getThetaInc() * PI / 180;
@@ -51,7 +51,7 @@ void FullLimitDirectivityOptimisationAlgoritm::solveDirectivityOptimisationTask(
 	}
 	delete[] B;
 	delete[] BInverse;
-	delete[] AEx;
+	delete[] AEx;*/
 }
 
 double FullLimitDirectivityOptimisationAlgoritm::calculate_uAu(double *vEx) {

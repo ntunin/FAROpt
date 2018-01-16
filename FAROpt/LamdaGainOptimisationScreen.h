@@ -1,11 +1,11 @@
 #pragma once
-#include "OneLimitOptimisationScreen.h"
+#include "OptimisationScreen.h"
 class LamdaGainOptimisationScreen :
-	public OneLimitOptimisationScreen
+	public OptimisationScreen
 {
 protected:
 	void printHead();
-	OneLimitOptimisationAlgoritm *getAgoritm(OneLimitOptimisationEnvirounment *envirounment);
+	FAROptimisationAlgoritm *getAgoritm(OptimisationEnvirounment *envirounment);
 public:
 	LamdaGainOptimisationScreen();
 	~LamdaGainOptimisationScreen();

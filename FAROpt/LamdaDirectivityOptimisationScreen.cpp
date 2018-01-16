@@ -13,7 +13,7 @@ void LamdaDirectivityOptimisationScreen::printHead() {
 	print("\n");
 }
 
-OneLimitOptimisationAlgoritm *LamdaDirectivityOptimisationScreen::getAgoritm(OneLimitOptimisationEnvirounment *envirounment) {
+FAROptimisationAlgoritm *LamdaDirectivityOptimisationScreen::getAgoritm(OptimisationEnvirounment *envirounment) {
 	return new LamdaDirectivityOptimisationAlgoritm(envirounment);
 }
 

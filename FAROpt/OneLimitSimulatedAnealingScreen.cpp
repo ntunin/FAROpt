@@ -13,7 +13,7 @@ void OneLimitSimulatedAnealingScreen::printHead() {
 	print("\n");
 }
 
-OneLimitOptimisationAlgoritm *OneLimitSimulatedAnealingScreen::getAgoritm(OneLimitOptimisationEnvirounment *envirounment) {
+FAROptimisationAlgoritm *OneLimitSimulatedAnealingScreen::getAgoritm(OptimisationEnvirounment *envirounment) {
 	double T = Shared::bundle().scanner()->readDouble("\nPlease, enter the \"temperature\" of the system: >");
 	double speed = Shared::bundle().scanner()->readDouble("\nPlease, enter the \"cool down speed\" of the system: >");
 	double radius = Shared::bundle().scanner()->readDouble("\nPlease, enter the \"random offset radius\": >");

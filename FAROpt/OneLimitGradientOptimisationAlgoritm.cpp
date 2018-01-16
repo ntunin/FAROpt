@@ -3,11 +3,11 @@
 
 using namespace std;
 
-OneLimitGradientOptimisationAlgoritm::OneLimitGradientOptimisationAlgoritm(OneLimitOptimisationEnvirounment *envirounment) {
-	solveDirectivityOptimisationTask(envirounment);
+OneLimitGradientOptimisationAlgoritm::OneLimitGradientOptimisationAlgoritm(OptimisationEnvirounment *envirounment) {
+	this->solveOneLimitOptimisationTask(envirounment);
 }
 
-void OneLimitGradientOptimisationAlgoritm::solveOptimisationTask(OneLimitOptimisationEnvirounment *envirounment) {
+void OneLimitGradientOptimisationAlgoritm::solveOptimisationTask(OptimisationEnvirounment *envirounment) {
 	NecIn *in = envirounment->getIn();
 	int sourceCount = envirounment->getSourceCount();
 	vector<EX *> *sources = in->getEX();

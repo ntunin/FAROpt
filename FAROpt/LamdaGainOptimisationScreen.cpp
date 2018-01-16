@@ -14,7 +14,7 @@ void LamdaGainOptimisationScreen::printHead() {
 	print("\n");
 }
 
-OneLimitOptimisationAlgoritm *LamdaGainOptimisationScreen::getAgoritm(OneLimitOptimisationEnvirounment *envirounment) {
+FAROptimisationAlgoritm *LamdaGainOptimisationScreen::getAgoritm(OptimisationEnvirounment *envirounment) {
 	return new LamdaGainOptimisationAlgoritm(envirounment);
 }
 

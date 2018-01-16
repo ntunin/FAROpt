@@ -1,5 +1,5 @@
 #pragma once
-#include "OneLimitOptimisationEnvirounment.h"
+#include "OptimisationEnvirounment.h"
 #include "SimulatedAnealingAlgoritm.h"
 #include "OneLimitDirectivityOptimisationAlgoritm.h"
 
@@ -7,9 +7,9 @@ class OneLimitSimulatedAnealingOptimisationAlgoritm :
 	public OneLimitDirectivityOptimisationAlgoritm,
 	public SimulatedAnealingAlgoritm {
 public:
-	void solveOptimisationTask(OneLimitOptimisationEnvirounment *envirounment);
+	void solveOptimisationTask(OptimisationEnvirounment *envirounment);
 	double targetFunction(double *x);
-	OneLimitSimulatedAnealingOptimisationAlgoritm(OneLimitOptimisationEnvirounment *envirounment, double T, double coolDownSpeed, double radius);
+	OneLimitSimulatedAnealingOptimisationAlgoritm(OptimisationEnvirounment *envirounment, double T, double coolDownSpeed, double radius);
 	~OneLimitSimulatedAnealingOptimisationAlgoritm();
 };
 

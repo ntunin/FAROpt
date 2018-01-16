@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void OptimisationEnvirounment::optimisationEnvirounmentSetup(NecIn *in, int theta, int phi) {
+OptimisationEnvirounment::OptimisationEnvirounment(NecIn *in, int theta, int phi) {
 	this->in = in;
 	RP *rp = in->getRP();
 	int thetaInc = rp->getThetaInc();
@@ -114,5 +114,10 @@ int OptimisationEnvirounment::getJDirect() {
 
 ComplexMatrix *OptimisationEnvirounment::getY() {
 	return this->Y;
+}
+
+
+NecOut **OptimisationEnvirounment::getOuts() {
+	return this->outs;
 }
 

@@ -1,5 +1,5 @@
 #pragma once
-#include "OneLimitOptimisationEnvirounment.h"
+#include "OptimisationEnvirounment.h"
 #include "GradientAlgoritm.h"
 #include "OneLimitDirectivityOptimisationAlgoritm.h"
 
@@ -7,9 +7,9 @@ class OneLimitGradientOptimisationAlgoritm :
 	public OneLimitDirectivityOptimisationAlgoritm,
 	public GradientAlgoritm {
 public:
-	void solveOptimisationTask(OneLimitOptimisationEnvirounment *envirounment);
+	void solveOptimisationTask(OptimisationEnvirounment *envirounment);
 	double targetFunction(double *x);
-	OneLimitGradientOptimisationAlgoritm(OneLimitOptimisationEnvirounment *envirounment);
+	OneLimitGradientOptimisationAlgoritm(OptimisationEnvirounment *envirounment);
 	~OneLimitGradientOptimisationAlgoritm();
 };
 

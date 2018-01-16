@@ -8,6 +8,7 @@ class OptimisationEnvirounment
 {
 
 public:
+	OptimisationEnvirounment(NecIn *in, int theta, int ph);
 	~OptimisationEnvirounment();
 	NecIn *getIn();
 	int getSourceCount();
@@ -15,8 +16,8 @@ public:
 	ComplexMatrix *getY();
 	int getIDirect();
 	int getJDirect();
+	NecOut **getOuts();
 protected:
-	void optimisationEnvirounmentSetup(NecIn *in, int theta, int ph);
 	void fillOuts();
 	void fillY();
 	void fillA();

@@ -1,13 +1,13 @@
 #include "stdafx.h"
-#include "OneLimitOptimisationScreen.h"
+#include "OptimisationScreen.h"
 
 using namespace std;
 
-OneLimitOptimisationScreen::OneLimitOptimisationScreen() {
+OptimisationScreen::OptimisationScreen() {
 	
 }
 
-void OneLimitOptimisationScreen::apply() {
+void OptimisationScreen::apply() {
 	this->reset();
 	this->printHead();
 	string fileName = readString("Please provide path to *.nec file: > ");
@@ -20,8 +20,8 @@ void OneLimitOptimisationScreen::apply() {
 	int theta = readInt("Theta: > ");
 	int phi = readInt("Phi: > ");
 	print("\n");
-	OneLimitOptimisationEnvirounment *envirounment = new OneLimitOptimisationEnvirounment(in, theta, phi);
-	OneLimitOptimisationAlgoritm *algoritm = getAgoritm(envirounment);
+	OptimisationEnvirounment *envirounment = new OptimisationEnvirounment(in, theta, phi);
+	FAROptimisationAlgoritm *algoritm = getAgoritm(envirounment);
 	print("\n");
 	printAlgoritmResult(algoritm);
 	print("\n");
@@ -39,17 +39,17 @@ void OneLimitOptimisationScreen::apply() {
 	delete envirounment;
 }
 
-void OneLimitOptimisationScreen::printAlgoritmResult(OneLimitOptimisationAlgoritm *algoritm) {
+void OptimisationScreen::printAlgoritmResult(FAROptimisationAlgoritm *algoritm) {
 	print("d: "); print(algoritm->getD());
 	print(" uAu: "); print(algoritm->get_uAu());
 	print(" uBu: "); print(algoritm->getD());
-	print(" uBu: "); print(algoritm->get_uBu());
+	//print(" uBu: "); print(algoritm->get_uBu());
 	print("\nvoltage: "); print(algoritm->getV());
 	print("\n");
 }
 
 
 
-OneLimitOptimisationScreen::~OneLimitOptimisationScreen()
+OptimisationScreen::~OptimisationScreen()
 {
 }

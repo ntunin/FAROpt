@@ -249,12 +249,6 @@
     <ClInclude Include="OneLimitOptimisationAlgoritm.h">
       <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
     </ClInclude>
-    <ClInclude Include="OneLimitOptimisationScreen.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
-    </ClInclude>
-    <ClInclude Include="OneLimitOptimisationEnvirounment.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
-    </ClInclude>
     <ClInclude Include="OneLimitGradientOptimisationAlgoritm.h">
       <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
     </ClInclude>
@@ -317,6 +311,18 @@
     </ClInclude>
     <ClInclude Include="OptimisationEnvirounment.h">
       <Filter>Файлы заголовков\Optimisations</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimisationScreen.h">
+      <Filter>Файлы заголовков\Optimisations</Filter>
+    </ClInclude>
+    <ClInclude Include="FAROptimisationAlgoritm.h">
+      <Filter>Файлы заголовков\Optimisations</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitGainOptimisationAlgoritm.h">
+      <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
+    </ClInclude>
+    <ClInclude Include="LamdaOptimisationAlgoritm.h">
+      <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -491,12 +497,6 @@
     <ClCompile Include="OneLimitOptimisationAlgoritm.cpp">
       <Filter>Исходные файлы\Optimisations\OneLimit</Filter>
     </ClCompile>
-    <ClCompile Include="OneLimitOptimisationScreen.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit</Filter>
-    </ClCompile>
-    <ClCompile Include="OneLimitOptimisationEnvirounment.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit</Filter>
-    </ClCompile>
     <ClCompile Include="OneLimitGradientOptimisationAlgoritm.cpp">
       <Filter>Исходные файлы\Optimisations\OneLimit</Filter>
     </ClCompile>
@@ -559,6 +559,18 @@
     </ClCompile>
     <ClCompile Include="OptimisationEnvirounment.cpp">
       <Filter>Исходные файлы\Optimisations</Filter>
+    </ClCompile>
+    <ClCompile Include="OptimisationScreen.cpp">
+      <Filter>Исходные файлы\Optimisations</Filter>
+    </ClCompile>
+    <ClCompile Include="FAROptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы\Optimisations</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitGainOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы\Optimisations\OneLimit</Filter>
+    </ClCompile>
+    <ClCompile Include="LamdaOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

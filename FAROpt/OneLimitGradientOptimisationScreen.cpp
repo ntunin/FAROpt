@@ -13,7 +13,7 @@ void OneLimitGradientOptimisationScreen::printHead() {
 	print("\n");
 }
 
-OneLimitOptimisationAlgoritm *OneLimitGradientOptimisationScreen::getAgoritm(OneLimitOptimisationEnvirounment *envirounment) {
+FAROptimisationAlgoritm *OneLimitGradientOptimisationScreen::getAgoritm(OptimisationEnvirounment *envirounment) {
 	return new OneLimitGradientOptimisationAlgoritm(envirounment);
 }
 
