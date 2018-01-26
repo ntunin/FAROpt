@@ -31,6 +31,9 @@ void PlotWritter::writeStream(ofstream &stream) {
 			stream << pattern.getTheta() << "   " << pattern.getPhi() << "   " << pattern.getGain() << "   " << pattern.getMagnitude() << "   " << pattern.getPhase() << endl;
 		}
 	}
+	if(firstSource < 0) {
+		return;
+	}
 	NecOut::RadiationPattern pattern = patterns[firstSource];
 	stream << pattern.getTheta() << "   " << pattern.getPhi() << "   " << pattern.getGain() << "   " << pattern.getMagnitude() << "   " << pattern.getPhase() << endl;
 }

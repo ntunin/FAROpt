@@ -17,8 +17,9 @@ void AntenaInputsKeywordsHandler::readContent(ifstream *file, FileStructure *str
 	skip(file, 3); // Skip empty lines and legend
 	string buffer = "error";
 	TableValueParser p = TableValueParser(buffer);
-	while (buffer != "") {
+	while (true) {
 		getline(*file, buffer);
+		if (buffer == "") return;
 		p.setInput(buffer);
 		int tag = p.getInt();
 		int seg = p.getInt();

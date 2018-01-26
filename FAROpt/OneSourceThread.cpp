@@ -8,9 +8,9 @@
 
 using namespace std;
 
-OneSourceThread::OneSourceThread(NecIn *in, NecOut *out, int sourceNumber) {
+OneSourceThread::OneSourceThread(NecIn *in, OptimisationEnvirounment *envirounment, int sourceNumber) {
 	this->in = in;
-	this->out = out;
+	this->envirounment = envirounment;
 	this->sourceNumber = sourceNumber;
 	this->createThread();
 }
@@ -36,7 +36,8 @@ void OneSourceThread::dispatch() {
 	stringstream command;
 	command << "tmp-" << this->sourceNumber << ".out";
 	string tmpName = command.str();
-	NecOutParser(outName, out);
+	NecOutParser(outName, this->envirounment->getOuts()[this->sourceNumber]);	
+	Shared::bundle().cacheManager()->cache(envirounment, outName);
 	removeFile(inName);
 	removeFile(outName);
 }

@@ -153,6 +153,7 @@
     <ClInclude Include="AllSourceNecInWritterException.h" />
     <ClInclude Include="AllSourceThread.h" />
     <ClInclude Include="AntenaInputsKeywordsHandler.h" />
+    <ClInclude Include="CacheManager.h" />
     <ClInclude Include="CE.h" />
     <ClInclude Include="CEHandler.h" />
     <ClInclude Include="CM.h" />
@@ -178,11 +179,16 @@
     <ClInclude Include="FullLimitDirectivityOptimisationAlgoritm.h" />
     <ClInclude Include="FullLimitOptimisationAlgoritm.h" />
     <ClInclude Include="FullLimitOptimisationMenuScreen.h" />
+    <ClInclude Include="FullLimitPowerOptimisationAlgoritm.h" />
+    <ClInclude Include="FullLimitPowerOptimisationHGSAAlgoritm.h" />
+    <ClInclude Include="FullLimitPowerOptimisationHGSAScreen.h" />
     <ClInclude Include="GE.h" />
     <ClInclude Include="GEHandler.h" />
     <ClInclude Include="GN.h" />
     <ClInclude Include="GNHandler.h" />
     <ClInclude Include="GradientAlgoritm.h" />
+    <ClInclude Include="GradientSAAlgoritm.h" />
+    <ClInclude Include="HGAlgoritm.h" />
     <ClInclude Include="GW.h" />
     <ClInclude Include="GWHandler.h" />
     <ClInclude Include="KeywordsHandler.h" />
@@ -191,6 +197,10 @@
     <ClInclude Include="OneLimitGainOptimisationAlgoritm.h" />
     <ClInclude Include="OneLimitGradientOptimisationAlgoritm.h" />
     <ClInclude Include="OneLimitGradientOptimisationScreen.h" />
+    <ClInclude Include="OneLimitGradientSAOptimisationAlgoritm.h" />
+    <ClInclude Include="OneLimitGradientSAOptimisationScreen.h" />
+    <ClInclude Include="OneLimitHGOptimisationAlgoritm.h" />
+    <ClInclude Include="OneLimitHGOptimisationScreen.h" />
     <ClInclude Include="OneLimitOptimisationAlgoritm.h" />
     <ClInclude Include="OneLimitOptimisationMenuScreen.h" />
     <ClInclude Include="OptimisationScreen.h" />
@@ -206,8 +216,8 @@
     <ClInclude Include="LamdaDirectivityOptimisationScreen.h" />
     <ClInclude Include="LamdaGainOptimisationAlgoritm.h" />
     <ClInclude Include="LamdaGainOptimisationScreen.h" />
-    <ClInclude Include="OneLimitSimulatedAnealingOptimisationAlgoritm.h" />
-    <ClInclude Include="OneLimitSimulatedAnealingScreen.h" />
+    <ClInclude Include="OneLimitHGSAOptimisationAlgoritm.h" />
+    <ClInclude Include="OneLimitHGSAScreen.h" />
     <ClInclude Include="OneSourceNecInWritterException.h" />
     <ClInclude Include="OneSourceThread.h" />
     <ClInclude Include="OneSourceNecInWritter.h" />
@@ -223,20 +233,23 @@
     <ClInclude Include="RPHandler.h" />
     <ClInclude Include="Scanner.h" />
     <ClInclude Include="Shared.h" />
-    <ClInclude Include="SimulatedAnealingAlgoritm.h" />
+    <ClInclude Include="HGSAAlgoritm.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="StringHandler.h" />
     <ClInclude Include="TableValueParser.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="TreeMap.h" />
     <ClInclude Include="Utils.h" />
+    <ClInclude Include="WindowsCacheManager.h" />
     <ClInclude Include="WindowsProcessManager.h" />
+    <ClInclude Include="WindowsUtils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AllSourceNecInWritter.cpp" />
     <ClCompile Include="AllSourceNecInWritterException.cpp" />
     <ClCompile Include="AllSourceThread.cpp" />
     <ClCompile Include="AntenaInputsKeywordsHandler.cpp" />
+    <ClCompile Include="CacheManager.cpp" />
     <ClCompile Include="CE.cpp" />
     <ClCompile Include="CEHandler.cpp" />
     <ClCompile Include="CM.cpp" />
@@ -263,11 +276,16 @@
     <ClCompile Include="FullLimitDirectivityOptimisationAlgoritm.cpp" />
     <ClCompile Include="FullLimitOptimisationAlgoritm.cpp" />
     <ClCompile Include="FullLimitOptimisationMenuScreen.cpp" />
+    <ClCompile Include="FullLimitPowerOptimisationAlgoritm.cpp" />
+    <ClCompile Include="FullLimitPowerOptimisationHGSAAlgoritm.cpp" />
+    <ClCompile Include="FullLimitPowerOptimisationHGSAScreen.cpp" />
     <ClCompile Include="GE.cpp" />
     <ClCompile Include="GEHandler.cpp" />
     <ClCompile Include="GN.cpp" />
     <ClCompile Include="GNHandler.cpp" />
     <ClCompile Include="GradientAlgoritm.cpp" />
+    <ClCompile Include="GradientSAAlgoritm.cpp" />
+    <ClCompile Include="HGAlgoritm.cpp" />
     <ClCompile Include="GW.cpp" />
     <ClCompile Include="GWHandler.cpp" />
     <ClCompile Include="KeywordsHandler.cpp" />
@@ -276,6 +294,10 @@
     <ClCompile Include="OneLimitGainOptimisationAlgoritm.cpp" />
     <ClCompile Include="OneLimitGradientOptimisationAlgoritm.cpp" />
     <ClCompile Include="OneLimitGradientOptimisationScreen.cpp" />
+    <ClCompile Include="OneLimitGradientSAOptimisationAlgoritm.cpp" />
+    <ClCompile Include="OneLimitGradientSAOptimisationScreen.cpp" />
+    <ClCompile Include="OneLimitHGOptimisationAlgoritm.cpp" />
+    <ClCompile Include="OneLimitHGOptimisationScreen.cpp" />
     <ClCompile Include="OneLimitOptimisationAlgoritm.cpp" />
     <ClCompile Include="OneLimitOptimisationMenuScreen.cpp" />
     <ClCompile Include="OptimisationScreen.cpp" />
@@ -291,8 +313,8 @@
     <ClCompile Include="LamdaDirectivityOptimisationScreen.cpp" />
     <ClCompile Include="LamdaGainOptimisationAlgoritm.cpp" />
     <ClCompile Include="LamdaGainOptimisationScreen.cpp" />
-    <ClCompile Include="OneLimitSimulatedAnealingOptimisationAlgoritm.cpp" />
-    <ClCompile Include="OneLimitSimulatedAnealingScreen.cpp" />
+    <ClCompile Include="OneLimitHGSAOptimisationAlgoritm.cpp" />
+    <ClCompile Include="OneLimitHGSAScreen.cpp" />
     <ClCompile Include="OneSourceNecInWritterException.cpp" />
     <ClCompile Include="OneSourceThread.cpp" />
     <ClCompile Include="OneSourceNecInWritter.cpp" />
@@ -308,7 +330,7 @@
     <ClCompile Include="RPHandler.cpp" />
     <ClCompile Include="Scanner.cpp" />
     <ClCompile Include="Shared.cpp" />
-    <ClCompile Include="SimulatedAnealingAlgoritm.cpp" />
+    <ClCompile Include="HGSAAlgoritm.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -319,7 +341,9 @@
     <ClCompile Include="TableValueParser.cpp" />
     <ClCompile Include="TreeMap.cpp" />
     <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="WindowsCacheManager.cpp" />
     <ClCompile Include="WindowsProcessManager.cpp" />
+    <ClCompile Include="WindowsUtils.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

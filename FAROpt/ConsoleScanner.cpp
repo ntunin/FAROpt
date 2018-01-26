@@ -52,3 +52,38 @@ string ConsoleScanner::readString() {
 	cin >> result;
 	return result;
 }
+
+
+bool ConsoleScanner::readBool() {
+	std::string answer;
+	cin >> answer;
+	while (true) {
+		switch (answer[0])	{
+		case 'y':
+			return true;
+		case 'n':
+			return false;
+		default:
+			break;
+		}
+		cin >> answer;
+	}
+}
+
+bool ConsoleScanner::readBool(string message) {
+	std::string answer;
+	cout << message << " (y / n): >";
+	cin >> answer;
+	while (true) {
+		switch (answer[0]) {
+		case 'y':
+			return true;
+		case 'n':
+			return false;
+		default:
+			break;
+		}
+		cout << "Sorry, entered invalid case. Required 'y' or 'n': >";
+		cin >> answer;
+	}
+}

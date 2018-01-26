@@ -73,6 +73,24 @@
     <Filter Include="Файлы заголовков\Optimisations\FullLimit">
       <UniqueIdentifier>{c9a6c768-e993-4368-bc3a-d0336e6ac4b3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Optimisations\OneLimit\Lamda">
+      <UniqueIdentifier>{62dc4013-3e54-497a-a8a3-5426b882d208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Optimisations\OneLimit\Gradient">
+      <UniqueIdentifier>{5e97d11c-b3ad-45ee-b7c9-9ae217323634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Optimisations\OneLimit\HG">
+      <UniqueIdentifier>{cb12aada-c5ae-4121-b9eb-52faff5e31d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Optimisations\OneLimit\Lamda">
+      <UniqueIdentifier>{2c27e5e8-6bf6-47dd-af61-f00ce244aa3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Optimisations\OneLimit\Gradient">
+      <UniqueIdentifier>{9c8fc751-3cb1-49db-b209-af0a41c74b41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Optimisations\OneLimit\HG">
+      <UniqueIdentifier>{73ba6d7e-4bfc-47e9-9f7c-7c748a79ace1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -243,13 +261,7 @@
     <ClInclude Include="ConsoleScanner.h">
       <Filter>Файлы заголовков\Shared</Filter>
     </ClInclude>
-    <ClInclude Include="Utils.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="OneLimitOptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
-    </ClInclude>
-    <ClInclude Include="OneLimitGradientOptimisationAlgoritm.h">
       <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
     </ClInclude>
     <ClInclude Include="ProcessManager.h">
@@ -257,27 +269,6 @@
     </ClInclude>
     <ClInclude Include="WindowsProcessManager.h">
       <Filter>Файлы заголовков\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="GradientAlgoritm.h">
-      <Filter>Файлы заголовков\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="SimulatedAnealingAlgoritm.h">
-      <Filter>Файлы заголовков\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="OneLimitGradientOptimisationScreen.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
-    </ClInclude>
-    <ClInclude Include="LamdaGainOptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
-    </ClInclude>
-    <ClInclude Include="LamdaGainOptimisationScreen.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
-    </ClInclude>
-    <ClInclude Include="LamdaDirectivityOptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
-    </ClInclude>
-    <ClInclude Include="LamdaDirectivityOptimisationScreen.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
     </ClInclude>
     <ClInclude Include="OptimisationAlgoritm.h">
       <Filter>Файлы заголовков\Math</Filter>
@@ -293,12 +284,6 @@
     </ClInclude>
     <ClInclude Include="ConsoleScreen.h">
       <Filter>Файлы заголовков\LifeCycle</Filter>
-    </ClInclude>
-    <ClInclude Include="OneLimitSimulatedAnealingOptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
-    </ClInclude>
-    <ClInclude Include="OneLimitSimulatedAnealingScreen.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
     </ClInclude>
     <ClInclude Include="FullLimitOptimisationMenuScreen.h">
       <Filter>Файлы заголовков\LifeCycle</Filter>
@@ -321,8 +306,77 @@
     <ClInclude Include="OneLimitGainOptimisationAlgoritm.h">
       <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
     </ClInclude>
+    <ClInclude Include="FullLimitPowerOptimisationAlgoritm.h">
+      <Filter>Файлы заголовков\Optimisations\FullLimit</Filter>
+    </ClInclude>
+    <ClInclude Include="CacheManager.h">
+      <Filter>Файлы заголовков\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsCacheManager.h">
+      <Filter>Файлы заголовков\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Файлы заголовков\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="HGAlgoritm.h">
+      <Filter>Файлы заголовков\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="FullLimitPowerOptimisationHGSAScreen.h">
+      <Filter>Файлы заголовков\Optimisations\FullLimit</Filter>
+    </ClInclude>
+    <ClInclude Include="FullLimitPowerOptimisationHGSAAlgoritm.h">
+      <Filter>Файлы заголовков\Optimisations\FullLimit</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsUtils.h">
+      <Filter>Файлы заголовков\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="GradientAlgoritm.h">
+      <Filter>Файлы заголовков\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="GradientSAAlgoritm.h">
+      <Filter>Файлы заголовков\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="HGSAAlgoritm.h">
+      <Filter>Файлы заголовков\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="LamdaDirectivityOptimisationAlgoritm.h">
+      <Filter>Файлы заголовков\Optimisations\OneLimit\Lamda</Filter>
+    </ClInclude>
+    <ClInclude Include="LamdaDirectivityOptimisationScreen.h">
+      <Filter>Файлы заголовков\Optimisations\OneLimit\Lamda</Filter>
+    </ClInclude>
+    <ClInclude Include="LamdaGainOptimisationAlgoritm.h">
+      <Filter>Файлы заголовков\Optimisations\OneLimit\Lamda</Filter>
+    </ClInclude>
+    <ClInclude Include="LamdaGainOptimisationScreen.h">
+      <Filter>Файлы заголовков\Optimisations\OneLimit\Lamda</Filter>
+    </ClInclude>
     <ClInclude Include="LamdaOptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
+      <Filter>Файлы заголовков\Optimisations\OneLimit\Lamda</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitHGSAOptimisationAlgoritm.h">
+      <Filter>Файлы заголовков\Optimisations\OneLimit\HG</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitHGSAScreen.h">
+      <Filter>Файлы заголовков\Optimisations\OneLimit\HG</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitHGOptimisationAlgoritm.h">
+      <Filter>Файлы заголовков\Optimisations\OneLimit\HG</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitHGOptimisationScreen.h">
+      <Filter>Файлы заголовков\Optimisations\OneLimit\HG</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitGradientSAOptimisationScreen.h">
+      <Filter>Файлы заголовков\Optimisations\OneLimit\Gradient</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitGradientSAOptimisationAlgoritm.h">
+      <Filter>Файлы заголовков\Optimisations\OneLimit\Gradient</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitGradientOptimisationAlgoritm.h">
+      <Filter>Файлы заголовков\Optimisations\OneLimit\Gradient</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitGradientOptimisationScreen.h">
+      <Filter>Файлы заголовков\Optimisations\OneLimit\Gradient</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -491,13 +545,7 @@
     <ClCompile Include="Scanner.cpp">
       <Filter>Исходные файлы\Shared</Filter>
     </ClCompile>
-    <ClCompile Include="Utils.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="OneLimitOptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit</Filter>
-    </ClCompile>
-    <ClCompile Include="OneLimitGradientOptimisationAlgoritm.cpp">
       <Filter>Исходные файлы\Optimisations\OneLimit</Filter>
     </ClCompile>
     <ClCompile Include="ProcessManager.cpp">
@@ -505,24 +553,6 @@
     </ClCompile>
     <ClCompile Include="WindowsProcessManager.cpp">
       <Filter>Исходные файлы\Shared</Filter>
-    </ClCompile>
-    <ClCompile Include="OneLimitGradientOptimisationScreen.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit</Filter>
-    </ClCompile>
-    <ClCompile Include="GradientAlgoritm.cpp">
-      <Filter>Исходные файлы\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="LamdaGainOptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit</Filter>
-    </ClCompile>
-    <ClCompile Include="LamdaGainOptimisationScreen.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit</Filter>
-    </ClCompile>
-    <ClCompile Include="LamdaDirectivityOptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit</Filter>
-    </ClCompile>
-    <ClCompile Include="LamdaDirectivityOptimisationScreen.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit</Filter>
     </ClCompile>
     <ClCompile Include="OptimisationAlgoritm.cpp">
       <Filter>Исходные файлы\Math</Filter>
@@ -538,15 +568,6 @@
     </ClCompile>
     <ClCompile Include="OneLimitOptimisationMenuScreen.cpp">
       <Filter>Исходные файлы\LifeCycle</Filter>
-    </ClCompile>
-    <ClCompile Include="OneLimitSimulatedAnealingOptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit</Filter>
-    </ClCompile>
-    <ClCompile Include="OneLimitSimulatedAnealingScreen.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit</Filter>
-    </ClCompile>
-    <ClCompile Include="SimulatedAnealingAlgoritm.cpp">
-      <Filter>Исходные файлы\Math</Filter>
     </ClCompile>
     <ClCompile Include="FullLimitOptimisationMenuScreen.cpp">
       <Filter>Исходные файлы\LifeCycle</Filter>
@@ -569,8 +590,77 @@
     <ClCompile Include="OneLimitGainOptimisationAlgoritm.cpp">
       <Filter>Исходные файлы\Optimisations\OneLimit</Filter>
     </ClCompile>
+    <ClCompile Include="FullLimitPowerOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы\Optimisations\FullLimit</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Исходные файлы\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="HGAlgoritm.cpp">
+      <Filter>Исходные файлы\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitPowerOptimisationHGSAAlgoritm.cpp">
+      <Filter>Исходные файлы\Optimisations\FullLimit</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitPowerOptimisationHGSAScreen.cpp">
+      <Filter>Исходные файлы\Optimisations\FullLimit</Filter>
+    </ClCompile>
+    <ClCompile Include="CacheManager.cpp">
+      <Filter>Исходные файлы\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsCacheManager.cpp">
+      <Filter>Исходные файлы\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsUtils.cpp">
+      <Filter>Исходные файлы\Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="GradientAlgoritm.cpp">
+      <Filter>Исходные файлы\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="GradientSAAlgoritm.cpp">
+      <Filter>Исходные файлы\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="HGSAAlgoritm.cpp">
+      <Filter>Исходные файлы\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="LamdaDirectivityOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы\Optimisations\OneLimit\Lamda</Filter>
+    </ClCompile>
+    <ClCompile Include="LamdaDirectivityOptimisationScreen.cpp">
+      <Filter>Исходные файлы\Optimisations\OneLimit\Lamda</Filter>
+    </ClCompile>
+    <ClCompile Include="LamdaGainOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы\Optimisations\OneLimit\Lamda</Filter>
+    </ClCompile>
+    <ClCompile Include="LamdaGainOptimisationScreen.cpp">
+      <Filter>Исходные файлы\Optimisations\OneLimit\Lamda</Filter>
+    </ClCompile>
     <ClCompile Include="LamdaOptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Optimisations\OneLimit\Lamda</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitGradientSAOptimisationScreen.cpp">
+      <Filter>Исходные файлы\Optimisations\OneLimit\Gradient</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitHGOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы\Optimisations\OneLimit\HG</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitHGOptimisationScreen.cpp">
+      <Filter>Исходные файлы\Optimisations\OneLimit\HG</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitHGSAOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы\Optimisations\OneLimit\HG</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitHGSAScreen.cpp">
+      <Filter>Исходные файлы\Optimisations\OneLimit\HG</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitGradientSAOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы\Optimisations\OneLimit\Gradient</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitGradientOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы\Optimisations\OneLimit\Gradient</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitGradientOptimisationScreen.cpp">
+      <Filter>Исходные файлы\Optimisations\OneLimit\Gradient</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

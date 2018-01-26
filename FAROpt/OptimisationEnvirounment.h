@@ -8,9 +8,11 @@ class OptimisationEnvirounment
 {
 
 public:
-	OptimisationEnvirounment(NecIn *in, int theta, int ph);
+	OptimisationEnvirounment(NecIn *in, int theta, int ph, std::string fileName);
 	~OptimisationEnvirounment();
 	NecIn *getIn();
+	void setName(std::string name);
+	std::string getName();
 	int getSourceCount();
 	Complex ****getA();
 	ComplexMatrix *getY();
@@ -18,6 +20,7 @@ public:
 	int getJDirect();
 	NecOut **getOuts();
 protected:
+	std::string name;
 	void fillOuts();
 	void fillY();
 	void fillA();

@@ -2,6 +2,7 @@
 #include "Log.h"
 #include "Scanner.h"
 #include "ProcessManager.h"
+#include "CacheManager.h"
 
 class Shared
 {
@@ -10,6 +11,7 @@ private:
 	Log *logInstance;
 	Scanner *scannerInstance;
 	ProcessManager *processManagerInstance;
+	CacheManager *cahceManagerInstance;
 public:
 	static Shared& bundle() {
 		static Shared bndl;
@@ -24,6 +26,9 @@ public:
 
 	ProcessManager *processManager();
 	void processManager(ProcessManager *);
+
+	CacheManager *cacheManager();
+	void cacheManager(CacheManager *);
 
 	~Shared();
 };

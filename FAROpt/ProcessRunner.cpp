@@ -5,6 +5,7 @@
 #include <tchar.h>
 #include <stdio.h> 
 #include <strsafe.h>
+#include "WindowsUtils.h"
 
 #define BUFSIZE 4096
 
@@ -25,16 +26,6 @@ void treamMethod(ProcessRunner *processRunner) {
 	processRunner->run();
 }
 
-LPWSTR ConvertString(const std::string& instr) {
-	int bufferlen = ::MultiByteToWideChar(CP_ACP, 0, instr.c_str(), instr.size(), NULL, 0);
-	if (bufferlen == 0) {
-		return 0;
-	}
-	LPWSTR widestr = new WCHAR[bufferlen + 1];
-	::MultiByteToWideChar(CP_ACP, 0, instr.c_str(), instr.size(), widestr, bufferlen);
-	widestr[bufferlen] = 0;
-	return widestr;
-}
 
 void ProcessRunner::exe(string &command) {
 	this->exe(command, string());
@@ -66,7 +57,7 @@ void ProcessRunner::exe(string &command, string &input) {
 
 
 	// Create the child process. 
-	LPWSTR lpCommand = ConvertString(command);
+	LPWSTR lpCommand = WindowsUtils::wideString(command);
 	CreateChildProcess(lpCommand, input);
 
 

@@ -3,7 +3,9 @@
 
 using namespace std;
 
-OneLimitGradientOptimisationAlgoritm::OneLimitGradientOptimisationAlgoritm(OptimisationEnvirounment *envirounment) {
+OneLimitGradientOptimisationAlgoritm::OneLimitGradientOptimisationAlgoritm(OptimisationEnvirounment *envirounment, double mulctMultiplier, double mulctDegree) {
+	this->mulctMultiplier = mulctMultiplier;
+	this->mulctDegree = mulctDegree;
 	this->solveOneLimitOptimisationTask(envirounment);
 }
 
@@ -26,7 +28,21 @@ void OneLimitGradientOptimisationAlgoritm::solveOptimisationTask(OptimisationEnv
 double OneLimitGradientOptimisationAlgoritm::targetFunction(double *x) {
 	double uAu = this->calculate_uAu(x);
 	double uBu = this->calculate_uBu(x);
-	return uAu / uBu;
+	double s = pow(abs(min(uBu, 0) + max(uBu, 1)), this->mulctDegree);
+	return uAu - this->mulctMultiplier * s;
+}
+
+void OneLimitGradientOptimisationAlgoritm::getGradient(double *x, double *dF, int size) {
+	double uBu = this->calculate_uBu(x);
+	if (uBu >= 0 && uBu <= 1) {
+		Utils::fill(size, 0, dF);
+		return;
+	}
+	int uno = (uBu > 1) ? -1 : 0;
+	double m = (uBu + uno) * pow(abs(uBu + uno), mulctDegree - 2);
+	double *duBu = new double[size];
+	Utils::gradient(size, B, x, duBu);
+	Utils::mul(size, duBu, m, dF);
 }
 
 OneLimitGradientOptimisationAlgoritm::~OneLimitGradientOptimisationAlgoritm()

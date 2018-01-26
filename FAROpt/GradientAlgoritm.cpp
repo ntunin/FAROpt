@@ -13,54 +13,32 @@ void GradientAlgoritm::solve() {
 	double *x = this->getCurrentSolution();
 	double *direction = new double[size];
 	double step = 1;
-	while (abs(lastF - f) > 1e-12) {
+	int sign = (maximisation) ? 1 : -1;
+
+	while (abs(lastF - f) > 1e-12 && step > 0) {
 		bool haveValidDirection = false;
 		lastF = f;
+		f = this->targetFunction(x);
+		getGradient(x, direction, size);
+		double *xTmp = new double[size];
 		for (int i = 0; i < size; i++) {
-			direction[i] = 0;
-			double f = this->targetFunction(x);
-			double zero = x[i];
-			double plus = x[i] + step;
-			double minus = x[i] - step;
-			x[i] = plus;
-			double fPlus = targetFunction(x);
-			x[i] = minus;
-			double fMinus = targetFunction(x);
-			double value;
-			x[i] = zero;
+			xTmp[i] = x[i] + sign*step*direction[i];
+		}
+		double fPlus = targetFunction(xTmp);
 
-			if (maximisation) {
-				if (fPlus > f || fMinus > f) {
-					if (fPlus > fMinus) {
-						direction[i] = +step;
-						haveValidDirection = true;
-					}
-					else {
-						direction[i] = -step;
-						haveValidDirection = true;
-					}
-				}
-			} else {
-				if (fPlus < f || fMinus < f) {
-					if (fPlus < fMinus) {
-						direction[i] = +step;
-						haveValidDirection = true;
-					}
-					else {
-						direction[i] = -step;
-						haveValidDirection = true;
-					}
-				}
+		if ((maximisation && fPlus > f) || (!maximisation && fPlus < f)) {
+			if (fPlus > f) {
+				haveValidDirection = true;
 			}
 		}
 
 		if (!haveValidDirection) {
 			step /= 2;
 			lastF = -1e7;
+			delete[] xTmp;
 			continue;
 		}
 
-		double *xTmp = new double[size];
 		double acceleration = 1;
 		f = targetFunction(x);
 		double nextF = f;
@@ -69,7 +47,7 @@ void GradientAlgoritm::solve() {
 			f = nextF;
 			for (int i = 0; i < size; i++) {
 				xTmp[i] = x[i];
-				x[i] += direction[i] * acceleration;
+				x[i] += sign * step * direction[i] * acceleration;
 			}
 			nextF = targetFunction(x);
 			acceleration *= 2;

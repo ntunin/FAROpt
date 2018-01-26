@@ -36,3 +36,12 @@ ProcessManager * Shared::processManager() {
 void  Shared::processManager(ProcessManager *manager) {
 	this->processManagerInstance = manager;
 }
+
+
+CacheManager *Shared::cacheManager() {
+	return this->cahceManagerInstance;
+}
+
+void Shared::cacheManager(CacheManager *manager) {
+	this->cahceManagerInstance = manager;
+}

@@ -1,19 +1,22 @@
 #pragma once
-class FullLimitOptimisationAlgoritm
+#include "FAROptimisationAlgoritm.h"
+#include <vector>
+
+class FullLimitOptimisationAlgoritm: public FAROptimisationAlgoritm
 {
 
 public:
 	FullLimitOptimisationAlgoritm();
 	~FullLimitOptimisationAlgoritm();
-	void set_uAu(double uAu);
-	void setD(double D);
-	void setV(int n, double *vEx);
-	double get_uAu();
-	double getD();
-	ComplexVector *getV();
-private:
-	double uAu;
-	double d;
-	ComplexVector *v;
+protected:
+	int size;
+	double *vEx;
+	std::vector<double **> *B;
+	double **AEx;
+	virtual std::vector<double **> *calculateB(OptimisationEnvirounment *envirounment) = 0;
+	double calculate_uAu(double *vEx);
+	std::vector<double> *calculate_uBu(double *vEx);
+	void solveFullLimitOptimisationTask(OptimisationEnvirounment *envirounment);
+	virtual void solveOptimisationTask(OptimisationEnvirounment *envirounment) = 0;
 };
 

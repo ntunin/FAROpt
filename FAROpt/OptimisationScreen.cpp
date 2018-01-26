@@ -20,7 +20,7 @@ void OptimisationScreen::apply() {
 	int theta = readInt("Theta: > ");
 	int phi = readInt("Phi: > ");
 	print("\n");
-	OptimisationEnvirounment *envirounment = new OptimisationEnvirounment(in, theta, phi);
+	OptimisationEnvirounment *envirounment = new OptimisationEnvirounment(in, theta, phi, fileName);
 	FAROptimisationAlgoritm *algoritm = getAgoritm(envirounment);
 	print("\n");
 	printAlgoritmResult(algoritm);

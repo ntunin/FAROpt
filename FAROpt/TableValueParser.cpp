@@ -151,7 +151,7 @@ std::string TableValueParser::getString(bool alowBeginFromDigit) {
 }
 
 void TableValueParser::skipSpaces(char c) {
-	if (c == ' ') {
+	if (c == ' ' || c == '\t') {
 		this->index++;
 	}
 	else {
@@ -160,7 +160,7 @@ void TableValueParser::skipSpaces(char c) {
 }
 
 void TableValueParser::parseString(char c, bool alowBeginFromDigit) {
-	if (c == ' ' || (!alowBeginFromDigit && c >= '0' && c <= '9' && !this->buffer.length())) {
+	if (c == ' ' || c == '\t' || (!alowBeginFromDigit && c >= '0' && c <= '9' && !this->buffer.length())) {
 		this->state = 3;
 	}
 	else {

@@ -2,6 +2,7 @@
 class Complex {
 public:
 	Complex();
+	~Complex();
 	Complex(double re, double im);
 	Complex& operator+(const Complex);
 	Complex& operator+=(const Complex);
@@ -20,6 +21,7 @@ public:
 	double arg();
 	double Re();
 	double Im();
+	void copy(Complex &c);
 
 private:
 	double _re;

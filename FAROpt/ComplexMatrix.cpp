@@ -67,7 +67,12 @@ ComplexMatrix::ComplexMatrix(ComplexVector v) {
 
 ComplexMatrix::~ComplexMatrix()
 {
-	for (int i = 0; i < this->_m; i++) {
+	for (int i = 0; i < this->_n; i++) {
+		if (allocated) {
+			for (int j = 0; j < this->_m; j++) {
+				delete &(this->_matrix[i][j]);
+			}
+		}
 		delete[] this->_matrix[i];
 	}
 	delete[] this->_matrix;
@@ -140,13 +145,16 @@ ComplexMatrix& ComplexMatrix::operator*(Complex c) {
 }
 
 
-ComplexMatrix& ComplexMatrix::econj() {
+ComplexMatrix* ComplexMatrix::econj() {
 	int length = this->_m;
 	int width = this->_n;
-	ComplexMatrix r = ComplexMatrix(length, width);
+	ComplexMatrix *r = new ComplexMatrix(length, width);
+	r->allocated = true;
 	for (int j = 0; j < length; j++) {
 		for (int i = 0; i < width; i++) {
-			r[j][i] = this->_matrix[i][j].conj();
+			Complex c = this->_matrix[i][j].conj();
+			Complex *p = new Complex(c.Re(), c.Im());
+			(*r)[j][i] = *p;
 		}
 	}
 	return r;

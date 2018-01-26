@@ -12,7 +12,6 @@ protected:
 	int size;
 	double *vEx;
 	double **B;
-	double **BInverse;
 	double **AEx;
 	virtual double **calculateB(OptimisationEnvirounment *envirounment) = 0;
 	double calculate_uAu(double *vEx);

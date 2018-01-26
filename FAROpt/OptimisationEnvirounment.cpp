@@ -3,8 +3,9 @@
 
 using namespace std;
 
-OptimisationEnvirounment::OptimisationEnvirounment(NecIn *in, int theta, int phi) {
+OptimisationEnvirounment::OptimisationEnvirounment(NecIn *in, int theta, int phi, string fileName) {
 	this->in = in;
+	this->name = fileName;
 	RP *rp = in->getRP();
 	int thetaInc = rp->getThetaInc();
 	int phiInc = rp->getPhiInc();
@@ -17,18 +18,39 @@ OptimisationEnvirounment::OptimisationEnvirounment(NecIn *in, int theta, int phi
 }
 
 
+void OptimisationEnvirounment::setName(std::string name) {
+	this->name = name;
+}
+
+string OptimisationEnvirounment::getName() {
+	return name;
+}
+
+
 
 void OptimisationEnvirounment::fillOuts() {
 	this->outs = new NecOut*[this->sourceCount];
+	for (int i = 0; i < this->sourceCount; i++) {
+		outs[i] = new NecOut;
+	}
+	bool cached = Shared::bundle().cacheManager()->cached(this);
+	bool useCache = false;
+	if (cached) {
+		useCache = Shared::bundle().scanner()->readBool("Previosly solved values was found, use them?");
+		if (useCache) {
+			Shared::bundle().cacheManager()->fill(this);
+			return;
+		}
+	}
 	OneSourceThread **threads = new OneSourceThread*[this->sourceCount];
 	Shared::bundle().log()->print("Please wait while nec2 making calculations for one source enabled mod. \n");
 	for (int i = 0; i < this->sourceCount; i++) {
-		outs[i] = new NecOut;
-		threads[i] = new OneSourceThread(in, outs[i], i);
+		threads[i] = new OneSourceThread(in, this, i);
 	}
 	for (int i = 0; i < this->sourceCount; i++) {
 		threads[i]->wait();
 	}
+
 	Shared::bundle().log()->print("\n");
 
 }

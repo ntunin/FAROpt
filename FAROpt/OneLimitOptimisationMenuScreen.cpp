@@ -15,8 +15,10 @@ void OneLimitOptimisationMenuScreen::printHead() {
 	print("Select the action you want to apply:\n");
 	print("   1: Lamda-optimisation of directivirty\n");
 	print("   2: Lamda-optimisation of gain\n");
-	print("   3: Gradient optimisation of directivity\n");
-	print("   4: Sumulated annealing optimisation of directivity\n");
+	print("   3: Hooke - Jeeves optimisation of directivity\n");
+	print("   4: Sumulated annealing based on  Hooke - Jeeves optimisation of directivity\n");
+	print("   5: Gradient optimisation of directivity\n");
+	print("   6: Sumulated annealing based on Gradient optimisation of directivity\n");
 	print("   0: exit\n\n");
 }
 
@@ -32,10 +34,16 @@ void OneLimitOptimisationMenuScreen::run() {
 			LamdaGainOptimisationScreen();
 			break;
 		case 3:
-			OneLimitGradientOptimisationScreen();
+			OneLimitHGOptimisationScreen();
 			break;
 		case 4:
-			OneLimitSimulatedAnealingScreen();
+			OneLimitHGSAScreen();
+			break;
+		case 5:
+			OneLimitGradientOptimisationScreen();
+			break;
+		case 6:
+			OneLimitGradientSAOptimisationScreen();
 			break;
 		case 0:
 			return;

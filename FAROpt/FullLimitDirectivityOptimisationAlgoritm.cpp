@@ -54,18 +54,4 @@ void FullLimitDirectivityOptimisationAlgoritm::solveDirectivityOptimisationTask(
 	delete[] AEx;*/
 }
 
-double FullLimitDirectivityOptimisationAlgoritm::calculate_uAu(double *vEx) {
-	double *Au = new double[size];
-	for (int i = 0; i < size; i++) {
-		Au[i] = 0;
-		for (int j = 0; j < size; j++) {
-			Au[i] += AEx[i][j] * vEx[j];
-		}
-	}
-	double uAu = 0;
-	for (int i = 0; i < size; i++) {
-		uAu += vEx[i] * Au[i];
-	}
-	delete[] Au;
-	return uAu;
-}
+

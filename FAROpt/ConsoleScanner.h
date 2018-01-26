@@ -10,6 +10,8 @@ public:
 	std::string readString(std::string message);
 	double readDouble();
 	double readDouble(std::string message);
+	bool readBool();
+	bool readBool(std::string message);
 	ConsoleScanner();
 	~ConsoleScanner();
 };

@@ -23,7 +23,8 @@ Complex& Complex::operator-() {
 }
 
 Complex& Complex::operator*(const double a) {
-	return Complex(this->_re * a, this->_im * a);
+	Complex *c = new Complex(this->_re * a, this->_im * a);
+	return *c;
 }
 
 Complex& Complex::operator*(const Complex a) {
@@ -81,4 +82,14 @@ Complex& Complex::operator+=(const Complex c) {
 Complex& Complex::inverse() {
 	double d = this->_im * this->_im + this->_re *this->_re;
 	return Complex(this->_re / d, this->_im / d);
+}
+
+
+void Complex::copy(Complex &c) {
+	this->_re = c._re;
+	this->_im = c._im;
+}
+
+
+Complex::~Complex() {
 }
