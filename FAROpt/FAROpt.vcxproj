@@ -180,6 +180,8 @@
     <ClInclude Include="FullLimitOptimisationAlgoritm.h" />
     <ClInclude Include="FullLimitOptimisationMenuScreen.h" />
     <ClInclude Include="FullLimitPowerOptimisationAlgoritm.h" />
+    <ClInclude Include="FullLimitPowerOptimisationGradientSAAlgoritm.h" />
+    <ClInclude Include="FullLimitPowerOptimisationGradientSAScreen.h" />
     <ClInclude Include="FullLimitPowerOptimisationHGSAAlgoritm.h" />
     <ClInclude Include="FullLimitPowerOptimisationHGSAScreen.h" />
     <ClInclude Include="GE.h" />
@@ -277,6 +279,8 @@
     <ClCompile Include="FullLimitOptimisationAlgoritm.cpp" />
     <ClCompile Include="FullLimitOptimisationMenuScreen.cpp" />
     <ClCompile Include="FullLimitPowerOptimisationAlgoritm.cpp" />
+    <ClCompile Include="FullLimitPowerOptimisationGradientSAAlgoritm.cpp" />
+    <ClCompile Include="FullLimitPowerOptimisationGradientSAScreen.cpp" />
     <ClCompile Include="FullLimitPowerOptimisationHGSAAlgoritm.cpp" />
     <ClCompile Include="FullLimitPowerOptimisationHGSAScreen.cpp" />
     <ClCompile Include="GE.cpp" />

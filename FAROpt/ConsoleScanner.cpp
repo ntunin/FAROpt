@@ -27,14 +27,14 @@ int ConsoleScanner::readInt() {
 }
 
 double ConsoleScanner::readDouble(std::string message) {
-	int result;
+	double result;
 	cout << message;
 	cin >> result;
 	return result;
 }
 
 double ConsoleScanner::readDouble() {
-	int result;
+	double result;
 	cin >> result;
 	return result;
 }

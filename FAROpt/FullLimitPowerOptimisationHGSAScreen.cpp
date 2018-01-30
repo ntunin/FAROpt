@@ -8,8 +8,8 @@ FullLimitPowerOptimisationHGSAScreen::FullLimitPowerOptimisationHGSAScreen() {
 
 
 void FullLimitPowerOptimisationHGSAScreen::printHead() {
-	print("---- Full Limited simulated anealing optimisation algoritm ----\n");
-	print("----                Omsk, 2018                ----\n");
+	print("----  Simulated annealing based on Hooke - Jeeves optimisation of input power ----\n");
+	print("----                                  Omsk, 2018                              ----\n");
 	print("\n");
 }
 

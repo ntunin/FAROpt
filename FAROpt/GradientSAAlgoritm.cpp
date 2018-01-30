@@ -30,7 +30,7 @@ void GradientSAAlgoritm::solve() {
 	int sign = (maximisation) ? 1 : -1;
 	double T = this->TInitial;
 
-	while (abs(lastF - f) > 1e-12) {
+	while (abs(lastF - f) > 1e-12 && step > 0) {
 		if (T > 0) {
 			double *xM = new double[size];
 			getRandomOffset(xM, x, size, this->radius);

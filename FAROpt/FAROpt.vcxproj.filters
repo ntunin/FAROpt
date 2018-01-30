@@ -91,6 +91,18 @@
     <Filter Include="Файлы заголовков\Optimisations\OneLimit\HG">
       <UniqueIdentifier>{73ba6d7e-4bfc-47e9-9f7c-7c748a79ace1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Optimisations\FullLimit\HG">
+      <UniqueIdentifier>{3b2da269-f213-4439-a45a-af58e4b82bc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Optimisations\FullLimit\HG">
+      <UniqueIdentifier>{15e6fb6a-a742-4dda-84d3-eeb9cea831fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Optimisations\FullLimit\Gradient">
+      <UniqueIdentifier>{eb006e34-0935-4071-b888-863e84a7d416}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Optimisations\FullLimit\Gradient">
+      <UniqueIdentifier>{8978f6ef-de39-401f-9afa-a914e2eb687e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -321,12 +333,6 @@
     <ClInclude Include="HGAlgoritm.h">
       <Filter>Файлы заголовков\Math</Filter>
     </ClInclude>
-    <ClInclude Include="FullLimitPowerOptimisationHGSAScreen.h">
-      <Filter>Файлы заголовков\Optimisations\FullLimit</Filter>
-    </ClInclude>
-    <ClInclude Include="FullLimitPowerOptimisationHGSAAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\FullLimit</Filter>
-    </ClInclude>
     <ClInclude Include="WindowsUtils.h">
       <Filter>Файлы заголовков\Shared</Filter>
     </ClInclude>
@@ -377,6 +383,18 @@
     </ClInclude>
     <ClInclude Include="OneLimitGradientOptimisationScreen.h">
       <Filter>Файлы заголовков\Optimisations\OneLimit\Gradient</Filter>
+    </ClInclude>
+    <ClInclude Include="FullLimitPowerOptimisationHGSAAlgoritm.h">
+      <Filter>Файлы заголовков\Optimisations\FullLimit\HG</Filter>
+    </ClInclude>
+    <ClInclude Include="FullLimitPowerOptimisationHGSAScreen.h">
+      <Filter>Файлы заголовков\Optimisations\FullLimit\HG</Filter>
+    </ClInclude>
+    <ClInclude Include="FullLimitPowerOptimisationGradientSAAlgoritm.h">
+      <Filter>Файлы заголовков\Optimisations\FullLimit\Gradient</Filter>
+    </ClInclude>
+    <ClInclude Include="FullLimitPowerOptimisationGradientSAScreen.h">
+      <Filter>Файлы заголовков\Optimisations\FullLimit\Gradient</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -599,12 +617,6 @@
     <ClCompile Include="HGAlgoritm.cpp">
       <Filter>Исходные файлы\Math</Filter>
     </ClCompile>
-    <ClCompile Include="FullLimitPowerOptimisationHGSAAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\FullLimit</Filter>
-    </ClCompile>
-    <ClCompile Include="FullLimitPowerOptimisationHGSAScreen.cpp">
-      <Filter>Исходные файлы\Optimisations\FullLimit</Filter>
-    </ClCompile>
     <ClCompile Include="CacheManager.cpp">
       <Filter>Исходные файлы\Shared</Filter>
     </ClCompile>
@@ -661,6 +673,18 @@
     </ClCompile>
     <ClCompile Include="OneLimitGradientOptimisationScreen.cpp">
       <Filter>Исходные файлы\Optimisations\OneLimit\Gradient</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitPowerOptimisationHGSAAlgoritm.cpp">
+      <Filter>Исходные файлы\Optimisations\FullLimit\HG</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitPowerOptimisationHGSAScreen.cpp">
+      <Filter>Исходные файлы\Optimisations\FullLimit\HG</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitPowerOptimisationGradientSAAlgoritm.cpp">
+      <Filter>Исходные файлы\Optimisations\FullLimit\Gradient</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitPowerOptimisationGradientSAScreen.cpp">
+      <Filter>Исходные файлы\Optimisations\FullLimit\Gradient</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

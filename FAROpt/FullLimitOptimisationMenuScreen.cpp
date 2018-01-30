@@ -13,7 +13,8 @@ void FullLimitOptimisationMenuScreen::printHead() {
 	print("----   Omsk, 2018     ----\n");
 	print("\n");
 	print("Select the action you want to apply:\n");
-	print("   1: Simulated annealing optimisation of input power\n");
+	print("   1: Simulated annealing based on Hooke - Jeeves optimisation of input power\n");
+	print("   2: Simulated annealing based on Gradient optimisation of input power\n");
 	print("   0: exit\n\n");
 }
 
@@ -24,6 +25,10 @@ void FullLimitOptimisationMenuScreen::run() {
 		switch (action) {
 		case 1: {
 			FullLimitPowerOptimisationHGSAScreen();
+			break;
+		}
+		case 2: {
+			FullLimitPowerOptimisationGradientSAScreen();
 			break;
 		}
 		case 0:

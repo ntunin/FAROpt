@@ -36,16 +36,22 @@ double OneLimitGradientSAOptimisationAlgoritm::targetFunction(double *x) {
 }
 
 void OneLimitGradientSAOptimisationAlgoritm::getGradient(double *x, double *dF, int size) {
+	double *duAu = new double[size];
+	Utils::gradient(size, this->AEx, x, duAu);
 	double uBu = this->calculate_uBu(x);
-	if (uBu >= 0 && uBu <= 1) {
-		Utils::fill(size, 0, dF);
-		return;
-	}
-	int uno = (uBu > 1) ? -1 : 0;
-	double m = mulctMultiplier * mulctDegree * (uBu + uno) * pow(abs(uBu + uno), mulctDegree - 2);
 	double *duBu = new double[size];
-	Utils::gradient(size, B, x, duBu);
-	Utils::mul(size, duBu, m, dF);
+	if (uBu >= 0 && uBu <= 1) {
+		Utils::fill(size, 0, duBu);
+	}
+	else {
+		int uno = (uBu > 1) ? -1 : 0;
+		double m = mulctMultiplier * (uBu + uno) * pow(abs(uBu + uno), mulctDegree - 2);
+		Utils::gradient(size, B, x, duBu);
+		Utils::mul(size, duBu, m, duBu);
+	}
+	Utils::summ(size, duAu, duBu, dF);
+	delete[] duBu;
+	delete[] duAu;
 }
 
 

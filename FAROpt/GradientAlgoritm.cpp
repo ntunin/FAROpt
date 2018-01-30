@@ -13,7 +13,7 @@ void GradientAlgoritm::solve() {
 	double *x = this->getCurrentSolution();
 	double *direction = new double[size];
 	double step = 1;
-	int sign = (maximisation) ? 1 : -1;
+	int sign = (maximisation) ? -1 : 1;
 
 	while (abs(lastF - f) > 1e-12 && step > 0) {
 		bool haveValidDirection = false;

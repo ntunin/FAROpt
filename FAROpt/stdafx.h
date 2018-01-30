@@ -32,6 +32,8 @@
 #include "OneLimitGradientSAOptimisationScreen.h"
 #include "FullLimitPowerOptimisationHGSAScreen.h"
 #include "FullLimitPowerOptimisationHGSAAlgoritm.h"
+#include "FullLimitPowerOptimisationGradientSAScreen.h"
+#include "FullLimitPowerOptimisationGradientSAAlgoritm.h"
 #include "LifeCycle.h"
 #include "Log.h"
 #include "Scanner.h"

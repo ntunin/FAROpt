@@ -2,8 +2,8 @@
 #include "OneLimitGradientSAOptimisationScreen.h"
 
 
-OneLimitGradientSAOptimisationScreen::OneLimitGradientSAOptimisationScreen()
-{
+OneLimitGradientSAOptimisationScreen::OneLimitGradientSAOptimisationScreen() {
+	this->apply();
 }
 
 
