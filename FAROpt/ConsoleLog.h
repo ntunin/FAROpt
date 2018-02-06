@@ -15,6 +15,7 @@ public:
 	void print(std::string &m);
 	void print(const char *m);
 	void print(double d);
+	void print(double d, int size);
 	void reset();
 	~ConsoleLog();
 };

@@ -28,6 +28,24 @@ void ConsoleScreen::print(double d) {
 }
 
 
+void ConsoleScreen::print(int size, double *v) {
+	for (int i = 0; i < size; i++) {
+		Shared::bundle().log()->print(v[i]);
+		Shared::bundle().log()->print(" ");
+	}
+}
+
+void ConsoleScreen::print(int size, double **m) {
+	for (int i = 0; i < size; i++) {
+		for (int j = 0; j < size; j++) {
+			Shared::bundle().log()->print(m[i][j], 8);
+			Shared::bundle().log()->print(" ");
+		}
+		Shared::bundle().log()->print("\n");
+	}
+}
+
+
 int ConsoleScreen::readInt(string message) {
 	return Shared::bundle().scanner()->readInt(message);
 }

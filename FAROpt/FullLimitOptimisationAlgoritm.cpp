@@ -35,12 +35,9 @@ void FullLimitOptimisationAlgoritm::solveFullLimitOptimisationTask(OptimisationE
 	solveOptimisationTask(envirounment);
 
 	double uAu = calculate_uAu(vEx);
-	//double uBu = calculate_uBu(vEx);
-	//double d = 4 * PI*uAu / (uBu * dTheta * dTheta);
-
-	//this->setD(d);
+	vector<double> *uBu = calculate_uBu(vEx);
 	this->set_uAu(uAu);
-	//this->set_uBu(uBu);
+	this->set_uBu(uBu);
 	this->setV(size, vEx);
 
 	for (int i = 0; i < size; i++) {

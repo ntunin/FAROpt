@@ -12,6 +12,7 @@ public:
 	virtual void print(std::string &m) = 0;
 	virtual void print(const char *m) = 0;
 	virtual void print(double d) = 0;
+	virtual void print(double d, int size) = 0;
 	virtual void reset() = 0;
 
 	~Log();

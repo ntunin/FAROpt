@@ -18,6 +18,25 @@ void ConsoleLog::print(double d) {
 	lck.unlock();
 }
 
+
+void ConsoleLog::print(double d, int size) {
+	unique_lock<mutex> lck(consoleMtx, defer_lock);
+	lck.lock();
+	std::stringstream s;
+	s << d;
+	std::string str = s.str();
+	if ((int)d == d && str.length() < size) {
+		str.append(".");
+	}
+	for (int i = 0; i < size && i < str.length(); i++) {
+		std::cout << str[i];
+	}
+	for (int i = str.length(); i < size; i++) {
+		std::cout << "0";
+	}
+	lck.unlock();
+}
+
 void ConsoleLog::print(string &m) {
 	unique_lock<mutex> lck(consoleMtx, defer_lock);
 	lck.lock();

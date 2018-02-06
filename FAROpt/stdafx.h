@@ -34,6 +34,8 @@
 #include "FullLimitPowerOptimisationHGSAAlgoritm.h"
 #include "FullLimitPowerOptimisationGradientSAScreen.h"
 #include "FullLimitPowerOptimisationGradientSAAlgoritm.h"
+#include "CheckoutData.h"
+#include "CheckProvidedSolutionScreen.h"
 #include "LifeCycle.h"
 #include "Log.h"
 #include "Scanner.h"

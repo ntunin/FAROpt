@@ -156,6 +156,12 @@
     <ClInclude Include="CacheManager.h" />
     <ClInclude Include="CE.h" />
     <ClInclude Include="CEHandler.h" />
+    <ClInclude Include="AHandler.h" />
+    <ClInclude Include="BHandler.h" />
+    <ClInclude Include="CheckoutData.h" />
+    <ClInclude Include="CheckoutParser.h" />
+    <ClInclude Include="XHandler.h" />
+    <ClInclude Include="CheckProvidedSolutionScreen.h" />
     <ClInclude Include="CM.h" />
     <ClInclude Include="CMHandler.h" />
     <ClInclude Include="Complex.h" />
@@ -254,6 +260,12 @@
     <ClCompile Include="CacheManager.cpp" />
     <ClCompile Include="CE.cpp" />
     <ClCompile Include="CEHandler.cpp" />
+    <ClCompile Include="AHandler.cpp" />
+    <ClCompile Include="BHandler.cpp" />
+    <ClCompile Include="CheckoutData.cpp" />
+    <ClCompile Include="CheckoutParser.cpp" />
+    <ClCompile Include="XHandler.cpp" />
+    <ClCompile Include="CheckProvidedSolutionScreen.cpp" />
     <ClCompile Include="CM.cpp" />
     <ClCompile Include="CMHandler.cpp" />
     <ClCompile Include="Complex.cpp" />

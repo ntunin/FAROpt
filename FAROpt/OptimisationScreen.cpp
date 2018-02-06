@@ -42,8 +42,13 @@ void OptimisationScreen::apply() {
 void OptimisationScreen::printAlgoritmResult(FAROptimisationAlgoritm *algoritm) {
 	print("d: "); print(algoritm->getD());
 	print(" uAu: "); print(algoritm->get_uAu());
-	print(" uBu: "); print(algoritm->getD());
-	//print(" uBu: "); print(algoritm->get_uBu());
+	vector<double> *uBu = algoritm->get_uBu();
+	int size = uBu->size();
+	print(" uBu: "); 
+	for (int i = 0; i < size; i++) {
+		print((*uBu)[i]);
+		print(" ");
+	}
 	print("\nvoltage: "); print(algoritm->getV());
 	print("\n");
 }

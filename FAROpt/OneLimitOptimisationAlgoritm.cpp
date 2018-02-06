@@ -6,15 +6,6 @@ using namespace std;
 OneLimitOptimisationAlgoritm::OneLimitOptimisationAlgoritm() {
 }
 
-void OneLimitOptimisationAlgoritm::set_uBu(double uBu) {
-	this->uBu = uBu;
-}
-
-double OneLimitOptimisationAlgoritm::get_uBu() {
-	return this->uBu;
-}
-
-
 void OneLimitOptimisationAlgoritm::solveOneLimitOptimisationTask(OptimisationEnvirounment *envirounment) {
 	NecIn *in = envirounment->getIn();
 	vector<EX *> *sources = in->getEX();
@@ -43,7 +34,9 @@ void OneLimitOptimisationAlgoritm::solveOneLimitOptimisationTask(OptimisationEnv
 
 	this->setD(d);
 	this->set_uAu(uAu);
-	this->set_uBu(uBu);
+	vector<double> *uBus = new vector<double>;
+	uBus->push_back(uBu);
+	this->set_uBu(uBus);
 	this->setV(size, vEx);
 
 	for (int i = 0; i < size; i++) {

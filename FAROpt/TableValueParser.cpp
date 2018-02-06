@@ -21,7 +21,10 @@ bool isSign(char c) {
 	return c == '+' || c == '-';
 }
 
-bool isDot(char c) {
+bool isDot(char &c, bool allowComma) {
+	if (allowComma && c == ',') {
+		c = '.';
+	}
 	return c == '.';
 }
 
@@ -38,9 +41,9 @@ void TableValueParser::parseSign(char c) {
 	this->index++;
 }
 
-void TableValueParser::parseMantissa(char c) {
+void TableValueParser::parseMantissa(char c, bool allowComma) {
 	this->index++;	
-	if (isDigit(c) || isDot(c)) {
+	if (isDigit(c) || isDot(c, allowComma)) {
 		this->buffer += c;
 	} else {
 		this->mantissa = atof(this->buffer.c_str());
@@ -68,16 +71,23 @@ void TableValueParser::parseExponenta(char c) {
 }
 
 int  TableValueParser::getInt() {
-	this->parseInput();
+	this->parseInput(false);
 	return (int)(this->sign*this->mantissa*pow(10, this->exponenta));
 }
-
+;
 double  TableValueParser::getDouble() {
-	this->parseInput();
+	return getDouble(false);
+}
+double TableValueParser::getDouble(bool allowComma) {
+	this->parseInput(allowComma);
 	return this->sign*this->mantissa*pow(10, this->exponenta);
 }
 
-void TableValueParser::parseInput() {
+bool TableValueParser::isEmpty() {
+	return this->input.length() == 0;
+}
+
+void TableValueParser::parseInput(bool allowComma) {
 	this->input.append(" ");
 	int length = (int)this->input.length();
 	this->state = 0;
@@ -93,7 +103,7 @@ void TableValueParser::parseInput() {
 				break;
 			}
 			case 1: {
-				this->parseMantissa(c);
+				this->parseMantissa(c, allowComma);
 				break;
 			}
 			case 2: {
@@ -103,6 +113,7 @@ void TableValueParser::parseInput() {
 		}
 	}
 	this->input.erase(0, this->index);
+	input.erase(input.find_last_not_of(" \n\r\t") + 1);
 }
 
 string  TableValueParser::getString() {

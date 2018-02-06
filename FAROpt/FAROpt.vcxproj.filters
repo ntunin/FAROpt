@@ -13,95 +13,350 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Исходные файлы\Nec">
-      <UniqueIdentifier>{a4e55294-e9b2-4390-afe4-3820487a8f3d}</UniqueIdentifier>
+    <Filter Include="Исходные файлы и файлы заголовков">
+      <UniqueIdentifier>{450c532a-98f3-4582-a3bd-d01da517138d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\Nec\NecIn">
-      <UniqueIdentifier>{72479bf7-4445-45e2-b3a7-f11f0a60001d}</UniqueIdentifier>
+    <Filter Include="Исходные файлы и файлы заголовков\LifeCycle">
+      <UniqueIdentifier>{c63a438a-43d5-48f9-9b1c-6cd5239c8968}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\Nec\NecOut">
-      <UniqueIdentifier>{6c3d5979-0027-42fd-b943-48bf0f8c4cb6}</UniqueIdentifier>
+    <Filter Include="Исходные файлы и файлы заголовков\LifeCycle\ConsoleScreen">
+      <UniqueIdentifier>{5f3cde7d-ec47-4328-a371-f00256cb5d91}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы заголовков\Nec">
-      <UniqueIdentifier>{6f165f77-47ea-4266-ae71-422eaac585c8}</UniqueIdentifier>
+    <Filter Include="Исходные файлы и файлы заголовков\LifeCycle\FullLimitOptimisationMenuScreen">
+      <UniqueIdentifier>{9614986d-fa23-4922-ac61-0d0b04f1c2af}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы заголовков\Nec\NecOut">
-      <UniqueIdentifier>{221edf7c-141a-45cf-b74b-9e200fe6679d}</UniqueIdentifier>
+    <Filter Include="Исходные файлы и файлы заголовков\LifeCycle\OneLimitOptimisationMenuScreen">
+      <UniqueIdentifier>{be2ede59-7166-4c66-85a3-0ce5d335cde2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы заголовков\Nec\NecIn">
-      <UniqueIdentifier>{1a5671df-9837-4bb0-9d1c-40248fc977b6}</UniqueIdentifier>
+    <Filter Include="Исходные файлы и файлы заголовков\Math">
+      <UniqueIdentifier>{608de4a9-3df5-418a-a2ba-731a46f1e837}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\Nec\NecIn\NecCommand">
-      <UniqueIdentifier>{4deece3d-6524-43e1-a7a7-9acb570d1784}</UniqueIdentifier>
+    <Filter Include="Исходные файлы и файлы заголовков\Math\Complex">
+      <UniqueIdentifier>{75687687-012a-406e-851b-26a4ef4f52d2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы заголовков\Nec\NecIn\NecCommand">
-      <UniqueIdentifier>{028b590b-14c2-4db4-b4ca-89d822015478}</UniqueIdentifier>
+    <Filter Include="Исходные файлы и файлы заголовков\Math\ComplexMatrix">
+      <UniqueIdentifier>{e8702f6e-5c38-42ed-ab85-5d3d9b8fd4e0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\Math">
-      <UniqueIdentifier>{9bab106b-9e09-4d93-817b-971a603d3e67}</UniqueIdentifier>
+    <Filter Include="Исходные файлы и файлы заголовков\Math\ComplexVector">
+      <UniqueIdentifier>{8b8ba207-a48c-4dcf-8dc7-682cbb9ad3da}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы заголовков\Math">
-      <UniqueIdentifier>{a901e5d5-e090-429a-b636-ae7a78da852b}</UniqueIdentifier>
+    <Filter Include="Исходные файлы и файлы заголовков\Math\ComplexVectorT">
+      <UniqueIdentifier>{370a4cfa-c0da-45af-a1a3-bb2672cdc526}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы заголовков\Shared">
-      <UniqueIdentifier>{64c37d97-3bef-466b-88ca-45d1273294ac}</UniqueIdentifier>
+    <Filter Include="Исходные файлы и файлы заголовков\Math\GradienAlgoritm">
+      <UniqueIdentifier>{32ca154c-0312-428a-966e-dc44456dab73}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\Shared">
-      <UniqueIdentifier>{2a66f0a4-ca5d-4ed2-b741-e3b77927f1c5}</UniqueIdentifier>
+    <Filter Include="Исходные файлы и файлы заголовков\Math\GradientSAAlgoritm">
+      <UniqueIdentifier>{c517d20c-3bbf-49c6-8679-f523c43d4bb9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\LifeCycle">
-      <UniqueIdentifier>{4a003233-cb52-46eb-adb4-c7996110869b}</UniqueIdentifier>
+    <Filter Include="Исходные файлы и файлы заголовков\Math\HGAlgoritm">
+      <UniqueIdentifier>{5a8db229-cf49-4b58-9c63-e72eb5c09ce8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы заголовков\LifeCycle">
-      <UniqueIdentifier>{1779fba3-a534-468c-9ca5-205631e8a42c}</UniqueIdentifier>
+    <Filter Include="Исходные файлы и файлы заголовков\Math\HGSAAlgoritm">
+      <UniqueIdentifier>{67978fed-06d4-4aab-9867-ad3ffc304708}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\Optimisations">
+    <Filter Include="Исходные файлы и файлы заголовков\Math\OptimisationAlgoritm">
+      <UniqueIdentifier>{8e68403b-bb07-4fd6-af6c-8558abddeaa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Math\Utils">
+      <UniqueIdentifier>{209c6345-0aee-430a-834d-9b6ec681c8e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations">
       <UniqueIdentifier>{0288d41f-b2e3-4031-bbd3-d4a04f6d7c0b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\Optimisations\FullLimit">
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit">
       <UniqueIdentifier>{154efe2b-d4dc-4dbf-a71c-4d817cd53f44}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\Optimisations\OneLimit">
-      <UniqueIdentifier>{73981fa1-dd8d-4775-a88b-f33f04c8a982}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Файлы заголовков\Optimisations">
-      <UniqueIdentifier>{a133b7de-2c5c-4904-9954-530a63b5ea14}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Файлы заголовков\Optimisations\OneLimit">
-      <UniqueIdentifier>{2a68cf5e-187a-4290-8816-899e7708520c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Файлы заголовков\Optimisations\FullLimit">
-      <UniqueIdentifier>{c9a6c768-e993-4368-bc3a-d0336e6ac4b3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\Optimisations\OneLimit\Lamda">
-      <UniqueIdentifier>{62dc4013-3e54-497a-a8a3-5426b882d208}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\Optimisations\OneLimit\Gradient">
-      <UniqueIdentifier>{5e97d11c-b3ad-45ee-b7c9-9ae217323634}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\Optimisations\OneLimit\HG">
-      <UniqueIdentifier>{cb12aada-c5ae-4121-b9eb-52faff5e31d7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Файлы заголовков\Optimisations\OneLimit\Lamda">
-      <UniqueIdentifier>{2c27e5e8-6bf6-47dd-af61-f00ce244aa3f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Файлы заголовков\Optimisations\OneLimit\Gradient">
-      <UniqueIdentifier>{9c8fc751-3cb1-49db-b209-af0a41c74b41}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Файлы заголовков\Optimisations\OneLimit\HG">
-      <UniqueIdentifier>{73ba6d7e-4bfc-47e9-9f7c-7c748a79ace1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\Optimisations\FullLimit\HG">
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG">
       <UniqueIdentifier>{3b2da269-f213-4439-a45a-af58e4b82bc8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы заголовков\Optimisations\FullLimit\HG">
-      <UniqueIdentifier>{15e6fb6a-a742-4dda-84d3-eeb9cea831fe}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\Optimisations\FullLimit\Gradient">
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\Gradient">
       <UniqueIdentifier>{eb006e34-0935-4071-b888-863e84a7d416}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы заголовков\Optimisations\FullLimit\Gradient">
-      <UniqueIdentifier>{8978f6ef-de39-401f-9afa-a914e2eb687e}</UniqueIdentifier>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit">
+      <UniqueIdentifier>{73981fa1-dd8d-4775-a88b-f33f04c8a982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\Lamda">
+      <UniqueIdentifier>{62dc4013-3e54-497a-a8a3-5426b882d208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\Gradient">
+      <UniqueIdentifier>{5e97d11c-b3ad-45ee-b7c9-9ae217323634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\HG">
+      <UniqueIdentifier>{cb12aada-c5ae-4121-b9eb-52faff5e31d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared">
+      <UniqueIdentifier>{2a66f0a4-ca5d-4ed2-b741-e3b77927f1c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\FullLimitDirectivityOptimisationAlgoritm">
+      <UniqueIdentifier>{78eeed49-e0b8-43db-9d37-555df85179b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\FullLimitOptimisationAlgoritm">
+      <UniqueIdentifier>{bc2f3978-a410-4313-a129-a55934b10509}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\FullLimitPowerOptimisationAlgoritm">
+      <UniqueIdentifier>{3f3ee664-23d5-487a-af5f-59dc2708dd1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\Gradient\FullLimitPowerOptimisationGradientSAAlgoritm">
+      <UniqueIdentifier>{ff31e84e-fcb7-496a-a548-e377c0b8c1da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\Gradient\FullLimitPowerOptimisationGradientSAScreen">
+      <UniqueIdentifier>{4a87a04b-3cfa-4a4d-9206-66f0ecaa3b69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitPowerOptimisationHGSAAlgoritm">
+      <UniqueIdentifier>{751e0ee7-615a-4da1-a0b5-9490ffdaee71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitPowerOptimisationHGSAScreen">
+      <UniqueIdentifier>{cbd28f69-1fdd-42a7-aec4-2ee569979aee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\Gradient\OneLimitGradientOptimisationScreen">
+      <UniqueIdentifier>{647135ad-24ea-4deb-83af-1e08794a9981}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\Gradient\OneLimitGradientSAOptimisationScreen">
+      <UniqueIdentifier>{36f4cb38-ac84-443c-ab42-e5baa6c3f1b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\Gradient\OneLimitGradientOptimisationAlgoritm">
+      <UniqueIdentifier>{aeab84cc-2d80-43eb-ae8e-01fb001eb1bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\Gradient\OneLimitGradientSAOptimisationAlgoritm">
+      <UniqueIdentifier>{c3568c75-bfde-4e4b-93f2-d257092b428d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\HG\OneLimitHGOptimisationAlgoritm">
+      <UniqueIdentifier>{8f28aee8-0ad8-4175-9fbb-f6b8192dac45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\HG\OneLimitHGOptimisationScreen">
+      <UniqueIdentifier>{9ad1467a-7235-4b27-b4f0-c54b2d12dec6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\HG\OneLimitHGSAOptimisationAlgoritm">
+      <UniqueIdentifier>{15fd0d71-09b1-4527-a37a-94bb7ab2628c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\HG\OneLimitHGSAScreen">
+      <UniqueIdentifier>{a9bde0bf-3954-4a36-80e4-6389810eb23b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\Lamda\LamdaDirectivityOptimisationAlgoritm">
+      <UniqueIdentifier>{902eb2d3-a984-4105-828a-e53a6639eb4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\Lamda\LamdaDirectivityOptimisationScreen">
+      <UniqueIdentifier>{c09f17e1-7394-40a3-b17d-7e2b403fe27c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\Lamda\LamdaGainOptimisationAlgoritm">
+      <UniqueIdentifier>{983947ce-5fb2-4621-b4ec-3fbb8d4d9cc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\Lamda\LamdaGainOptimisationScreen">
+      <UniqueIdentifier>{9a9a9fb4-7a0c-42ce-9054-634d911fbf3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\Lamda\LamdaOptimisationAlgoritm">
+      <UniqueIdentifier>{64440b76-1838-4992-b514-e2b0cd5f336b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\OneLimitDirectivityOptimisationAlgoritm">
+      <UniqueIdentifier>{7d8d8e90-c4b8-4eb9-b378-1349589b5f9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\OneLimitGainOptimisationAlgoritm">
+      <UniqueIdentifier>{f34eed3a-f9df-48b5-bb78-76f36c734e2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OneLimit\OneLimitOptimisationAlgoritm">
+      <UniqueIdentifier>{66e91417-3568-4f80-916e-d85147563a53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FAROptimisationAlgoritm">
+      <UniqueIdentifier>{05926dfa-21ff-4528-b3c6-26cb0d8161ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OptimisationEnvirounment">
+      <UniqueIdentifier>{96aec3b1-c030-4f78-a1a2-231226e2c31b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\OptimisationScreen">
+      <UniqueIdentifier>{b00c9b55-f84c-473a-a489-ce74dcc20eb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\CacheManager">
+      <UniqueIdentifier>{8f706994-f2fd-42df-89a5-e4fd13a9ab95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\ConsoleLog">
+      <UniqueIdentifier>{3cc4c661-4dd8-4e03-adcc-637d2fb225c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\ConsoleScanner">
+      <UniqueIdentifier>{3544bfc6-4cb0-4a0e-9ca2-a11837f87fda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\Log">
+      <UniqueIdentifier>{6c12dd8b-83f0-4f49-9e9b-26642f219758}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\ProcessManager">
+      <UniqueIdentifier>{27792361-3eec-4402-a38d-5041bb390315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\WindowsUtils">
+      <UniqueIdentifier>{3edf6852-54e6-44e6-b47a-5a425872e265}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\ProcessRunner">
+      <UniqueIdentifier>{03bf1623-715c-4f0f-afae-1dfa9b37536c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\WindowsProcessManager">
+      <UniqueIdentifier>{63586ae7-c849-451b-8d41-3474c6511f03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\WindowsCacheManager">
+      <UniqueIdentifier>{b30849cc-2d86-488c-9f51-0ee8bfc719b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\TreeMap">
+      <UniqueIdentifier>{0fef8de4-83fa-469c-9d59-5a48c7a5b310}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\Scanner">
+      <UniqueIdentifier>{11da31df-4867-4958-8ae2-28d14ba78c86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\CheckProvidedSolution">
+      <UniqueIdentifier>{adf0da9c-e55d-467d-8dfe-9d837d8b83cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\CheckProvidedSolution\CheckProvidedSolutionScreen">
+      <UniqueIdentifier>{a43e75c9-8d64-46ed-968c-a30bd1b68bfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers">
+      <UniqueIdentifier>{a4e55294-e9b2-4390-afe4-3820487a8f3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn">
+      <UniqueIdentifier>{72479bf7-4445-45e2-b3a7-f11f0a60001d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand">
+      <UniqueIdentifier>{4deece3d-6524-43e1-a7a7-9acb570d1784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\CE">
+      <UniqueIdentifier>{93f8a42e-b326-498c-b175-6a687ac40944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\CEHandler">
+      <UniqueIdentifier>{dc0ba5da-c01c-4d28-a6c7-fa273f63c6f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\CM">
+      <UniqueIdentifier>{d52a8cd9-4e89-4d38-a081-62c8a26738e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\CMHandler">
+      <UniqueIdentifier>{1032434a-967a-4641-bebd-25bcfe8ae80f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\EN">
+      <UniqueIdentifier>{f7e82b3e-e68a-493c-8224-744ac22942ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\ENHandler">
+      <UniqueIdentifier>{cfc7e3a6-a1ab-407c-ab29-22b7c2d14fbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\EX">
+      <UniqueIdentifier>{bcd59fe6-87c3-426a-a99e-b647e361e1d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\EXHandler">
+      <UniqueIdentifier>{c39b9827-eea1-4642-a2b4-af88486ef34d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\FR">
+      <UniqueIdentifier>{20e5bba0-68de-402a-a577-e24ae60af964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\FRHandler">
+      <UniqueIdentifier>{bf692300-e608-46e8-8c02-e92f7a471097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\GE">
+      <UniqueIdentifier>{010ec8fc-1496-41f7-8f4d-118470f8c0bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\GEHandler">
+      <UniqueIdentifier>{7a0a6c88-23c1-4c1e-a90f-3e0003902612}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\GN">
+      <UniqueIdentifier>{63332e1f-0147-4f82-bfb5-d3d844b9793f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\GNHandler">
+      <UniqueIdentifier>{441f6483-719a-4861-baaf-12dfde735622}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\GW">
+      <UniqueIdentifier>{5083d934-1e65-4391-85bf-4e40d52bb3c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\GWHandler">
+      <UniqueIdentifier>{861586a9-a814-438d-b496-d004cb4f33df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\NecCommand">
+      <UniqueIdentifier>{bc7cedc3-8747-4825-9207-23cbaae94438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\RPHandler">
+      <UniqueIdentifier>{4c2a0c4a-ac76-432a-9ac7-c53b0dc161fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\RP">
+      <UniqueIdentifier>{28ed556d-bf66-4fbc-bcc4-44518f02bb6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\PT">
+      <UniqueIdentifier>{7a812393-5475-438f-afac-dfb20e585304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\PTHandler">
+      <UniqueIdentifier>{86bea4de-b4f0-41d4-93e2-f280952a1a85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\AllSourceNecInWritter">
+      <UniqueIdentifier>{08494b3d-63b9-4e0a-af35-cd0f5c033f12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\AllSourceNecInWritterException">
+      <UniqueIdentifier>{d66e328f-c163-4bb2-9e13-c5892664f6c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecInParser">
+      <UniqueIdentifier>{c0b0f569-2da0-4e74-9118-3d2cc7ea4cf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\OneSourceNecInWritterException">
+      <UniqueIdentifier>{2b9d241b-8254-4b0d-ad5e-1d1391e24cb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\OneSourceNecInWritter">
+      <UniqueIdentifier>{601803db-795c-450c-800d-c6186e963319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecOut">
+      <UniqueIdentifier>{6c3d5979-0027-42fd-b943-48bf0f8c4cb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecOut\AntenaInputsKeywordsHandler">
+      <UniqueIdentifier>{8b4f5083-b5ea-4957-9a5a-d2b0779d6d36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecOut\NecOutParser">
+      <UniqueIdentifier>{89ffa73b-5d1a-44b4-8fcd-97537f84a560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecOut\RadiationKeywordsHandler">
+      <UniqueIdentifier>{2b35bc37-7e6c-4931-a315-f1078903719f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\AllSourceThread">
+      <UniqueIdentifier>{82664735-11e3-4e53-8c11-198d106daf65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\FileException">
+      <UniqueIdentifier>{97d582f2-48d1-4cab-8810-303a28a1ddde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\FileParser">
+      <UniqueIdentifier>{b7693f74-6b22-44b7-8b3d-5e2101f91ab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\FileStreamHandler">
+      <UniqueIdentifier>{c0233968-da75-4157-8a8d-e2d9b3508436}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\FileStructure">
+      <UniqueIdentifier>{654d276d-17d1-4adc-adcc-38313bc089c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\KeywordsHandler">
+      <UniqueIdentifier>{e88af155-3c05-4517-b165-ca82a88c6e55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\TableValueParser">
+      <UniqueIdentifier>{c58bb0d4-53c1-46b1-9ed4-ffa816d2432b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\OneSourceThread">
+      <UniqueIdentifier>{c37b7427-ecde-46b4-9ffb-cad6cbca5141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\PlotWritter">
+      <UniqueIdentifier>{10932fb1-827d-4ccd-b042-ea184b2ecbb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\StringHandler">
+      <UniqueIdentifier>{9c65354a-aed7-4fc8-81f7-2c3b035e5939}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecOutPlotDrawer">
+      <UniqueIdentifier>{576be644-7d01-4584-bd0d-bd448c892d1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\Checkout">
+      <UniqueIdentifier>{00fa6d39-cbbf-42c7-a564-63b7b627612d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutParser">
+      <UniqueIdentifier>{02cc8ffd-730c-4331-8f98-f837f39c31d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutData">
+      <UniqueIdentifier>{6e706b15-a2de-4bb5-967b-4b44c74db0e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutKeywordsHandlers">
+      <UniqueIdentifier>{63a9adb8-2380-4e54-a725-c5f1871a7ad0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutKeywordsHandlers\AHandler">
+      <UniqueIdentifier>{b99c8db0-bd01-40ea-bbf8-1e124932b6cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutKeywordsHandlers\BHandler">
+      <UniqueIdentifier>{43c1acfd-eda2-41de-89c5-a4951cc5a8d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutKeywordsHandlers\XHandler">
+      <UniqueIdentifier>{dc057bfe-a708-4062-af40-6050060a6446}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -114,287 +369,305 @@
     <ClInclude Include="targetver.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="AntenaInputsKeywordsHandler.h">
-      <Filter>Файлы заголовков\Nec\NecOut</Filter>
-    </ClInclude>
-    <ClInclude Include="RadiationKeywordsHandler.h">
-      <Filter>Файлы заголовков\Nec\NecOut</Filter>
-    </ClInclude>
-    <ClInclude Include="NecOut.h">
-      <Filter>Файлы заголовков\Nec\NecOut</Filter>
-    </ClInclude>
-    <ClInclude Include="NecOutParser.h">
-      <Filter>Файлы заголовков\Nec\NecOut</Filter>
-    </ClInclude>
-    <ClInclude Include="NecIn.h">
-      <Filter>Файлы заголовков\Nec\NecIn</Filter>
-    </ClInclude>
-    <ClInclude Include="NecInParser.h">
-      <Filter>Файлы заголовков\Nec\NecIn</Filter>
-    </ClInclude>
-    <ClInclude Include="TableValueParser.h">
-      <Filter>Файлы заголовков\Nec</Filter>
-    </ClInclude>
-    <ClInclude Include="KeywordsHandler.h">
-      <Filter>Файлы заголовков\Nec</Filter>
-    </ClInclude>
-    <ClInclude Include="FileParser.h">
-      <Filter>Файлы заголовков\Nec</Filter>
-    </ClInclude>
-    <ClInclude Include="FileException.h">
-      <Filter>Файлы заголовков\Nec</Filter>
-    </ClInclude>
-    <ClInclude Include="CE.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="CM.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="NecCommand.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="GW.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="GN.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="FR.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="EX.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="PT.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="RP.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="EN.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="CEHandler.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="CMHandler.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="ENHandler.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="FileStreamHandler.h">
-      <Filter>Файлы заголовков\Nec</Filter>
-    </ClInclude>
-    <ClInclude Include="StringHandler.h">
-      <Filter>Файлы заголовков\Nec</Filter>
-    </ClInclude>
-    <ClInclude Include="FileStructure.h">
-      <Filter>Файлы заголовков\Nec</Filter>
-    </ClInclude>
-    <ClInclude Include="EXHandler.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="FRHandler.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="GNHandler.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="GWHandler.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="PTHandler.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="RPHandler.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="GE.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="GEHandler.h">
-      <Filter>Файлы заголовков\Nec\NecIn\NecCommand</Filter>
-    </ClInclude>
-    <ClInclude Include="Complex.h">
-      <Filter>Файлы заголовков\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="ComplexMatrix.h">
-      <Filter>Файлы заголовков\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="ComplexVector.h">
-      <Filter>Файлы заголовков\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="ComplexVectorT.h">
-      <Filter>Файлы заголовков\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="OneSourceNecInWritter.h">
-      <Filter>Файлы заголовков\Nec\NecIn</Filter>
-    </ClInclude>
-    <ClInclude Include="OneSourceNecInWritterException.h">
-      <Filter>Файлы заголовков\Nec\NecIn</Filter>
-    </ClInclude>
-    <ClInclude Include="AllSourceNecInWritter.h">
-      <Filter>Файлы заголовков\Nec\NecIn</Filter>
-    </ClInclude>
-    <ClInclude Include="AllSourceNecInWritterException.h">
-      <Filter>Файлы заголовков\Nec\NecIn</Filter>
-    </ClInclude>
-    <ClInclude Include="AllSourceThread.h">
-      <Filter>Файлы заголовков\Nec</Filter>
-    </ClInclude>
-    <ClInclude Include="OneSourceThread.h">
-      <Filter>Файлы заголовков\Nec</Filter>
-    </ClInclude>
-    <ClInclude Include="ProcessRunner.h">
-      <Filter>Файлы заголовков\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="ConsoleLog.h">
-      <Filter>Файлы заголовков\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="Shared.h">
-      <Filter>Файлы заголовков\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="Log.h">
-      <Filter>Файлы заголовков\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="TreeMap.h">
-      <Filter>Файлы заголовков\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="NecOutPlotDrawer.h">
-      <Filter>Файлы заголовков\Nec</Filter>
-    </ClInclude>
-    <ClInclude Include="PlotWritter.h">
-      <Filter>Файлы заголовков\Nec</Filter>
-    </ClInclude>
-    <ClInclude Include="Scanner.h">
-      <Filter>Файлы заголовков\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="ConsoleScanner.h">
-      <Filter>Файлы заголовков\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="OneLimitOptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
-    </ClInclude>
-    <ClInclude Include="ProcessManager.h">
-      <Filter>Файлы заголовков\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="WindowsProcessManager.h">
-      <Filter>Файлы заголовков\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="OptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="OneLimitDirectivityOptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
-    </ClInclude>
-    <ClInclude Include="LifeCycle.h">
-      <Filter>Файлы заголовков\LifeCycle</Filter>
-    </ClInclude>
-    <ClInclude Include="OneLimitOptimisationMenuScreen.h">
-      <Filter>Файлы заголовков\LifeCycle</Filter>
-    </ClInclude>
     <ClInclude Include="ConsoleScreen.h">
-      <Filter>Файлы заголовков\LifeCycle</Filter>
+      <Filter>Исходные файлы и файлы заголовков\LifeCycle\ConsoleScreen</Filter>
     </ClInclude>
     <ClInclude Include="FullLimitOptimisationMenuScreen.h">
-      <Filter>Файлы заголовков\LifeCycle</Filter>
+      <Filter>Исходные файлы и файлы заголовков\LifeCycle\FullLimitOptimisationMenuScreen</Filter>
     </ClInclude>
-    <ClInclude Include="FullLimitOptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\FullLimit</Filter>
+    <ClInclude Include="OneLimitOptimisationMenuScreen.h">
+      <Filter>Исходные файлы и файлы заголовков\LifeCycle\OneLimitOptimisationMenuScreen</Filter>
     </ClInclude>
-    <ClInclude Include="FullLimitDirectivityOptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\FullLimit</Filter>
+    <ClInclude Include="LifeCycle.h">
+      <Filter>Исходные файлы и файлы заголовков\LifeCycle</Filter>
     </ClInclude>
-    <ClInclude Include="OptimisationEnvirounment.h">
-      <Filter>Файлы заголовков\Optimisations</Filter>
+    <ClInclude Include="Complex.h">
+      <Filter>Исходные файлы и файлы заголовков\Math\Complex</Filter>
     </ClInclude>
-    <ClInclude Include="OptimisationScreen.h">
-      <Filter>Файлы заголовков\Optimisations</Filter>
+    <ClInclude Include="ComplexMatrix.h">
+      <Filter>Исходные файлы и файлы заголовков\Math\ComplexMatrix</Filter>
     </ClInclude>
-    <ClInclude Include="FAROptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations</Filter>
+    <ClInclude Include="ComplexVectorT.h">
+      <Filter>Исходные файлы и файлы заголовков\Math\ComplexVectorT</Filter>
     </ClInclude>
-    <ClInclude Include="OneLimitGainOptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit</Filter>
-    </ClInclude>
-    <ClInclude Include="FullLimitPowerOptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\FullLimit</Filter>
-    </ClInclude>
-    <ClInclude Include="CacheManager.h">
-      <Filter>Файлы заголовков\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="WindowsCacheManager.h">
-      <Filter>Файлы заголовков\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="Utils.h">
-      <Filter>Файлы заголовков\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="HGAlgoritm.h">
-      <Filter>Файлы заголовков\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="WindowsUtils.h">
-      <Filter>Файлы заголовков\Shared</Filter>
+    <ClInclude Include="ComplexVector.h">
+      <Filter>Исходные файлы и файлы заголовков\Math\ComplexVector</Filter>
     </ClInclude>
     <ClInclude Include="GradientAlgoritm.h">
-      <Filter>Файлы заголовков\Math</Filter>
+      <Filter>Исходные файлы и файлы заголовков\Math\GradienAlgoritm</Filter>
     </ClInclude>
     <ClInclude Include="GradientSAAlgoritm.h">
-      <Filter>Файлы заголовков\Math</Filter>
+      <Filter>Исходные файлы и файлы заголовков\Math\GradientSAAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="HGAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Math\HGAlgoritm</Filter>
     </ClInclude>
     <ClInclude Include="HGSAAlgoritm.h">
-      <Filter>Файлы заголовков\Math</Filter>
+      <Filter>Исходные файлы и файлы заголовков\Math\HGSAAlgoritm</Filter>
     </ClInclude>
-    <ClInclude Include="LamdaDirectivityOptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit\Lamda</Filter>
+    <ClInclude Include="Utils.h">
+      <Filter>Исходные файлы и файлы заголовков\Math\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="LamdaDirectivityOptimisationScreen.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit\Lamda</Filter>
+    <ClInclude Include="OptimisationAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Math\OptimisationAlgoritm</Filter>
     </ClInclude>
-    <ClInclude Include="LamdaGainOptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit\Lamda</Filter>
+    <ClInclude Include="CE.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\CE</Filter>
     </ClInclude>
-    <ClInclude Include="LamdaGainOptimisationScreen.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit\Lamda</Filter>
+    <ClInclude Include="CEHandler.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\CEHandler</Filter>
     </ClInclude>
-    <ClInclude Include="LamdaOptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit\Lamda</Filter>
+    <ClInclude Include="CM.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\CM</Filter>
     </ClInclude>
-    <ClInclude Include="OneLimitHGSAOptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit\HG</Filter>
+    <ClInclude Include="CMHandler.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\CMHandler</Filter>
     </ClInclude>
-    <ClInclude Include="OneLimitHGSAScreen.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit\HG</Filter>
+    <ClInclude Include="EN.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\EN</Filter>
     </ClInclude>
-    <ClInclude Include="OneLimitHGOptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit\HG</Filter>
+    <ClInclude Include="ENHandler.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\ENHandler</Filter>
     </ClInclude>
-    <ClInclude Include="OneLimitHGOptimisationScreen.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit\HG</Filter>
+    <ClInclude Include="EX.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\EX</Filter>
     </ClInclude>
-    <ClInclude Include="OneLimitGradientSAOptimisationScreen.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit\Gradient</Filter>
+    <ClInclude Include="EXHandler.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\EXHandler</Filter>
     </ClInclude>
-    <ClInclude Include="OneLimitGradientSAOptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit\Gradient</Filter>
+    <ClInclude Include="FR.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\FR</Filter>
     </ClInclude>
-    <ClInclude Include="OneLimitGradientOptimisationAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit\Gradient</Filter>
+    <ClInclude Include="FRHandler.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\FRHandler</Filter>
     </ClInclude>
-    <ClInclude Include="OneLimitGradientOptimisationScreen.h">
-      <Filter>Файлы заголовков\Optimisations\OneLimit\Gradient</Filter>
+    <ClInclude Include="GE.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\GE</Filter>
     </ClInclude>
-    <ClInclude Include="FullLimitPowerOptimisationHGSAAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\FullLimit\HG</Filter>
+    <ClInclude Include="GEHandler.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\GEHandler</Filter>
     </ClInclude>
-    <ClInclude Include="FullLimitPowerOptimisationHGSAScreen.h">
-      <Filter>Файлы заголовков\Optimisations\FullLimit\HG</Filter>
+    <ClInclude Include="GN.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\GN</Filter>
+    </ClInclude>
+    <ClInclude Include="GNHandler.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\GNHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="GW.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\GW</Filter>
+    </ClInclude>
+    <ClInclude Include="GWHandler.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\GWHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="NecCommand.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\NecCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="PT.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\PT</Filter>
+    </ClInclude>
+    <ClInclude Include="PTHandler.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\PTHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="RP.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\RP</Filter>
+    </ClInclude>
+    <ClInclude Include="RPHandler.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\RPHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="NecIn.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn</Filter>
+    </ClInclude>
+    <ClInclude Include="AllSourceNecInWritter.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\AllSourceNecInWritter</Filter>
+    </ClInclude>
+    <ClInclude Include="AllSourceNecInWritterException.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\AllSourceNecInWritterException</Filter>
+    </ClInclude>
+    <ClInclude Include="NecInParser.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecInParser</Filter>
+    </ClInclude>
+    <ClInclude Include="OneSourceNecInWritter.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\OneSourceNecInWritter</Filter>
+    </ClInclude>
+    <ClInclude Include="OneSourceNecInWritterException.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\OneSourceNecInWritterException</Filter>
+    </ClInclude>
+    <ClInclude Include="AntenaInputsKeywordsHandler.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecOut\AntenaInputsKeywordsHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="NecOutParser.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecOut\NecOutParser</Filter>
+    </ClInclude>
+    <ClInclude Include="RadiationKeywordsHandler.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecOut\RadiationKeywordsHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="NecOut.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecOut</Filter>
+    </ClInclude>
+    <ClInclude Include="AllSourceThread.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\AllSourceThread</Filter>
+    </ClInclude>
+    <ClInclude Include="FileException.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\FileException</Filter>
+    </ClInclude>
+    <ClInclude Include="FileParser.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\FileParser</Filter>
+    </ClInclude>
+    <ClInclude Include="FileStreamHandler.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\FileStreamHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="FileStructure.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\FileStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="KeywordsHandler.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\KeywordsHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="NecOutPlotDrawer.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecOutPlotDrawer</Filter>
+    </ClInclude>
+    <ClInclude Include="OneSourceThread.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\OneSourceThread</Filter>
+    </ClInclude>
+    <ClInclude Include="PlotWritter.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\PlotWritter</Filter>
+    </ClInclude>
+    <ClInclude Include="StringHandler.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\StringHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="TableValueParser.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\TableValueParser</Filter>
     </ClInclude>
     <ClInclude Include="FullLimitPowerOptimisationGradientSAAlgoritm.h">
-      <Filter>Файлы заголовков\Optimisations\FullLimit\Gradient</Filter>
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\Gradient\FullLimitPowerOptimisationGradientSAAlgoritm</Filter>
     </ClInclude>
     <ClInclude Include="FullLimitPowerOptimisationGradientSAScreen.h">
-      <Filter>Файлы заголовков\Optimisations\FullLimit\Gradient</Filter>
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\Gradient\FullLimitPowerOptimisationGradientSAScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="FullLimitPowerOptimisationHGSAAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitPowerOptimisationHGSAAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="FullLimitPowerOptimisationHGSAScreen.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitPowerOptimisationHGSAScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="FullLimitDirectivityOptimisationAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\FullLimitDirectivityOptimisationAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="FullLimitOptimisationAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\FullLimitOptimisationAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="FullLimitPowerOptimisationAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\FullLimitPowerOptimisationAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitGradientOptimisationAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\Gradient\OneLimitGradientOptimisationAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitGradientOptimisationScreen.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\Gradient\OneLimitGradientOptimisationScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitGradientSAOptimisationAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\Gradient\OneLimitGradientSAOptimisationAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitGradientSAOptimisationScreen.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\Gradient\OneLimitGradientSAOptimisationScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitHGOptimisationScreen.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\HG\OneLimitHGOptimisationScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitHGSAOptimisationAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\HG\OneLimitHGSAOptimisationAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitHGOptimisationAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\HG\OneLimitHGOptimisationAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitHGSAScreen.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\HG\OneLimitHGSAScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="LamdaDirectivityOptimisationAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\Lamda\LamdaDirectivityOptimisationAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="LamdaDirectivityOptimisationScreen.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\Lamda\LamdaDirectivityOptimisationScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="LamdaGainOptimisationAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\Lamda\LamdaGainOptimisationAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="LamdaGainOptimisationScreen.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\Lamda\LamdaGainOptimisationScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="LamdaOptimisationAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\Lamda\LamdaOptimisationAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitDirectivityOptimisationAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\OneLimitDirectivityOptimisationAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitOptimisationAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\OneLimitOptimisationAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="OneLimitGainOptimisationAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\OneLimitGainOptimisationAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="FAROptimisationAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FAROptimisationAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimisationEnvirounment.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OptimisationEnvirounment</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimisationScreen.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OptimisationScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="CacheManager.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\CacheManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleLog.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\ConsoleLog</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleScanner.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\ConsoleScanner</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessManager.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\ProcessManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessRunner.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\ProcessRunner</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanner.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\Scanner</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeMap.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\TreeMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Shared.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsCacheManager.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\WindowsCacheManager</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsProcessManager.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\WindowsProcessManager</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsUtils.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\WindowsUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckProvidedSolutionScreen.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\CheckProvidedSolution\CheckProvidedSolutionScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckoutParser.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutParser</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckoutData.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutData</Filter>
+    </ClInclude>
+    <ClInclude Include="AHandler.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutKeywordsHandlers\AHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="BHandler.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutKeywordsHandlers\BHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="XHandler.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutKeywordsHandlers\XHandler</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -404,287 +677,305 @@
     <ClCompile Include="FAROpt.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="AntenaInputsKeywordsHandler.cpp">
-      <Filter>Исходные файлы\Nec\NecOut</Filter>
-    </ClCompile>
     <ClCompile Include="NecOut.cpp">
-      <Filter>Исходные файлы\Nec\NecOut</Filter>
-    </ClCompile>
-    <ClCompile Include="NecOutParser.cpp">
-      <Filter>Исходные файлы\Nec\NecOut</Filter>
-    </ClCompile>
-    <ClCompile Include="RadiationKeywordsHandler.cpp">
-      <Filter>Исходные файлы\Nec\NecOut</Filter>
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecOut</Filter>
     </ClCompile>
     <ClCompile Include="NecIn.cpp">
-      <Filter>Исходные файлы\Nec\NecIn</Filter>
-    </ClCompile>
-    <ClCompile Include="NecInParser.cpp">
-      <Filter>Исходные файлы\Nec\NecIn</Filter>
-    </ClCompile>
-    <ClCompile Include="FileParser.cpp">
-      <Filter>Исходные файлы\Nec</Filter>
-    </ClCompile>
-    <ClCompile Include="FileException.cpp">
-      <Filter>Исходные файлы\Nec</Filter>
-    </ClCompile>
-    <ClCompile Include="KeywordsHandler.cpp">
-      <Filter>Исходные файлы\Nec</Filter>
-    </ClCompile>
-    <ClCompile Include="TableValueParser.cpp">
-      <Filter>Исходные файлы\Nec</Filter>
-    </ClCompile>
-    <ClCompile Include="CE.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="CM.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="GW.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="GN.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="FR.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="EX.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="PT.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="RP.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="EN.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="NecCommand.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="CEHandler.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="CMHandler.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="ENHandler.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="FileStreamHandler.cpp">
-      <Filter>Исходные файлы\Nec</Filter>
-    </ClCompile>
-    <ClCompile Include="FileStructure.cpp">
-      <Filter>Исходные файлы\Nec</Filter>
-    </ClCompile>
-    <ClCompile Include="EXHandler.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="FRHandler.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="GNHandler.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="GWHandler.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="PTHandler.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="RPHandler.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="StringHandler.cpp">
-      <Filter>Исходные файлы\Nec</Filter>
-    </ClCompile>
-    <ClCompile Include="GE.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="GEHandler.cpp">
-      <Filter>Исходные файлы\Nec\NecIn\NecCommand</Filter>
-    </ClCompile>
-    <ClCompile Include="Complex.cpp">
-      <Filter>Исходные файлы\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="ComplexMatrix.cpp">
-      <Filter>Исходные файлы\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="ComplexVector.cpp">
-      <Filter>Исходные файлы\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="ComplexVectorT.cpp">
-      <Filter>Исходные файлы\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="OneSourceNecInWritter.cpp">
-      <Filter>Исходные файлы\Nec\NecIn</Filter>
-    </ClCompile>
-    <ClCompile Include="OneSourceNecInWritterException.cpp">
-      <Filter>Исходные файлы\Nec\NecIn</Filter>
-    </ClCompile>
-    <ClCompile Include="AllSourceNecInWritter.cpp">
-      <Filter>Исходные файлы\Nec\NecIn</Filter>
-    </ClCompile>
-    <ClCompile Include="AllSourceNecInWritterException.cpp">
-      <Filter>Исходные файлы\Nec\NecIn</Filter>
-    </ClCompile>
-    <ClCompile Include="AllSourceThread.cpp">
-      <Filter>Исходные файлы\Nec</Filter>
-    </ClCompile>
-    <ClCompile Include="OneSourceThread.cpp">
-      <Filter>Исходные файлы\Nec</Filter>
-    </ClCompile>
-    <ClCompile Include="ConsoleLog.cpp">
-      <Filter>Исходные файлы\Shared</Filter>
-    </ClCompile>
-    <ClCompile Include="Log.cpp">
-      <Filter>Исходные файлы\Shared</Filter>
-    </ClCompile>
-    <ClCompile Include="ProcessRunner.cpp">
-      <Filter>Исходные файлы\Shared</Filter>
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn</Filter>
     </ClCompile>
     <ClCompile Include="Shared.cpp">
-      <Filter>Исходные файлы\Shared</Filter>
-    </ClCompile>
-    <ClCompile Include="TreeMap.cpp">
-      <Filter>Исходные файлы\Shared</Filter>
-    </ClCompile>
-    <ClCompile Include="PlotWritter.cpp">
-      <Filter>Исходные файлы\Nec</Filter>
-    </ClCompile>
-    <ClCompile Include="NecOutPlotDrawer.cpp">
-      <Filter>Исходные файлы\Nec</Filter>
-    </ClCompile>
-    <ClCompile Include="ConsoleScanner.cpp">
-      <Filter>Исходные файлы\Shared</Filter>
-    </ClCompile>
-    <ClCompile Include="Scanner.cpp">
-      <Filter>Исходные файлы\Shared</Filter>
-    </ClCompile>
-    <ClCompile Include="OneLimitOptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit</Filter>
-    </ClCompile>
-    <ClCompile Include="ProcessManager.cpp">
-      <Filter>Исходные файлы\Shared</Filter>
-    </ClCompile>
-    <ClCompile Include="WindowsProcessManager.cpp">
-      <Filter>Исходные файлы\Shared</Filter>
-    </ClCompile>
-    <ClCompile Include="OptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="OneLimitDirectivityOptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit</Filter>
+      <Filter>Исходные файлы и файлы заголовков\Shared</Filter>
     </ClCompile>
     <ClCompile Include="LifeCycle.cpp">
-      <Filter>Исходные файлы\LifeCycle</Filter>
+      <Filter>Исходные файлы и файлы заголовков\LifeCycle</Filter>
     </ClCompile>
     <ClCompile Include="ConsoleScreen.cpp">
-      <Filter>Исходные файлы\LifeCycle</Filter>
-    </ClCompile>
-    <ClCompile Include="OneLimitOptimisationMenuScreen.cpp">
-      <Filter>Исходные файлы\LifeCycle</Filter>
+      <Filter>Исходные файлы и файлы заголовков\LifeCycle\ConsoleScreen</Filter>
     </ClCompile>
     <ClCompile Include="FullLimitOptimisationMenuScreen.cpp">
-      <Filter>Исходные файлы\LifeCycle</Filter>
+      <Filter>Исходные файлы и файлы заголовков\LifeCycle\FullLimitOptimisationMenuScreen</Filter>
     </ClCompile>
-    <ClCompile Include="FullLimitOptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\FullLimit</Filter>
+    <ClCompile Include="OneLimitOptimisationMenuScreen.cpp">
+      <Filter>Исходные файлы и файлы заголовков\LifeCycle\OneLimitOptimisationMenuScreen</Filter>
     </ClCompile>
-    <ClCompile Include="FullLimitDirectivityOptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\FullLimit</Filter>
+    <ClCompile Include="Complex.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Math\Complex</Filter>
     </ClCompile>
-    <ClCompile Include="OptimisationEnvirounment.cpp">
-      <Filter>Исходные файлы\Optimisations</Filter>
+    <ClCompile Include="ComplexMatrix.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Math\ComplexMatrix</Filter>
     </ClCompile>
-    <ClCompile Include="OptimisationScreen.cpp">
-      <Filter>Исходные файлы\Optimisations</Filter>
+    <ClCompile Include="ComplexVector.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Math\ComplexVector</Filter>
     </ClCompile>
-    <ClCompile Include="FAROptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations</Filter>
-    </ClCompile>
-    <ClCompile Include="OneLimitGainOptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit</Filter>
-    </ClCompile>
-    <ClCompile Include="FullLimitPowerOptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\FullLimit</Filter>
-    </ClCompile>
-    <ClCompile Include="Utils.cpp">
-      <Filter>Исходные файлы\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="HGAlgoritm.cpp">
-      <Filter>Исходные файлы\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="CacheManager.cpp">
-      <Filter>Исходные файлы\Shared</Filter>
-    </ClCompile>
-    <ClCompile Include="WindowsCacheManager.cpp">
-      <Filter>Исходные файлы\Shared</Filter>
-    </ClCompile>
-    <ClCompile Include="WindowsUtils.cpp">
-      <Filter>Исходные файлы\Shared</Filter>
+    <ClCompile Include="ComplexVectorT.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Math\ComplexVectorT</Filter>
     </ClCompile>
     <ClCompile Include="GradientAlgoritm.cpp">
-      <Filter>Исходные файлы\Math</Filter>
+      <Filter>Исходные файлы и файлы заголовков\Math\GradienAlgoritm</Filter>
     </ClCompile>
     <ClCompile Include="GradientSAAlgoritm.cpp">
-      <Filter>Исходные файлы\Math</Filter>
+      <Filter>Исходные файлы и файлы заголовков\Math\GradientSAAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="HGAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Math\HGAlgoritm</Filter>
     </ClCompile>
     <ClCompile Include="HGSAAlgoritm.cpp">
-      <Filter>Исходные файлы\Math</Filter>
+      <Filter>Исходные файлы и файлы заголовков\Math\HGSAAlgoritm</Filter>
     </ClCompile>
-    <ClCompile Include="LamdaDirectivityOptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit\Lamda</Filter>
+    <ClCompile Include="OptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Math\OptimisationAlgoritm</Filter>
     </ClCompile>
-    <ClCompile Include="LamdaDirectivityOptimisationScreen.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit\Lamda</Filter>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Math\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="LamdaGainOptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit\Lamda</Filter>
+    <ClCompile Include="CE.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\CE</Filter>
     </ClCompile>
-    <ClCompile Include="LamdaGainOptimisationScreen.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit\Lamda</Filter>
+    <ClCompile Include="CEHandler.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\CEHandler</Filter>
     </ClCompile>
-    <ClCompile Include="LamdaOptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit\Lamda</Filter>
+    <ClCompile Include="CM.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\CM</Filter>
     </ClCompile>
-    <ClCompile Include="OneLimitGradientSAOptimisationScreen.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit\Gradient</Filter>
+    <ClCompile Include="CMHandler.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\CMHandler</Filter>
     </ClCompile>
-    <ClCompile Include="OneLimitHGOptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit\HG</Filter>
+    <ClCompile Include="EN.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\EN</Filter>
     </ClCompile>
-    <ClCompile Include="OneLimitHGOptimisationScreen.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit\HG</Filter>
+    <ClCompile Include="ENHandler.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\ENHandler</Filter>
     </ClCompile>
-    <ClCompile Include="OneLimitHGSAOptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit\HG</Filter>
+    <ClCompile Include="EX.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\EX</Filter>
     </ClCompile>
-    <ClCompile Include="OneLimitHGSAScreen.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit\HG</Filter>
+    <ClCompile Include="EXHandler.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\EXHandler</Filter>
     </ClCompile>
-    <ClCompile Include="OneLimitGradientSAOptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit\Gradient</Filter>
+    <ClCompile Include="FR.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\FR</Filter>
     </ClCompile>
-    <ClCompile Include="OneLimitGradientOptimisationAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit\Gradient</Filter>
+    <ClCompile Include="FRHandler.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\FRHandler</Filter>
     </ClCompile>
-    <ClCompile Include="OneLimitGradientOptimisationScreen.cpp">
-      <Filter>Исходные файлы\Optimisations\OneLimit\Gradient</Filter>
+    <ClCompile Include="GE.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\GE</Filter>
     </ClCompile>
-    <ClCompile Include="FullLimitPowerOptimisationHGSAAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\FullLimit\HG</Filter>
+    <ClCompile Include="GEHandler.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\GEHandler</Filter>
     </ClCompile>
-    <ClCompile Include="FullLimitPowerOptimisationHGSAScreen.cpp">
-      <Filter>Исходные файлы\Optimisations\FullLimit\HG</Filter>
+    <ClCompile Include="GN.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\GN</Filter>
+    </ClCompile>
+    <ClCompile Include="GNHandler.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\GNHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="GW.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\GW</Filter>
+    </ClCompile>
+    <ClCompile Include="GWHandler.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\GWHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="RPHandler.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\RPHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="PTHandler.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\PTHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="PT.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\PT</Filter>
+    </ClCompile>
+    <ClCompile Include="RP.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\RP</Filter>
+    </ClCompile>
+    <ClCompile Include="NecCommand.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecCommand\NecCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="AllSourceNecInWritter.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\AllSourceNecInWritter</Filter>
+    </ClCompile>
+    <ClCompile Include="AllSourceNecInWritterException.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\AllSourceNecInWritterException</Filter>
+    </ClCompile>
+    <ClCompile Include="NecInParser.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecInParser</Filter>
+    </ClCompile>
+    <ClCompile Include="OneSourceNecInWritter.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\OneSourceNecInWritter</Filter>
+    </ClCompile>
+    <ClCompile Include="OneSourceNecInWritterException.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\OneSourceNecInWritterException</Filter>
+    </ClCompile>
+    <ClCompile Include="AntenaInputsKeywordsHandler.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecOut\AntenaInputsKeywordsHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="NecOutParser.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecOut\NecOutParser</Filter>
+    </ClCompile>
+    <ClCompile Include="RadiationKeywordsHandler.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecOut\RadiationKeywordsHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="AllSourceThread.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\AllSourceThread</Filter>
+    </ClCompile>
+    <ClCompile Include="FileException.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\FileException</Filter>
+    </ClCompile>
+    <ClCompile Include="FileStreamHandler.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\FileStreamHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="FileParser.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\FileParser</Filter>
+    </ClCompile>
+    <ClCompile Include="FileStructure.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\FileStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="KeywordsHandler.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\KeywordsHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="NecOutPlotDrawer.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecOutPlotDrawer</Filter>
+    </ClCompile>
+    <ClCompile Include="OneSourceThread.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\OneSourceThread</Filter>
+    </ClCompile>
+    <ClCompile Include="PlotWritter.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\PlotWritter</Filter>
+    </ClCompile>
+    <ClCompile Include="StringHandler.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\StringHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="TableValueParser.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\TableValueParser</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitDirectivityOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\FullLimitDirectivityOptimisationAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\FullLimitOptimisationAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitPowerOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\FullLimitPowerOptimisationAlgoritm</Filter>
     </ClCompile>
     <ClCompile Include="FullLimitPowerOptimisationGradientSAAlgoritm.cpp">
-      <Filter>Исходные файлы\Optimisations\FullLimit\Gradient</Filter>
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\Gradient\FullLimitPowerOptimisationGradientSAAlgoritm</Filter>
     </ClCompile>
     <ClCompile Include="FullLimitPowerOptimisationGradientSAScreen.cpp">
-      <Filter>Исходные файлы\Optimisations\FullLimit\Gradient</Filter>
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\Gradient\FullLimitPowerOptimisationGradientSAScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitPowerOptimisationHGSAAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitPowerOptimisationHGSAAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitPowerOptimisationHGSAScreen.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitPowerOptimisationHGSAScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitGradientOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\Gradient\OneLimitGradientOptimisationAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitGradientOptimisationScreen.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\Gradient\OneLimitGradientOptimisationScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitGradientSAOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\Gradient\OneLimitGradientSAOptimisationAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitGradientSAOptimisationScreen.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\Gradient\OneLimitGradientSAOptimisationScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitHGOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\HG\OneLimitHGOptimisationAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitHGOptimisationScreen.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\HG\OneLimitHGOptimisationScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitHGSAOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\HG\OneLimitHGSAOptimisationAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitHGSAScreen.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\HG\OneLimitHGSAScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="LamdaDirectivityOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\Lamda\LamdaDirectivityOptimisationAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="LamdaDirectivityOptimisationScreen.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\Lamda\LamdaDirectivityOptimisationScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="LamdaGainOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\Lamda\LamdaGainOptimisationAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="LamdaGainOptimisationScreen.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\Lamda\LamdaGainOptimisationScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="LamdaOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\Lamda\LamdaOptimisationAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitDirectivityOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\OneLimitDirectivityOptimisationAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitGainOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\OneLimitGainOptimisationAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="OneLimitOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OneLimit\OneLimitOptimisationAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="FAROptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FAROptimisationAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="OptimisationEnvirounment.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OptimisationEnvirounment</Filter>
+    </ClCompile>
+    <ClCompile Include="OptimisationScreen.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\OptimisationScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="CacheManager.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\CacheManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleLog.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\ConsoleLog</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleScanner.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\ConsoleScanner</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessManager.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\ProcessManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessRunner.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\ProcessRunner</Filter>
+    </ClCompile>
+    <ClCompile Include="Scanner.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\Scanner</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeMap.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\TreeMap</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsProcessManager.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\WindowsProcessManager</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsCacheManager.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\WindowsCacheManager</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsUtils.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\WindowsUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckProvidedSolutionScreen.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\CheckProvidedSolution\CheckProvidedSolutionScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckoutParser.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutParser</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckoutData.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutData</Filter>
+    </ClCompile>
+    <ClCompile Include="AHandler.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutKeywordsHandlers\AHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="BHandler.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutKeywordsHandlers\BHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="XHandler.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutKeywordsHandlers\XHandler</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

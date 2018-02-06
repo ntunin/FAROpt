@@ -4,8 +4,6 @@
 #define PI 3.14159265359
 class OneLimitOptimisationAlgoritm: public FAROptimisationAlgoritm {
 public:
-	void set_uBu(double uBu);
-	double get_uBu();
 	OneLimitOptimisationAlgoritm();
 	~OneLimitOptimisationAlgoritm();
 protected:

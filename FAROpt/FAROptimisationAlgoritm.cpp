@@ -7,8 +7,16 @@ FAROptimisationAlgoritm::FAROptimisationAlgoritm()
 }
 
 
-FAROptimisationAlgoritm::~FAROptimisationAlgoritm()
-{
+FAROptimisationAlgoritm::~FAROptimisationAlgoritm() {
+	delete uBu;
+}
+
+std::vector<double> *FAROptimisationAlgoritm::get_uBu() {
+	return uBu;
+}
+
+void FAROptimisationAlgoritm::set_uBu(std::vector<double> *uBu) {
+	this->uBu = uBu;
 }
 
 void FAROptimisationAlgoritm::set_uAu(double uAu) {
