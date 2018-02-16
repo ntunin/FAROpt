@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -42,7 +42,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -160,6 +160,17 @@
     <ClInclude Include="BHandler.h" />
     <ClInclude Include="CheckoutData.h" />
     <ClInclude Include="CheckoutParser.h" />
+    <ClInclude Include="FileLog.h" />
+    <ClInclude Include="FileScanner.h" />
+    <ClInclude Include="FullLimitDirectivityPseudoOptimisationAlgoritm.h" />
+    <ClInclude Include="FullLimitDirectivityPseudoOptimisationScreen.h" />
+    <ClInclude Include="FullLimitMultyThreadPowerOptimisationGradienSAAlgoritm.h" />
+    <ClInclude Include="FullLimitMultyThreadPowerOptimisationGradientSAScreen.h" />
+    <ClInclude Include="FullLimitMultyThreadPowerOptimisationHGSAAlgoritm.h" />
+    <ClInclude Include="FullLimitMultyThreadPowerOptimisationHGSAScreen.h" />
+    <ClInclude Include="Task.h" />
+    <ClInclude Include="TaskManager.h" />
+    <ClInclude Include="WindowsTaskManager.h" />
     <ClInclude Include="XHandler.h" />
     <ClInclude Include="CheckProvidedSolutionScreen.h" />
     <ClInclude Include="CM.h" />
@@ -264,6 +275,17 @@
     <ClCompile Include="BHandler.cpp" />
     <ClCompile Include="CheckoutData.cpp" />
     <ClCompile Include="CheckoutParser.cpp" />
+    <ClCompile Include="FileLog.cpp" />
+    <ClCompile Include="FileScanner.cpp" />
+    <ClCompile Include="FullLimitDirectivityPseudoOptimisationAlgoritm.cpp" />
+    <ClCompile Include="FullLimitDirectivityPseudoOptimisationScreen.cpp" />
+    <ClCompile Include="FullLimitMultyThreadPowerOptimisationGradientSAAlgoritm.cpp" />
+    <ClCompile Include="FullLimitMultyThreadPowerOptimisationGradientSAScreen.cpp" />
+    <ClCompile Include="FullLimitMultyThreadPowerOptimisationHGSAAlgoritm.cpp" />
+    <ClCompile Include="FullLimitMultyThreadPowerOptimisationHGSAScreen.cpp" />
+    <ClCompile Include="Task.cpp" />
+    <ClCompile Include="TaskManager.cpp" />
+    <ClCompile Include="WindowsTaskManager.cpp" />
     <ClCompile Include="XHandler.cpp" />
     <ClCompile Include="CheckProvidedSolutionScreen.cpp" />
     <ClCompile Include="CM.cpp" />

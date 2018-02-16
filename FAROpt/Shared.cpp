@@ -45,3 +45,12 @@ CacheManager *Shared::cacheManager() {
 void Shared::cacheManager(CacheManager *manager) {
 	this->cahceManagerInstance = manager;
 }
+
+
+TaskManager *Shared::taskManager(){
+	return this->taskManagerInstance;
+}
+
+void Shared::taskManager(TaskManager *manager) {
+	this->taskManagerInstance = manager;
+}

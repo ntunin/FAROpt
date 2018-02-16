@@ -14,16 +14,29 @@ FullLimitPowerOptimisationGradientSAAlgoritm::FullLimitPowerOptimisationGradient
 	this->solveFullLimitOptimisationTask(envirounment);
 }
 
+FullLimitPowerOptimisationGradientSAAlgoritm::FullLimitPowerOptimisationGradientSAAlgoritm(OptimisationEnvirounment *envirounment, vector<double> *P, double T, double coolDownSpeed, double radius, double mulctMultiplier, double mulctDegree, double randomStartRadius) {
+	this->P = P;
+	this->TInitial = T;
+	this->coolDownSpeed = coolDownSpeed;
+	this->radius = radius;
+	this->mulctMultiplier = mulctMultiplier;
+	this->mulctDegree = mulctDegree;
+	this->randomStartRadius = randomStartRadius;
+	this->solveFullLimitOptimisationTask(envirounment);
+}
 void FullLimitPowerOptimisationGradientSAAlgoritm::solveOptimisationTask(OptimisationEnvirounment *envirounment) {
-	NecIn *in = envirounment->getIn();
 	int sourceCount = envirounment->getSourceCount();
-	vector<EX *> *sources = in->getEX();
-	for (int i = 0; i < sourceCount; i++) {
-		Complex value = (*sources)[i]->getValue();
-		this->vEx[i] = value.Re();
-		this->vEx[i + sourceCount] = value.Im();
+	if (this->randomStartRadius) {
+		this->vEx = new double[sourceCount * 2];
+		for (int i = 0; i < sourceCount * 2; i++) {
+			int r = rand();
+			double v = r % ((int)(2 * randomStartRadius * 1e3)) / 1e3 - randomStartRadius;
+			this->vEx[i] = v;
+		}
 	}
-
+	else {
+		this->vEx = FullLimitDirectivityPseudoOptimisationAlgoritm(envirounment, this->P).getV()->extendDouble();
+	}
 	this->setInitial(vEx);
 	this->makeMaximisational();
 	this->setSize(sourceCount * 2);

@@ -19,6 +19,7 @@ public:
 	ComplexVector& operator*(ComplexVector);
 	ComplexMatrix& operator*(Complex);
 	ComplexMatrix* econj();
+	void setSize(int n);
 	bool allocated;
 	double **doubleExtend();
 	Complex*& operator[](int);

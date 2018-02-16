@@ -7,8 +7,20 @@ FullLimitOptimisationAlgoritm::FullLimitOptimisationAlgoritm()
 {
 }
 
-FullLimitOptimisationAlgoritm::~FullLimitOptimisationAlgoritm()
-{
+FullLimitOptimisationAlgoritm::~FullLimitOptimisationAlgoritm() {
+	for (int i = 0; i < size; i++) {
+		delete[] AEx[i];
+	}
+	delete[] AEx;
+	int sourceCount = size / 2;
+	for (int k = 0; k < sourceCount; k++) {
+		double **Bk = (*B)[k];
+		for (int i = 0; i < size; i++) {
+			delete[] Bk[i];
+		}
+		delete[] Bk;
+	}
+	delete B;
 }
 
 
@@ -40,20 +52,6 @@ void FullLimitOptimisationAlgoritm::solveFullLimitOptimisationTask(OptimisationE
 	this->set_uBu(uBu);
 	this->setV(size, vEx);
 
-	for (int i = 0; i < size; i++) {
-		//delete[] B[i];
-		delete[] AEx[i];
-	}
-	//delete[] B;
-	delete[] AEx;
-	for (int k = 0; k < sourceCount; k++) {
-		double **Bk = (*B)[k];
-		for (int i = 0; i < size; i++) {
-			delete[] Bk[i];
-		}
-		delete[] Bk;
-	}	
-	delete B;
 }
 
 double FullLimitOptimisationAlgoritm::calculate_uAu(double *vEx) {

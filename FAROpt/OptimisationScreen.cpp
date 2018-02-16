@@ -21,36 +21,45 @@ void OptimisationScreen::apply() {
 	int phi = readInt("Phi: > ");
 	print("\n");
 	OptimisationEnvirounment *envirounment = new OptimisationEnvirounment(in, theta, phi, fileName);
+	this->Y = envirounment->getY();
 	FAROptimisationAlgoritm *algoritm = getAgoritm(envirounment);
 	print("\n");
-	printAlgoritmResult(algoritm);
+	printAlgoritmResult(algoritm, envirounment);
 	print("\n");
-	NecOut *out = new NecOut();
+	/*NecOut *out = new NecOut();
 	string resultOutName = readString("Please provide the name of result nec file: > ");
 	AllSourceThread *thread = new AllSourceThread(envirounment->getIn(), algoritm->getV(), resultOutName.c_str(), out);
 	thread->wait();
 	NecOutPlotDrawer *drawer = new NecOutPlotDrawer(out, theta, phi);
 	drawer->wait();
-	system("pause");
+	system("pause");*/
 	delete in;
-	delete out;
-	delete thread;
-	delete drawer;
+	//delete out;
+	//delete thread;
+	//delete drawer;
 	delete envirounment;
 }
 
-void OptimisationScreen::printAlgoritmResult(FAROptimisationAlgoritm *algoritm) {
-	print("d: "); print(algoritm->getD());
-	print(" uAu: "); print(algoritm->get_uAu());
+void OptimisationScreen::printAlgoritmResult(FAROptimisationAlgoritm *algoritm, OptimisationEnvirounment *envirounment) {
+	FileLog log("log.txt");
+	
+	//log.print(" uAu: "); 
+	log.print(algoritm->get_uAu());
+	log.print("\t");
 	vector<double> *uBu = algoritm->get_uBu();
 	int size = uBu->size();
-	print(" uBu: "); 
+	//log.print(" uBu: "); 
 	for (int i = 0; i < size; i++) {
-		print((*uBu)[i]);
-		print(" ");
+		log.print((*uBu)[i]);
+		log.print("\t");
 	}
-	print("\nvoltage: "); print(algoritm->getV());
-	print("\n");
+	/*log.print("\nvoltage: "); 
+	log.print(*algoritm->getV());
+	double *I = new double[2 * size];
+	Utils::mul(2 * size, envirounment->getY()->doubleExtend(), algoritm->getV()->extendDouble(), I);
+	log.print("\ncurrents:\n");
+	log.print(I, 2 * size);*/
+	log.print("\n");
 }
 
 

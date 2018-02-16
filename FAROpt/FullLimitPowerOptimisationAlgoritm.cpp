@@ -48,6 +48,5 @@ vector<double **> *FullLimitPowerOptimisationAlgoritm::calculateB(OptimisationEn
 		}
 		delete[] Pk;
 	}
-	delete Y;
 	return B;
 }

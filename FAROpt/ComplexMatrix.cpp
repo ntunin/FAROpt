@@ -8,6 +8,11 @@ ComplexMatrix::ComplexMatrix() {
 	this->_matrix[0] = new Complex[1];
 }
 
+
+void ComplexMatrix::setSize(int n) {
+	this->_n = this->_m = n;
+}
+
 ComplexMatrix::ComplexMatrix(int n) {
 	this->_n = this->_m = n;
 	this->_matrix = new Complex*[n];

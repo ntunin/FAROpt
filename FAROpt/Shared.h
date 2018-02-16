@@ -3,6 +3,7 @@
 #include "Scanner.h"
 #include "ProcessManager.h"
 #include "CacheManager.h"
+#include "TaskManager.h"
 
 class Shared
 {
@@ -12,6 +13,7 @@ private:
 	Scanner *scannerInstance;
 	ProcessManager *processManagerInstance;
 	CacheManager *cahceManagerInstance;
+	TaskManager *taskManagerInstance;
 public:
 	static Shared& bundle() {
 		static Shared bndl;
@@ -29,6 +31,9 @@ public:
 
 	CacheManager *cacheManager();
 	void cacheManager(CacheManager *);
+
+	TaskManager *taskManager();
+	void taskManager(TaskManager *);
 
 	~Shared();
 };

@@ -358,6 +358,42 @@
     <Filter Include="Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutKeywordsHandlers\XHandler">
       <UniqueIdentifier>{dc057bfe-a708-4062-af40-6050060a6446}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\PseudoOptimisation">
+      <UniqueIdentifier>{4f03ffb9-8153-4efb-b894-8cb0cc905d8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\PseudoOptimisation\FullLimitDirectivityPseudoOptimisationAlgoritm">
+      <UniqueIdentifier>{510d1807-fb69-47b1-92e8-5d4f677b7381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\PseudoOptimisation\FullLimitDirectivityPseudoOptimisationScreen">
+      <UniqueIdentifier>{6e8b77eb-da48-4e09-926e-75e7ee4d4f9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitMultyThreadPowerOptimisationHGSAScreen">
+      <UniqueIdentifier>{c092f318-038d-4bf2-8ac6-5726767fde79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitMultyThreadPowerOptimisationHGSAAlgoritm">
+      <UniqueIdentifier>{3d3bf61f-8f90-4c7d-b20a-2dd741f2fba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\TaskManager">
+      <UniqueIdentifier>{e7743462-2d13-4f49-924b-c0520020e9ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\Task">
+      <UniqueIdentifier>{1f46b312-d53c-40ef-a1f3-b84654da4aa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\WindowsTaskManager">
+      <UniqueIdentifier>{8b04fc17-f383-4276-8294-ad524133fe86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\Gradient\FullLimitMultyThreadPowerOptimisationGradientSAScreen">
+      <UniqueIdentifier>{4de7cce9-14b2-4064-ae77-ad1ffdf0da24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\Gradient\FullLimitMultyThreadPowerOptimisationGradientSAAlgoritm">
+      <UniqueIdentifier>{f5dfaed6-75ab-4ae9-ae41-c69db886dd16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\FileScanner">
+      <UniqueIdentifier>{82ce24d5-1aa9-44e4-8ca7-1f07bd51a153}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\FileLog">
+      <UniqueIdentifier>{f22965ba-56e6-4d71-9504-7cdb35249779}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -669,6 +705,39 @@
     <ClInclude Include="XHandler.h">
       <Filter>Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutKeywordsHandlers\XHandler</Filter>
     </ClInclude>
+    <ClInclude Include="FullLimitDirectivityPseudoOptimisationAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\PseudoOptimisation\FullLimitDirectivityPseudoOptimisationAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="FullLimitDirectivityPseudoOptimisationScreen.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\PseudoOptimisation\FullLimitDirectivityPseudoOptimisationScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="FullLimitMultyThreadPowerOptimisationHGSAScreen.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitMultyThreadPowerOptimisationHGSAScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="FullLimitMultyThreadPowerOptimisationHGSAAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitMultyThreadPowerOptimisationHGSAAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="Task.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskManager.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\TaskManager</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsTaskManager.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\WindowsTaskManager</Filter>
+    </ClInclude>
+    <ClInclude Include="FullLimitMultyThreadPowerOptimisationGradienSAAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\Gradient\FullLimitMultyThreadPowerOptimisationGradientSAAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="FullLimitMultyThreadPowerOptimisationGradientSAScreen.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\Gradient\FullLimitMultyThreadPowerOptimisationGradientSAScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="FileScanner.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\FileScanner</Filter>
+    </ClInclude>
+    <ClInclude Include="FileLog.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\FileLog</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -976,6 +1045,39 @@
     </ClCompile>
     <ClCompile Include="XHandler.cpp">
       <Filter>Исходные файлы и файлы заголовков\Parsers\Checkout\CheckoutKeywordsHandlers\XHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitDirectivityPseudoOptimisationAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\PseudoOptimisation\FullLimitDirectivityPseudoOptimisationAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitDirectivityPseudoOptimisationScreen.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\PseudoOptimisation\FullLimitDirectivityPseudoOptimisationScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitMultyThreadPowerOptimisationHGSAScreen.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitMultyThreadPowerOptimisationHGSAScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitMultyThreadPowerOptimisationHGSAAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitMultyThreadPowerOptimisationHGSAAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="Task.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsTaskManager.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\WindowsTaskManager</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskManager.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\TaskManager</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitMultyThreadPowerOptimisationGradientSAAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\Gradient\FullLimitMultyThreadPowerOptimisationGradientSAAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitMultyThreadPowerOptimisationGradientSAScreen.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\Gradient\FullLimitMultyThreadPowerOptimisationGradientSAScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="FileScanner.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\FileScanner</Filter>
+    </ClCompile>
+    <ClCompile Include="FileLog.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\FileLog</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

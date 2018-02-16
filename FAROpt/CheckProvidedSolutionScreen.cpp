@@ -35,7 +35,59 @@ CheckProvidedSolutionScreen::CheckProvidedSolutionScreen() {
 		print(" ");
 	}
 	print("\n\n");
+	string inName = Shared::bundle().scanner()->readString("Please provide the name of original *.nec file: > ");
+	string solutionName = Shared::bundle().scanner()->readString("Please provide the name *.nec file for check: > ");
+	NecIn *in = new NecIn;
+	print("\nFill out the direction of radiation\n");
+	int theta = readInt("Theta: > ");
+	int phi = readInt("Phi: > ");
+	print("\n");
+	NecInParser(inName, in);
+	OptimisationEnvirounment *envirounment = new OptimisationEnvirounment(in, theta, phi, inName);	
+	ComplexMatrix *Y = envirounment->getY();
+	size = Y->length();
+	Complex ****ACover = envirounment->getA();
+	ComplexMatrix Ain = ComplexMatrix(size);
+	int iDirect = envirounment->getIDirect();
+	int jDirect = envirounment->getJDirect();
+	
+	for (int i = 0; i < size; i++) {
+		for (int j = 0; j < size; j++) {
+			Ain[i][j] = ACover[i][j][iDirect][jDirect];
+		}
+	}
+	double **AEx = Ain.doubleExtend();
+	double **Z = new double*[2*size];
+	for (int i = 0; i < 2*size; i++) {
+		Z[i] = new double[2*size];
+	}
+	print("\n A:\n");
+	print(2*size, AEx);
+	Utils::inverse(2*size, Y->doubleExtend(), Z);
+	double *U = new double[2 * size];
+	Utils::mul(2*size, Z, X, U);
+	ComplexVector u(size);
+	for (int i = 0; i < size; i++) {
+		u[i] = Complex(U[i], U[i + size]);
+	}
+	NecOut *out = new NecOut;
+	AllSourceThread *thread = new AllSourceThread(in, &u, solutionName.c_str(), out);
+	thread->wait();
+	NecOutPlotDrawer *drawer = new NecOutPlotDrawer(out, theta, phi);
+	drawer->wait();
+	system("pause");
 	delete uBu;
+	delete in;
+	delete envirounment;
+	for (int i = 0; i < 2 * size; i++) {
+		delete[] AEx[i];
+		delete[] Z[i];
+	}
+	delete[] AEx;
+	delete[] U;
+	delete[] Z;
+	delete out;
+	delete drawer;
 	system("pause");
 }
 

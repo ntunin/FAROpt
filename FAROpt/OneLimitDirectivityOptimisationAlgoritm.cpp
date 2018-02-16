@@ -35,3 +35,9 @@ double **OneLimitDirectivityOptimisationAlgoritm::calculateB(OptimisationEnvirou
 	}
 	return complexB.doubleExtend();
 }
+
+double *OneLimitDirectivityOptimisationAlgoritm::getInitial(OptimisationEnvirounment *envirounment) {
+	FAROptimisationAlgoritm *algoritm = new LamdaDirectivityOptimisationAlgoritm(envirounment);
+	return algoritm->getV()->extendDouble();
+}
+

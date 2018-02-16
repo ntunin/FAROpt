@@ -9,6 +9,7 @@ protected:
 public:
 	OneLimitDirectivityOptimisationAlgoritm();
 	~OneLimitDirectivityOptimisationAlgoritm();
+	double *getInitial(OptimisationEnvirounment *envirounment);
 
 };
 

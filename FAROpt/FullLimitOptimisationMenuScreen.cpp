@@ -13,9 +13,12 @@ void FullLimitOptimisationMenuScreen::printHead() {
 	print("----   Omsk, 2018     ----\n");
 	print("\n");
 	print("Select the action you want to apply:\n");
-	print("   1: Simulated annealing based on Hooke - Jeeves optimisation of input power\n");
-	print("   2: Simulated annealing based on Gradient optimisation of input power\n");
-	print("   3: Check provided solution\n");
+	print("   1: Pseudo-optimisation besedon lamda algoithm\n");
+	print("   2: Simulated annealing based on Hooke - Jeeves optimisation of input power\n");
+	print("   3: Simulated annealing based on Hooke - Jeeves multy-threads optimisation of input power\n");
+	print("   4: Simulated annealing based on Gradient optimisation of input power\n");
+	print("   5: Simulated annealing based on Gradient multy-threads optimisation of input power\n");
+	print("   6: Check provided solution\n");
 	print("   0: exit\n\n");
 }
 
@@ -25,14 +28,26 @@ void FullLimitOptimisationMenuScreen::run() {
 		int action = readInt("Enter your choice: > ");
 		switch (action) {
 		case 1: {
-			FullLimitPowerOptimisationHGSAScreen();
+			FullLimitDirectivityPseudoOptimisationScreen();
 			break;
 		}
 		case 2: {
-			FullLimitPowerOptimisationGradientSAScreen();
+			FullLimitPowerOptimisationHGSAScreen();
 			break;
 		}
 		case 3: {
+			FullLimitMultyThreadPowerOptimisationHGSAScreen();
+			break;
+		}
+		case 4: {
+			FullLimitPowerOptimisationGradientSAScreen();
+			break;
+		}
+		case 5: {
+			FullLimitMultyThreadPowerOptimisationGradientSAScreen();
+			break;
+		}
+		case 6: {
 			CheckProvidedSolutionScreen();
 			break;
 		}
