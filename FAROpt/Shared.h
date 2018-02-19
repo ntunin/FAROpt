@@ -4,6 +4,7 @@
 #include "ProcessManager.h"
 #include "CacheManager.h"
 #include "TaskManager.h"
+#include "RandomGenerator.h"
 
 class Shared
 {
@@ -14,6 +15,7 @@ private:
 	ProcessManager *processManagerInstance;
 	CacheManager *cahceManagerInstance;
 	TaskManager *taskManagerInstance;
+	RandomGenerator *generatorInstance;
 public:
 	static Shared& bundle() {
 		static Shared bndl;
@@ -34,6 +36,9 @@ public:
 
 	TaskManager *taskManager();
 	void taskManager(TaskManager *);
+
+	RandomGenerator *randomGenerator();
+	void randomGenerator(RandomGenerator *);
 
 	~Shared();
 };

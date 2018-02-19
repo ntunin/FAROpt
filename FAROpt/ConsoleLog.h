@@ -1,7 +1,5 @@
 #pragma once
 #include "Log.h"
-#include <mutex> 
-
 
 class ConsoleLog :
 	public Log

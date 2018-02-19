@@ -53,7 +53,7 @@ void OneSourceThread::randomize() {
 
 string OneSourceThread::createName(thread::id id, int number) {
 	stringstream s;
-	s << "tmp-" << abs(rand() % 1000 + 1) << "-";
+	s << "tmp-" << abs(Shared::bundle().randomGenerator()->next() % 1000 + 1) << "-";
 	id._To_text(s);
 	s << "-" << number;
 	return s.str();

@@ -7,7 +7,7 @@ HGSAAlgoritm::HGSAAlgoritm() {
 
 void HGSAAlgoritm::getRandomOffset(double *xM, double *x, int size, double radius) {
 	for (int i = 0; i < size; i++) {
-		xM[i] = x[i] + rand() % ((int)(2 * radius * 1e3))/1e3 - radius ;
+		xM[i] = x[i] + Shared::bundle().randomGenerator()->next() % ((int)(2 * radius * 1e3))/1e3 - radius ;
 	}
 }
 
@@ -35,7 +35,7 @@ void HGSAAlgoritm::solve() {
 			double FM = targetFunction(xM);
 			double F = targetFunction(x);
 			double P = exp(-(FM - F) / T);
-			double p = rand() % 100 * 0.01;
+			double p = Shared::bundle().randomGenerator()->next() % 100 * 0.01;
 			if (maximisation) {
 				if (FM > F || p < P) {
 					coppyValues(x, xM, size);

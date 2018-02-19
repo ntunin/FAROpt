@@ -30,7 +30,7 @@ void FullLimitPowerOptimisationHGSAAlgoritm::solveOptimisationTask(OptimisationE
 	if (this->randomStartRadius) {
 		this->vEx = new double[sourceCount * 2];
 		for (int i = 0; i < sourceCount * 2; i++) {
-			int r = rand();
+			int r = Shared::bundle().randomGenerator()->next();
 			double v = r % ((int)(2 * randomStartRadius * 1e3)) / 1e3 - randomStartRadius;
 			this->vEx[i] = v;
 		}

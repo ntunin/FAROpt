@@ -42,7 +42,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -168,8 +168,10 @@
     <ClInclude Include="FullLimitMultyThreadPowerOptimisationGradientSAScreen.h" />
     <ClInclude Include="FullLimitMultyThreadPowerOptimisationHGSAAlgoritm.h" />
     <ClInclude Include="FullLimitMultyThreadPowerOptimisationHGSAScreen.h" />
+    <ClInclude Include="RandomGenerator.h" />
     <ClInclude Include="Task.h" />
     <ClInclude Include="TaskManager.h" />
+    <ClInclude Include="WindowsRandomGenerator.h" />
     <ClInclude Include="WindowsTaskManager.h" />
     <ClInclude Include="XHandler.h" />
     <ClInclude Include="CheckProvidedSolutionScreen.h" />
@@ -283,8 +285,10 @@
     <ClCompile Include="FullLimitMultyThreadPowerOptimisationGradientSAScreen.cpp" />
     <ClCompile Include="FullLimitMultyThreadPowerOptimisationHGSAAlgoritm.cpp" />
     <ClCompile Include="FullLimitMultyThreadPowerOptimisationHGSAScreen.cpp" />
+    <ClCompile Include="RandomGenerator.cpp" />
     <ClCompile Include="Task.cpp" />
     <ClCompile Include="TaskManager.cpp" />
+    <ClCompile Include="WindowsRandomGenerator.cpp" />
     <ClCompile Include="WindowsTaskManager.cpp" />
     <ClCompile Include="XHandler.cpp" />
     <ClCompile Include="CheckProvidedSolutionScreen.cpp" />

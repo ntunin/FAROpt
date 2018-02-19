@@ -54,3 +54,11 @@ TaskManager *Shared::taskManager(){
 void Shared::taskManager(TaskManager *manager) {
 	this->taskManagerInstance = manager;
 }
+
+
+RandomGenerator *Shared::randomGenerator() {
+	return this->generatorInstance;
+}
+void Shared::randomGenerator(RandomGenerator *generatorInstance) {
+	this->generatorInstance = generatorInstance;
+}

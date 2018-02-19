@@ -394,6 +394,12 @@
     <Filter Include="Исходные файлы и файлы заголовков\Shared\FileLog">
       <UniqueIdentifier>{f22965ba-56e6-4d71-9504-7cdb35249779}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\RandomGenerator">
+      <UniqueIdentifier>{ebdb72de-d34d-4414-ac77-e9530b6e9724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\RandomGenerator\WindowsRandomGenerator">
+      <UniqueIdentifier>{4918c614-8ce8-4599-ab66-559bb47aa7d6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -738,6 +744,12 @@
     <ClInclude Include="FileLog.h">
       <Filter>Исходные файлы и файлы заголовков\Shared\FileLog</Filter>
     </ClInclude>
+    <ClInclude Include="RandomGenerator.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\RandomGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsRandomGenerator.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\RandomGenerator\WindowsRandomGenerator</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -1078,6 +1090,12 @@
     </ClCompile>
     <ClCompile Include="FileLog.cpp">
       <Filter>Исходные файлы и файлы заголовков\Shared\FileLog</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomGenerator.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\RandomGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsRandomGenerator.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\Log</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
