@@ -93,7 +93,7 @@ void Utils::mul(int size, double **matrix, double *vector, double *result) {
 	for (int i = 0; i < size; i++) {
 		double s = 0;
 		for (int j = 0; j < size; j++) {
-			s += matrix[i][j] * vector[i];
+			s += matrix[i][j] * vector[j];
 		}
 		result[i] = s;
 	}

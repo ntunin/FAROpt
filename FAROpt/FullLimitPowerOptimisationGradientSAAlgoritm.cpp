@@ -70,7 +70,7 @@ void FullLimitPowerOptimisationGradientSAAlgoritm::getGradient(double *x, double
 		}
 		else {
 			int uno = (uBu > 1) ? -1 : 0;
-			double m = mulctMultiplier * (uBu + uno) * pow(abs(uBu + uno), mulctDegree - 2);
+			double m = mulctMultiplier * mulctDegree * pow(uBu + uno, mulctDegree - 1);
 			double **B = (*this->B)[i];
 			Utils::gradient(size, B, x, duBu);
 			Utils::mul(size, duBu, m, duBu);

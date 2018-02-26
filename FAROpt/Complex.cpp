@@ -11,7 +11,7 @@ Complex::Complex(double re, double im) {
 }
 
 Complex& Complex::operator+(const Complex a) {
-	return Complex(this->_re + a._re, this->_im + a._im);
+	return *(new Complex(this->_re + a._re, this->_im + a._im));
 }
 
 Complex& Complex::operator-(const Complex a) {

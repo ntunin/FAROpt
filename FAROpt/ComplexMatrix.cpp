@@ -56,7 +56,7 @@ ComplexMatrix::ComplexMatrix(int n, Complex *data) {
 	}
 }
 
-ComplexMatrix::ComplexMatrix(ComplexVector v) {
+ComplexMatrix::ComplexMatrix(ComplexVector &v) {
 	this->_n = this->_m = v.length();
 	this->_matrix = new Complex*[this->_m];
 	ComplexVectorT ve = v.econj();
@@ -87,7 +87,7 @@ Complex*& ComplexMatrix::operator[](int i) {
 	return this->_matrix[i];
 }
 
-ComplexVector& ComplexMatrix::operator*(ComplexVector v) {
+ComplexVector& ComplexMatrix::operator*(ComplexVector &v) {
 	int length = (int)fmin(this->_m, v.length());
 	int width = (int)fmin(this->_n, v.length());
 	ComplexVector r = ComplexVector(length);
@@ -110,7 +110,7 @@ int ComplexMatrix::width() {
 }
 
 
-ComplexMatrix& ComplexMatrix::operator-(ComplexMatrix m) {
+ComplexMatrix& ComplexMatrix::operator-(ComplexMatrix &m) {
 	int length = (int)fmin(this->_m, m.length());
 	int width = (int)fmin(this->_n, m.width());
 	ComplexMatrix r = ComplexMatrix(length, width);
@@ -123,21 +123,22 @@ ComplexMatrix& ComplexMatrix::operator-(ComplexMatrix m) {
 
 }
 
-ComplexMatrix& ComplexMatrix::operator+(ComplexMatrix m) {
+ComplexMatrix& ComplexMatrix::operator+(ComplexMatrix &m) {
 	int length = (int)fmin(this->_m, m.length());
 	int width = (int)fmin(this->_n, m.width());
-	ComplexMatrix r = ComplexMatrix(length, width);
+	ComplexMatrix *r = new ComplexMatrix(length, width);
+	r->allocated = true;
 	for (int j = 0; j < length; j++) {
 		for (int i = 0; i < width; i++) {
-			r[j][i] = this->_matrix[j][i] + m[j][i];
+			(*r)[j][i] = this->_matrix[j][i] + m._matrix[j][i];
 		}
 	}
-	return r;
+	return *r;
 }
 
 
 
-ComplexMatrix& ComplexMatrix::operator*(Complex c) {
+ComplexMatrix& ComplexMatrix::operator*(Complex &c) {
 	int length = this->_m;
 	int width = this->_n;
 	ComplexMatrix r = ComplexMatrix(length, width);
@@ -163,6 +164,24 @@ ComplexMatrix* ComplexMatrix::econj() {
 		}
 	}
 	return r;
+}
+
+ComplexMatrix& ComplexMatrix::operator*(ComplexMatrix &m) {
+	int length = this->_m;
+	int width = this->_n;
+	ComplexMatrix *r = new ComplexMatrix(length, width);
+	r->allocated = true;
+	int minSize = min(length, width);
+	for (int i = 0; i < length; i++) {
+		for (int j = 0; j < width; j++) {
+			Complex c;
+			for (int k = 0; k < minSize; k++) {
+				c += (*this)[i][k] * m[k][j];
+			}
+			(*r)[i][j] = c;
+		}
+	}
+	return *r;
 }
 
 double **ComplexMatrix::doubleExtend() {

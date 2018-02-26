@@ -12,12 +12,11 @@ FullLimitPowerOptimisationAlgoritm::~FullLimitPowerOptimisationAlgoritm()
 {
 }
 
-double **buildProjector(int k, int N) {
-	double **P = new double*[N];
+ComplexMatrix *buildProjector(int k, int N) {
+	ComplexMatrix *P = new ComplexMatrix(N);
 	for (int i = 0; i < N; i++) {
-		P[i] = new double[N];
 		for (int j = 0; j < N; j++) {
-			P[i][j] = (i == k && j == k) ? 1 : 0;
+			(*P)[i][j] = Complex((i == k && j == k) ? 1 : 0, 0);
 		}
 	}
 	return P;
@@ -30,23 +29,10 @@ vector<double **> *FullLimitPowerOptimisationAlgoritm::calculateB(OptimisationEn
 	ComplexMatrix *_Y = Y->econj();
 	for (int k = 0; k < N; k++) {
 		int dSize = 2 * N;
-		double **Pk = buildProjector(k, N);
-		ComplexMatrix Bk(N);
-		for (int i = 0; i < N; i++) {
-			for (int j = 0; j < N; j++) {
-				Complex _y = (*_Y)[i][j];
-				double p = Pk[i][j];
-				Complex y = (*Y)[i][j];
-				Complex yp = _y * p + y * p;
-				Complex b = yp * (1.0 / (4 * (*this->P)[k]));
-				Bk[i][j].copy(b);
-			}
-		}
-		B->push_back( Bk.doubleExtend() );
-		for (int i = 0; i < N; i++) {
-			delete[] Pk[i];
-		}
-		delete[] Pk;
+		ComplexMatrix *Pk = buildProjector(k, N);
+		double **Bk = ((*_Y)*(*Pk) + (*Pk)*(*Y)).doubleExtend();
+		B->push_back( Bk );
+		delete Pk;
 	}
 	return B;
 }

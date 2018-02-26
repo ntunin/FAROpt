@@ -56,6 +56,16 @@ void GradientSAAlgoritm::solve() {
 		lastF = f;
 		f = this->targetFunction(x);
 		getGradient(x, direction, size);
+		double absDir = 0;
+		for (int i = 0; i < size; i++) {
+			absDir += direction[i] * direction[i];
+		}
+		absDir = sqrt(absDir);
+		for (int i = 0; i < size; i++) {
+			direction[i] /= absDir;
+		}
+
+
 		double *xTmp = new double[size];
 		for (int i = 0; i < size; i++) {
 			xTmp[i] = x[i] + sign * step*direction[i];

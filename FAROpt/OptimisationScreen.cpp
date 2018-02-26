@@ -41,25 +41,26 @@ void OptimisationScreen::apply() {
 }
 
 void OptimisationScreen::printAlgoritmResult(FAROptimisationAlgoritm *algoritm, OptimisationEnvirounment *envirounment) {
-	FileLog log("log.txt");
-	
-	//log.print(" uAu: "); 
+	//FileLog log("log.txt");
+	ConsoleLog log = *(ConsoleLog *)Shared::bundle().log();
+	log.print(" uAu: "); 
 	log.print(algoritm->get_uAu());
 	log.print("\t");
 	vector<double> *uBu = algoritm->get_uBu();
 	int size = uBu->size();
-	//log.print(" uBu: "); 
+	log.print(" uBu: "); 
 	for (int i = 0; i < size; i++) {
 		log.print((*uBu)[i]);
 		log.print("\t");
 	}
-	/*log.print("\nvoltage: "); 
+	log.print("\nvoltage: "); 
 	log.print(*algoritm->getV());
 	double *I = new double[2 * size];
 	Utils::mul(2 * size, envirounment->getY()->doubleExtend(), algoritm->getV()->extendDouble(), I);
 	log.print("\ncurrents:\n");
-	log.print(I, 2 * size);*/
+	log.print(I, 2 * size);
 	log.print("\n");
+	system("pause");
 }
 
 
