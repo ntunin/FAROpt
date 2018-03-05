@@ -90,12 +90,9 @@ void FileLog::print(ComplexVector &v) {
 	lck.lock();
 	for (int i = 0; i < v.length(); i++) {
 		(*file) << v[i].Re();
-		(*file) << "+";
+		(*file) << "\t";
 		(*file) << v[i].Im();
-		(*file) << "i";
-		if (i != v.length() - 1) {
-			(*file) << "\t ";
-		}
+		(*file) << "\t";
 	}
 	lck.unlock();
 }

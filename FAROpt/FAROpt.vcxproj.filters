@@ -400,6 +400,9 @@
     <Filter Include="Исходные файлы и файлы заголовков\Shared\RandomGenerator\WindowsRandomGenerator">
       <UniqueIdentifier>{4918c614-8ce8-4599-ab66-559bb47aa7d6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Shared\PredefinedScanner">
+      <UniqueIdentifier>{57afead9-d174-45ea-bde8-372ce02eed2a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -750,6 +753,9 @@
     <ClInclude Include="WindowsRandomGenerator.h">
       <Filter>Исходные файлы и файлы заголовков\Shared\RandomGenerator\WindowsRandomGenerator</Filter>
     </ClInclude>
+    <ClInclude Include="PredefinedScanner.h">
+      <Filter>Исходные файлы и файлы заголовков\Shared\PredefinedScanner</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -1096,6 +1102,9 @@
     </ClCompile>
     <ClCompile Include="WindowsRandomGenerator.cpp">
       <Filter>Исходные файлы и файлы заголовков\Shared\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="PredefinedScanner.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Shared\PredefinedScanner</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

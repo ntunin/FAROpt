@@ -51,7 +51,7 @@ double FullLimitPowerOptimisationGradientSAAlgoritm::targetFunction(double *x) {
 	double s = 0;
 	for (int i = 0; i < M; i++) {
 		double uBui = (*uBu)[i];
-		s += pow(abs(min(uBui, 0) + max(uBui, 1)), this->mulctDegree);
+		s += pow(min(uBui, 0) + max(uBui, 1) - 1, this->mulctDegree);
 	}
 	delete uBu;
 	return uAu - this->mulctMultiplier * s;
@@ -75,6 +75,7 @@ void FullLimitPowerOptimisationGradientSAAlgoritm::getGradient(double *x, double
 			Utils::gradient(size, B, x, duBu);
 			Utils::mul(size, duBu, m, duBu);
 		}
+		Utils::mul(size, duBu, -1, duBu);
 		Utils::summ(size, dF, duBu, dF);
 		delete[] duBu;
 	}

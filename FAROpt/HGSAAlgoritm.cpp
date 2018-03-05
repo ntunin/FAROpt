@@ -40,8 +40,8 @@ void HGSAAlgoritm::solve() {
 	double T = this->TInitial;
 
 	while (abs(lastF - f) > 1e-12) {
-
-		/*if (T > 0) {
+		/*
+		if (T > 0) {
 			double *xM = new double[size];
 			getRandomOffset(xM, x, size, this->radius);
 			double FM = targetFunction(xM);
@@ -112,12 +112,14 @@ void HGSAAlgoritm::solve() {
 			}
 		}
 		double dX = 1;
-		double start = 1;
+		double path = 0;
+		double scale = 1;
 		f = targetFunction(x);
 		for (int k = 0; true; k++) {
 			dX *= 2;
+			path += dX;
 			for (int i = 0; i < size; i++) {
-				xNext[i] = xTmp[3][i] + direction[i] * dX*start;
+				xNext[i] = x[i] + direction[i] * path * scale;
 			}
 			double fNext = targetFunction(xNext);
 			if (maximisation && fNext < f || !maximisation && fNext > f) {
@@ -125,7 +127,7 @@ void HGSAAlgoritm::solve() {
 					for (int j = 0; j < size; j++) {
 						xTmp[3][j] = x[j];
 					}
-					start /= 2;
+					scale /= 2;
 					k = 0;
 					dX = 1;
 					f = targetFunction(x);
@@ -133,7 +135,7 @@ void HGSAAlgoritm::solve() {
 				} else {
 					push(xTmp, xNext, 4, size);
 					for (int i = 0; i < size; i++) {
-						xNext[i] = xTmp[2][i] + direction[i] * dX/2*start;
+						xNext[i] = x[i] + direction[i] * (path - 0.5*dX) * scale;
 					}
 					push(xTmp, xNext, 4, size);
 					break;
@@ -147,29 +149,29 @@ void HGSAAlgoritm::solve() {
 		double fRight = targetFunction(xTmp[2]);
 
 		double *xa, *xb, *xc;
+		double a, b, c;
 
 		if (maximisation && fLeft > fRight || !maximisation && fLeft < fRight) {
-			xa = xTmp[0];
-			xb = xTmp[1];
-			xc = xTmp[3];
+			xa = xTmp[0]; a = path - 1.5 * dX;
+			xb = xTmp[1]; b = path - dX;
+			xc = xTmp[3]; c = path - 0.5 * dX;
 		}  else {
-			xa = xTmp[1];
-			xb = xTmp[3];
-			xc = xTmp[2];
+			xa = xTmp[1]; a = path - dX;
+			xb = xTmp[3]; b = path - 0.5 * dX;
+			xc = xTmp[2]; c = path;
 		}
 
 		double fxa = targetFunction(xa);
 		double fxb = targetFunction(xb);
 		double fxc = targetFunction(xc);
 
+		double top = (b*b - c * c) * fxa + (c*c - a * a) * fxb + (a*a - b * b) * fxc;
+		double bottom = (b - c) * fxa + (c - a) * fxb + (a - b) * fxc;
+		int sign = (maximisation) ? 1 : -1;
+		double opt = (bottom == 0)? b: sign * 1.0 / 2 * top / bottom;
+
 		for (int i = 0; i < size; i++) {
-			double top = (xb[i] * xb[i] - xc[i] * xc[i])*fxa + (xc[i] * xc[i] - xa[i] * xa[i])*fxb + (xa[i] * xa[i] - xb[i] * xb[i])*fxc;
-			double bottom = (xb[i] - xc[i])*fxa + (xc[i] - xa[i])*fxb + (xa[i] - xb[i])*fxc;
-			if (bottom == 0) {
-				x[i] = xb[i];
-			} else {
-				x[i] = -1.0 / 2 * top / bottom;
-			}
+			x[i] += direction[i] * opt * scale;
 		}
 
 		f = targetFunction(x);

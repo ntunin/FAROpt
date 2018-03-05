@@ -25,7 +25,12 @@ FAROptimisationAlgoritm *FullLimitPowerOptimisationHGSAScreen::getAgoritm(Optimi
 	double radius = Shared::bundle().scanner()->readDouble("\nPlease, enter the \"random offset radius\": >");
 	double mulctMultiplier = Shared::bundle().scanner()->readDouble("\nPlease, enter the \"mulct\" multiplier: >");
 	double mulctDegree = Shared::bundle().scanner()->readDouble("\nPlease, enter the \"mulct\" degree: >");
-	return new FullLimitPowerOptimisationHGSAAlgoritm(envirounment, P, T, speed, radius, mulctMultiplier, mulctDegree);
+
+	std::uint64_t start = WindowsUtils::time();
+	FullLimitPowerOptimisationHGSAAlgoritm *a = new FullLimitPowerOptimisationHGSAAlgoritm(envirounment, P, T, speed, radius, mulctMultiplier, mulctDegree);
+	std::uint64_t end = WindowsUtils::time();
+	workingTime = end - start;
+	return a;
 }
 
 FullLimitPowerOptimisationHGSAScreen::~FullLimitPowerOptimisationHGSAScreen()

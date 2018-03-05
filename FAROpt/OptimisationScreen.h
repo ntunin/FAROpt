@@ -11,6 +11,7 @@ protected:
 	virtual void printHead() = 0;
 	virtual FAROptimisationAlgoritm *getAgoritm(OptimisationEnvirounment *envirounment) = 0;
 	ComplexMatrix *Y;
+	int workingTime;
 public:
 	OptimisationScreen();
 	~OptimisationScreen();

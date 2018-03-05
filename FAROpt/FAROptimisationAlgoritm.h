@@ -13,6 +13,7 @@ public:
 	double get_uAu();
 	double getD();
 	ComplexVector *getV();
+	std::vector<double> start;
 private:
 	double uAu;
 	std::vector<double> *uBu;

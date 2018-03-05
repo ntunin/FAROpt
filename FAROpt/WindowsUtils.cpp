@@ -2,6 +2,7 @@
 #include "WindowsUtils.h"
 #include <stdio.h>
 #include <strsafe.h>
+#include <chrono>
 
 WindowsUtils::WindowsUtils()
 {
@@ -85,6 +86,12 @@ std::vector<std::string> WindowsUtils::contentsOfDirectory(const std::string& pa
 
 	FindClose(hFind);
 	return result;
+}
+
+std::uint64_t WindowsUtils::time() {
+	return std::chrono::duration_cast< std::chrono::milliseconds >(
+		std::chrono::system_clock::now().time_since_epoch()
+		).count();
 }
 
 

@@ -31,7 +31,7 @@ void GradientSAAlgoritm::solve() {
 	double T = this->TInitial;
 
 	while (abs(lastF - f) > 1e-12 && step > 0) {
-		if (T > 0) {
+		/*if (T > 0) {
 			double *xM = new double[size];
 			getRandomOffset(xM, x, size, this->radius);
 			double FM = targetFunction(xM);
@@ -50,7 +50,7 @@ void GradientSAAlgoritm::solve() {
 			}
 			T -= this->coolDownSpeed;
 			delete[] xM;
-		}
+		}*/
 		
 		bool haveValidDirection = false;
 		lastF = f;
@@ -66,48 +66,101 @@ void GradientSAAlgoritm::solve() {
 		}
 
 
-		double *xTmp = new double[size];
-		for (int i = 0; i < size; i++) {
-			xTmp[i] = x[i] + sign * step*direction[i];
-		}
-		double fPlus = targetFunction(xTmp);
-
-		if ((maximisation && fPlus > f) || (!maximisation && fPlus < f)) {
-			if (fPlus > f) {
-				haveValidDirection = true;
+		double **xTmp = new double*[4];
+		double *xNext = new double[size];
+		double *xm, *xmMinuus1, *xmPlus1, *xmMinus2;
+		for (int i = 0; i < 4; i++) {
+			xTmp[i] = new double[size];
+			for (int j = 0; j < size; j++) {
+				xTmp[i][j] = x[i];
 			}
 		}
-
-		if (!haveValidDirection) {
-			step /= 2;
-			lastF = -1e7;
-			delete[] xTmp;
-			continue;
-		}
-
-		double acceleration = 1;
+		double dX = 1;
+		double path = 0;
+		double scale = 1;
 		f = targetFunction(x);
-		double nextF = f;
-
-		do {
-			f = nextF;
+		for (int k = 0; true; k++) {
+			dX *= 2;
+			path += dX;
 			for (int i = 0; i < size; i++) {
-				xTmp[i] = x[i];
-				x[i] += sign * step * direction[i] * acceleration;
+				xNext[i] = x[i] + direction[i] * path * scale;
 			}
-			nextF = targetFunction(x);
-			acceleration *= 2;
-		} while (nextF > f);
+			double fNext = targetFunction(xNext);
+			if (maximisation && fNext < f || !maximisation && fNext > f) {
+				if (k < 4 + Shared::bundle().randomGenerator()->next() % 8) {
+					for (int j = 0; j < size; j++) {
+						xTmp[3][j] = x[j];
+					}
+					scale /= 2;
+					k = 0;
+					dX = 1;
+					f = targetFunction(x);
+					continue;
+				}
+				else {
+					push(xTmp, xNext, 4, size);
+					for (int i = 0; i < size; i++) {
+						xNext[i] = x[i] + direction[i] * (path - 0.5*dX) * scale;
+					}
+					push(xTmp, xNext, 4, size);
+					break;
+				}
+			}
+			push(xTmp, xNext, 4, size);
+			f = fNext;
+		}
+
+		double fLeft = targetFunction(xTmp[0]);
+		double fRight = targetFunction(xTmp[2]);
+
+		double *xa, *xb, *xc;
+		double a, b, c;
+
+		if (maximisation && fLeft > fRight || !maximisation && fLeft < fRight) {
+			xa = xTmp[0]; a = path - 1.5 * dX;
+			xb = xTmp[1]; b = path - dX;
+			xc = xTmp[3]; c = path - 0.5 * dX;
+		}
+		else {
+			xa = xTmp[1]; a = path - dX;
+			xb = xTmp[3]; b = path - 0.5 * dX;
+			xc = xTmp[2]; c = path;
+		}
+
+		double fxa = targetFunction(xa);
+		double fxb = targetFunction(xb);
+		double fxc = targetFunction(xc);
+
+		double top = (b*b - c * c) * fxa + (c*c - a * a) * fxb + (a*a - b * b) * fxc;
+		double bottom = (b - c) * fxa + (c - a) * fxb + (a - b) * fxc;
+		int sign = (maximisation) ? 1 : -1;
+		double opt = (bottom == 0) ? b : sign * 1.0 / 2 * top / bottom;
 
 		for (int i = 0; i < size; i++) {
-			x[i] = xTmp[i];
+			x[i] += direction[i] * opt * scale;
 		}
 
 		f = targetFunction(x);
+
+		delete[] xNext;
+		for (int i = 0; i < 4; i++) {
+			delete[] xTmp[i];
+		}
 		delete[] xTmp;
 
 	}
 
+}
+
+void GradientSAAlgoritm::push(double **stack, double *newVector, int stackSize, int vectorSize) {
+	for (int i = 0; i < stackSize - 1; i++) {
+		for (int j = 0; j < vectorSize; j++) {
+			stack[i][j] = stack[i + 1][j];
+		}
+	}
+	for (int j = 0; j < vectorSize; j++) {
+		stack[stackSize - 1][j] = newVector[j];
+	}
 }
 
 GradientSAAlgoritm::~GradientSAAlgoritm()

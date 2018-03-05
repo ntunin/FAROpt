@@ -10,6 +10,7 @@ private:
 	double mulctMultiplier;
 	double mulctDegree;
 	double randomStartRadius;
+	bool inside;
 public:
 	FullLimitPowerOptimisationHGSAAlgoritm(OptimisationEnvirounment *envirounment, std::vector<double> *P, double T, double coolDownSpeed, double radius, double mulctMultiplier, double mulctDegree);
 	FullLimitPowerOptimisationHGSAAlgoritm(OptimisationEnvirounment *envirounment, std::vector<double> *P, double T, double coolDownSpeed, double radius, double mulctMultiplier, double mulctDegree, double randomStartRadius);

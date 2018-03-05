@@ -24,6 +24,7 @@ void LifeCycle::printMain() {
 }
 
 void LifeCycle::run() {
+	this->finished = false;
 	while (!this->finished) {
 		printMain();
 		int action = readInt("Enter your choice: > ");

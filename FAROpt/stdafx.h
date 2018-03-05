@@ -49,6 +49,7 @@
 #include "FileLog.h"
 #include "ConsoleScanner.h"
 #include "FileScanner.h"
+#include "PredefinedScanner.h"
 #include "FileException.h"
 #include "OneSourceNecInWritterException.h"
 #include "NecOutParser.h"

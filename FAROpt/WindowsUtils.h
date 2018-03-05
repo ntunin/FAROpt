@@ -10,6 +10,7 @@ public:
 	static bool existsDirectory(const std::string& path);
 	static void copy(std::string& from, std::string& to);
 	static std::vector<std::string> contentsOfDirectory(const std::string& path);
+	static std::uint64_t time();
 	WindowsUtils();
 	~WindowsUtils();
 };
