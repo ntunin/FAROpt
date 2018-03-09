@@ -27,6 +27,63 @@ GW::GW(GW &gw) {
 }
 
 
+void GW::translate(double x, double y, double z) {
+	this->x1 += x;
+	this->x2 += x;
+	this->y1 += y;
+	this->y2 += y;
+	this->z1 += z;
+	this->z2 += z;
+}
+
+void GW::rotateX(double a) {
+	double y, z;
+	y = this->y1*cos(a) - this->z1*sin(a);
+	z = this->y1*sin(a) + this->z1*cos(a);
+	this->y1 = y;
+	this->z1 = z;
+	y = this->y2*cos(a) - this->z2*sin(a);
+	z = this->y2*sin(a) + this->z2*cos(a);
+	this->y2 = y;
+	this->z2 = z;
+}
+
+
+void GW::rotateY(double a) {
+	double x, z;
+	x = this->x1*cos(a) + this->z1*sin(a);
+	z = -this->z1*sin(a) + this->z1*cos(a);
+	this->x1 = x;
+	this->z1 = z;
+	x = this->x2*cos(a) + this->z2*sin(a);
+	z = -this->z2*sin(a) + this->z2*cos(a);
+	this->x2 = x;
+	this->z2 = z;
+}
+
+
+void GW::rotateZ(double a) {
+	double x, y;
+	x = this->x1*cos(a) - this->y1*sin(a);
+	y = this->x1*sin(a) + this->y1*cos(a);
+	this->x1 = x;
+	this->y1 = y;
+	x = this->x2*cos(a) - this->y2*sin(a);
+	y = this->x2*sin(a) + this->y2*cos(a);
+	this->x2 = x;
+	this->y2 = y;
+}
+
+
+void GW::setTag(int tag) {
+	this->tag = tag;
+}
+
+int GW::getTag() {
+	return this->tag;
+}
+
+
 GW::~GW(){
 }
 

@@ -403,6 +403,9 @@
     <Filter Include="Исходные файлы и файлы заголовков\Shared\PredefinedScanner">
       <UniqueIdentifier>{57afead9-d174-45ea-bde8-372ce02eed2a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\FARBuilder">
+      <UniqueIdentifier>{cb7a9bcb-1c4c-4226-b4b6-08f609b7c500}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -756,6 +759,9 @@
     <ClInclude Include="PredefinedScanner.h">
       <Filter>Исходные файлы и файлы заголовков\Shared\PredefinedScanner</Filter>
     </ClInclude>
+    <ClInclude Include="FARBuilder.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -1105,6 +1111,9 @@
     </ClCompile>
     <ClCompile Include="PredefinedScanner.cpp">
       <Filter>Исходные файлы и файлы заголовков\Shared\PredefinedScanner</Filter>
+    </ClCompile>
+    <ClCompile Include="FARBuilder.cpp">
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

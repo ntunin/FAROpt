@@ -24,7 +24,8 @@ void OptimisationScreen::apply() {
 	this->Y = envirounment->getY();
 	FAROptimisationAlgoritm *algoritm = getAgoritm(envirounment);
 	print("\n");
-	FileLog log("log.txt");
+	//FileLog log("log.txt");
+	ConsoleLog log = *(ConsoleLog *)Shared::bundle().log();
 	log.print(algoritm->get_uAu());
 	log.print("\t");
 	vector<double> *uBu = algoritm->get_uBu();
@@ -53,8 +54,8 @@ void OptimisationScreen::apply() {
 	AllSourceThread *thread = new AllSourceThread(envirounment->getIn(), algoritm->getV(), resultOutName.c_str(), out);
 	thread->wait();
 	NecOutPlotDrawer *drawer = new NecOutPlotDrawer(out, theta, phi);
-	drawer->wait();
-	system("pause");*/
+	drawer->wait();;*/
+	system("pause");
 	delete in;
 	//delete out;
 	//delete thread;

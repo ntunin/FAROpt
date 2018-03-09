@@ -160,6 +160,7 @@
     <ClInclude Include="BHandler.h" />
     <ClInclude Include="CheckoutData.h" />
     <ClInclude Include="CheckoutParser.h" />
+    <ClInclude Include="FARBuilder.h" />
     <ClInclude Include="FileLog.h" />
     <ClInclude Include="FileScanner.h" />
     <ClInclude Include="FullLimitDirectivityPseudoOptimisationAlgoritm.h" />
@@ -278,6 +279,7 @@
     <ClCompile Include="BHandler.cpp" />
     <ClCompile Include="CheckoutData.cpp" />
     <ClCompile Include="CheckoutParser.cpp" />
+    <ClCompile Include="FARBuilder.cpp" />
     <ClCompile Include="FileLog.cpp" />
     <ClCompile Include="FileScanner.cpp" />
     <ClCompile Include="FullLimitDirectivityPseudoOptimisationAlgoritm.cpp" />

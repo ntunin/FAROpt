@@ -7,6 +7,12 @@ public:
 	std::string toString();
 	GW(GW &GW);
 	~GW();
+	void translate(double x, double y, double z);
+	void rotateX(double a);
+	void rotateY(double a);
+	void rotateZ(double a);
+	void setTag(int tag);
+	int getTag();
 private:
 	int tag;
 	int seg;

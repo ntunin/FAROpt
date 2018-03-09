@@ -27,9 +27,9 @@ int main(int argc, char **argv) {
 		WindowsRandomGenerator *generator = new WindowsRandomGenerator();
 		Shared::bundle().randomGenerator(generator);
 		LifeCycle *cycle = new LifeCycle();
-		for (int i = 0; i < 100; i++) {
+		//for (int i = 0; i < 100; i++) {
 			cycle->run();
-		}
+		//}
 		generator->stop();
 		delete generator;
 		delete cycle;

@@ -28,11 +28,12 @@ FullLimitPowerOptimisationHGSAAlgoritm::FullLimitPowerOptimisationHGSAAlgoritm(O
 void FullLimitPowerOptimisationHGSAAlgoritm::solveOptimisationTask(OptimisationEnvirounment *envirounment) {
 	int sourceCount = envirounment->getSourceCount();
 	this->randomStartRadius = 100;
+	this->customStart = new double[8]{ -4.41, -18.54, 16.31, -23.13, -11.04, 23.39, -46.31, 18.49 };
 	if (this->randomStartRadius) {
 		this->vEx = new double[sourceCount * 2];
 		for (int i = 0; i < sourceCount * 2; i++) {
 			int r = Shared::bundle().randomGenerator()->next();
-			double v = r % ((int)(2 * randomStartRadius * 1e2)) / 1e2 - randomStartRadius;
+			double v = this->customStart[i];//r % ((int)(2 * randomStartRadius * 1e2)) / 1e2 - randomStartRadius;
 			this->vEx[i] = v;
 			this->start.push_back(v);
 		}
