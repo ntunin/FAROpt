@@ -21,10 +21,12 @@ public:
 
 	void setCM(CM &cm);
 	void setCE(CE &ce);
+	void setGW(std::vector<GW *> *gw);
 	void pushGW(GW &gw);
 	void setGE(GE &ge);
 	void setGN(GN &gn);
 	void setFR(FR &fr);
+	void setEX(std::vector<EX*> *ex);
 	void pushEX(EX &ex);
 	void setPT(PT &pt);
 	void setRP(RP &rp);

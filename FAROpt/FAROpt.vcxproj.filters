@@ -406,6 +406,12 @@
     <Filter Include="Исходные файлы и файлы заголовков\FARBuilder">
       <UniqueIdentifier>{cb7a9bcb-1c4c-4226-b4b6-08f609b7c500}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Parsers\NecIn\NecInWritter">
+      <UniqueIdentifier>{d542c072-9d1f-40f7-9d53-ab3378f05060}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\LifeCycle\FARBuilderScreen">
+      <UniqueIdentifier>{7e19b057-e7ff-44a7-a118-2e95cd926f6e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -759,8 +765,14 @@
     <ClInclude Include="PredefinedScanner.h">
       <Filter>Исходные файлы и файлы заголовков\Shared\PredefinedScanner</Filter>
     </ClInclude>
+    <ClInclude Include="NecInWritter.h">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecInWritter</Filter>
+    </ClInclude>
     <ClInclude Include="FARBuilder.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Исходные файлы и файлы заголовков\FARBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="FARBuilderScreen.h">
+      <Filter>Исходные файлы и файлы заголовков\LifeCycle\FARBuilderScreen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1112,8 +1124,14 @@
     <ClCompile Include="PredefinedScanner.cpp">
       <Filter>Исходные файлы и файлы заголовков\Shared\PredefinedScanner</Filter>
     </ClCompile>
+    <ClCompile Include="NecInWritter.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Parsers\NecIn\NecInWritter</Filter>
+    </ClCompile>
     <ClCompile Include="FARBuilder.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы и файлы заголовков\FARBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="FARBuilderScreen.cpp">
+      <Filter>Исходные файлы и файлы заголовков\LifeCycle\FARBuilderScreen</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

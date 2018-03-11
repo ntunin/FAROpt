@@ -18,6 +18,15 @@ EX::EX(EX &ex) {
 	this->value = Complex(ex.value.Re(), ex.value.Im());
 }
 
+int EX::getTag() {
+	return tag;
+}
+
+
+void EX::setTag(int tag) {
+	this->tag = tag;
+}
+
 EX::EX(EX &ex, Complex &source) {
 	this->type = ex.type;
 	this->tag = ex.tag;

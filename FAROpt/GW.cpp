@@ -90,14 +90,14 @@ GW::~GW(){
 std::string GW::toString() {
 	std::stringstream stream;
 	stream << "GW"
-		<< ((NecCommand *)this)->toString(this->tag, 5)
-		<< ((NecCommand *)this)->toString(this->seg, 3)
-		<< ((NecCommand *)this)->toString(this->x1, 9, false)
-		<< ((NecCommand *)this)->toString(this->y1, 9, false)
-		<< ((NecCommand *)this)->toString(this->z1, 9, false)
-		<< ((NecCommand *)this)->toString(this->x2, 9, false)
-		<< ((NecCommand *)this)->toString(this->y2, 9, false)
-		<< ((NecCommand *)this)->toString(this->z2, 9, false)
+		<< ((NecCommand *)this)->toString(this->tag, 5) << "\t"
+		<< ((NecCommand *)this)->toString(this->seg, 3) << "\t"
+		<< ((NecCommand *)this)->toString(this->x1, 9, false) << "\t"
+		<< ((NecCommand *)this)->toString(this->y1, 9, false) << "\t"
+		<< ((NecCommand *)this)->toString(this->z1, 9, false) << "\t"
+		<< ((NecCommand *)this)->toString(this->x2, 9, false) << "\t"
+		<< ((NecCommand *)this)->toString(this->y2, 9, false) << "\t"
+		<< ((NecCommand *)this)->toString(this->z2, 9, false) << "\t"
 		<< ((NecCommand *)this)->toString(this->radius, 9, false);
 	return stream.str();
 }

@@ -14,6 +14,8 @@ public:
 	EX(EX &ex);
 	EX(EX &ex, Complex &source);
 	EX(EX &ex, bool disabled);
+	int getTag();
+	void setTag(int tag);
 	~EX();
 	std::string toString();
 	Complex &getValue();

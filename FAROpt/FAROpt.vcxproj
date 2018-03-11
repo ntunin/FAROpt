@@ -161,6 +161,7 @@
     <ClInclude Include="CheckoutData.h" />
     <ClInclude Include="CheckoutParser.h" />
     <ClInclude Include="FARBuilder.h" />
+    <ClInclude Include="FARBuilderScreen.h" />
     <ClInclude Include="FileLog.h" />
     <ClInclude Include="FileScanner.h" />
     <ClInclude Include="FullLimitDirectivityPseudoOptimisationAlgoritm.h" />
@@ -169,6 +170,7 @@
     <ClInclude Include="FullLimitMultyThreadPowerOptimisationGradientSAScreen.h" />
     <ClInclude Include="FullLimitMultyThreadPowerOptimisationHGSAAlgoritm.h" />
     <ClInclude Include="FullLimitMultyThreadPowerOptimisationHGSAScreen.h" />
+    <ClInclude Include="NecInWritter.h" />
     <ClInclude Include="PredefinedScanner.h" />
     <ClInclude Include="RandomGenerator.h" />
     <ClInclude Include="Task.h" />
@@ -280,6 +282,7 @@
     <ClCompile Include="CheckoutData.cpp" />
     <ClCompile Include="CheckoutParser.cpp" />
     <ClCompile Include="FARBuilder.cpp" />
+    <ClCompile Include="FARBuilderScreen.cpp" />
     <ClCompile Include="FileLog.cpp" />
     <ClCompile Include="FileScanner.cpp" />
     <ClCompile Include="FullLimitDirectivityPseudoOptimisationAlgoritm.cpp" />
@@ -288,6 +291,7 @@
     <ClCompile Include="FullLimitMultyThreadPowerOptimisationGradientSAScreen.cpp" />
     <ClCompile Include="FullLimitMultyThreadPowerOptimisationHGSAAlgoritm.cpp" />
     <ClCompile Include="FullLimitMultyThreadPowerOptimisationHGSAScreen.cpp" />
+    <ClCompile Include="NecInWritter.cpp" />
     <ClCompile Include="PredefinedScanner.cpp" />
     <ClCompile Include="RandomGenerator.cpp" />
     <ClCompile Include="Task.cpp" />

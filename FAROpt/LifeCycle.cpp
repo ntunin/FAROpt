@@ -20,6 +20,7 @@ void LifeCycle::printMain() {
 	print("Select the action you want to apply:\n");
 	print("   1: 1-Limited optimisation\n");
 	print("   2: Full-Limited optimisation\n");
+	print("   3: FAR builder\n");
 	print("   0: exit\n\n");
 }
 
@@ -34,6 +35,9 @@ void LifeCycle::run() {
 			break;
 		case 2:
 			FullLimitOptimisationMenuScreen();
+			break;
+		case 3:
+			FARBuilderScreen();
 			break;
 		case 0:
 			this->exit();

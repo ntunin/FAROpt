@@ -28,6 +28,16 @@ NecIn::~NecIn() {
 }
 
 
+void NecIn::setGW(std::vector<GW *> *gw) {
+	delete this->gw;
+	this->gw = gw;
+}
+
+void NecIn::setEX(std::vector<EX *> *ex) {
+	delete this->ex;
+	this->ex = ex;
+}
+
 void NecIn::setCM(CM &cm) {
 	this->cm = new CM;
 }
