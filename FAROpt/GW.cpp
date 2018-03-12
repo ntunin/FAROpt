@@ -66,12 +66,12 @@ void GW::rotateZ(double a) {
 	double x, y;
 	x = this->x1*cos(a) - this->y1*sin(a);
 	y = this->x1*sin(a) + this->y1*cos(a);
-	this->x1 = x;
-	this->y1 = y;
+	this->x1 = round(x * 100)/100;
+	this->y1 = round(y * 100) / 100;
 	x = this->x2*cos(a) - this->y2*sin(a);
 	y = this->x2*sin(a) + this->y2*cos(a);
-	this->x2 = x;
-	this->y2 = y;
+	this->x2 = round(x * 100) / 100;
+	this->y2 = round(y * 100) / 100;
 }
 
 
@@ -90,14 +90,14 @@ GW::~GW(){
 std::string GW::toString() {
 	std::stringstream stream;
 	stream << "GW"
-		<< ((NecCommand *)this)->toString(this->tag, 5) << "\t"
-		<< ((NecCommand *)this)->toString(this->seg, 3) << "\t"
-		<< ((NecCommand *)this)->toString(this->x1, 9, false) << "\t"
-		<< ((NecCommand *)this)->toString(this->y1, 9, false) << "\t"
-		<< ((NecCommand *)this)->toString(this->z1, 9, false) << "\t"
-		<< ((NecCommand *)this)->toString(this->x2, 9, false) << "\t"
-		<< ((NecCommand *)this)->toString(this->y2, 9, false) << "\t"
-		<< ((NecCommand *)this)->toString(this->z2, 9, false) << "\t"
+		<< ((NecCommand *)this)->toString(this->tag, 5) 
+		<< ((NecCommand *)this)->toString(this->seg, 3)
+		<< ((NecCommand *)this)->toString(this->x1, 9, false) 
+		<< ((NecCommand *)this)->toString(this->y1, 9, false)
+		<< ((NecCommand *)this)->toString(this->z1, 9, false) 
+		<< ((NecCommand *)this)->toString(this->x2, 9, false)
+		<< ((NecCommand *)this)->toString(this->y2, 9, false) 
+		<< ((NecCommand *)this)->toString(this->z2, 9, false)
 		<< ((NecCommand *)this)->toString(this->radius, 9, false);
 	return stream.str();
 }

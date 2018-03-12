@@ -9,6 +9,9 @@ GN::GN(int groundType, int radialWiresNumber, double dielectricConstant, double 
 	this->conductivity = conductivity;
 }
 
+int GN::getType() {
+	return this->groundType;
+}
 
 GN::GN(GN &gn) {
 	this->groundType = gn.groundType;
@@ -25,11 +28,17 @@ GN::~GN()
 std::string GN::toString() {
 	std::stringstream stream;
 	std::string str1 = ((NecCommand *)this)->toString(this->dielectricConstant, 5, false);
-	stream << "GN "
-		<< ((NecCommand *)this)->toString(this->groundType, 3)
-		<< ((NecCommand *)this)->toString(this->radialWiresNumber, 3) << " 0  0 "
-		<< ((NecCommand *)this)->toString(this->dielectricConstant, 5, false) << "  "
-		<< ((NecCommand *)this)->toString(this->conductivity, 5, false) << " ";
+	if (this->groundType >= 0) {
+		stream << "GN "
+			<< ((NecCommand *)this)->toString(this->groundType, 3)
+			<< ((NecCommand *)this)->toString(this->radialWiresNumber, 3) << " 0  0 "
+			<< ((NecCommand *)this)->toString(this->dielectricConstant, 5, false) << "  "
+			<< ((NecCommand *)this)->toString(this->conductivity, 5, false) << " ";
+	} else {
+		stream << "GN "
+			<< ((NecCommand *)this)->toString(this->groundType, 3) << " ";
+	}
+	
 	return stream.str();
 }
 

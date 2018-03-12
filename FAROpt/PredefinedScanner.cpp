@@ -8,7 +8,7 @@ PredefinedScanner::PredefinedScanner() {
 	this->offset = 1;
 	this->results.push_back("2");
 	this->results.push_back("2");
-	this->results.push_back("in.nec");
+	this->results.push_back("3x3WWD.nec");
 	this->results.push_back("70");
 	this->results.push_back("45");
 	this->results.push_back("y");
@@ -16,10 +16,15 @@ PredefinedScanner::PredefinedScanner() {
 	this->results.push_back("1");
 	this->results.push_back("1");
 	this->results.push_back("1");
+	this->results.push_back("1");
+	this->results.push_back("1");
+	this->results.push_back("1");
+	this->results.push_back("1");
+	this->results.push_back("1");
 	this->results.push_back("100");
 	this->results.push_back("1");
 	this->results.push_back("1");
-	this->results.push_back("10000000");
+	this->results.push_back("5000000");
 	this->results.push_back("4");
 	this->results.push_back("0");
 	this->results.push_back("0");

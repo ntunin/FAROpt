@@ -7,6 +7,7 @@ public:
 	GN(GN &gn);
 	~GN();
 	std::string toString();
+	int getType();
 
 private:
 	int groundType;

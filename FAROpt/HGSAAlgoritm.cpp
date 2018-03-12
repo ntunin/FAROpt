@@ -123,7 +123,7 @@ void HGSAAlgoritm::solve() {
 			}
 			double fNext = targetFunction(xNext);
 			if (maximisation && fNext < f || !maximisation && fNext > f) {
-				if (k < 4 + Shared::bundle().randomGenerator()->next() % 8) {
+				if (k < 4) {
 					for (int j = 0; j < size; j++) {
 						xTmp[3][j] = x[j];
 					}

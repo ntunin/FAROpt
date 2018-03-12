@@ -15,8 +15,8 @@ int main(int argc, char **argv) {
 		file.close();
 		Log *log = new ConsoleLog();
 		//Scanner *scanner = new FileScanner("run-script.txt");
-		Scanner *scanner = new ConsoleScanner;
-		//Scanner *scanner = new PredefinedScanner;
+		//Scanner *scanner = new ConsoleScanner;
+		Scanner *scanner = new PredefinedScanner;
 		ProcessManager *processManager = new WindowsProcessManager();
 		CacheManager *cacheManager = new WindowsCacheManager("cache");
 		TaskManager *taskManager = new WindowsTaskManager();
@@ -28,9 +28,9 @@ int main(int argc, char **argv) {
 		WindowsRandomGenerator *generator = new WindowsRandomGenerator();
 		Shared::bundle().randomGenerator(generator);
 		LifeCycle *cycle = new LifeCycle();
-		//for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 61; i++) {
 			cycle->run();
-		//}
+		}
 		generator->stop();
 		delete generator;
 		delete cycle;
