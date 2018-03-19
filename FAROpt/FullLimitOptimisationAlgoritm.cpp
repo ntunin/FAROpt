@@ -21,6 +21,8 @@ FullLimitOptimisationAlgoritm::~FullLimitOptimisationAlgoritm() {
 		delete[] Bk;
 	}
 	delete B;
+	delete[] Au;
+	delete[] Bu;
 }
 
 
@@ -44,6 +46,10 @@ void FullLimitOptimisationAlgoritm::solveFullLimitOptimisationTask(OptimisationE
 	}
 	this->AEx = A.doubleExtend();
 	vEx = new double[size];
+	Au = new double[size];
+	Bu = new double[size];
+	lastCheckedSolution = new double[size];
+	uBus = new vector<double>;
 	solveOptimisationTask(envirounment);
 
 	double uAu = calculate_uAu(vEx);
@@ -55,7 +61,6 @@ void FullLimitOptimisationAlgoritm::solveFullLimitOptimisationTask(OptimisationE
 }
 
 double FullLimitOptimisationAlgoritm::calculate_uAu(double *vEx) {
-	double *Au = new double[size];
 	for (int i = 0; i < size; i++) {
 		Au[i] = 0;
 		for (int j = 0; j < size; j++) {
@@ -66,14 +71,25 @@ double FullLimitOptimisationAlgoritm::calculate_uAu(double *vEx) {
 	for (int i = 0; i < size; i++) {
 		uAu += vEx[i] * Au[i];
 	}
-	delete[] Au;
 	return uAu;
 }
 
 vector<double> * FullLimitOptimisationAlgoritm::calculate_uBu(double *vEx) {
+	bool sameSolution = true;
+	for (int i = 0; i < size; i++) {
+		if (vEx[i] != lastCheckedSolution[i]) {
+			sameSolution = false;
+			break;
+		}
+	}
+	if (sameSolution) {
+		return uBus;
+	}
+	for (int i = 0; i < size; i++) {
+		lastCheckedSolution[i] = vEx[i];
+	}
 	int N = (*this->B).size();
-	vector<double> *uBus = new vector<double>;
-	double *Bu = new double[size];
+	uBus->clear();
 	for (int k = 0; k < N; k++) {
 		for (int i = 0; i < size; i++) {
 			Bu[i] = 0;
@@ -88,6 +104,5 @@ vector<double> * FullLimitOptimisationAlgoritm::calculate_uBu(double *vEx) {
 		}
 		uBus->push_back(uBu);
 	}
-	delete[] Bu;
 	return uBus;
 }

@@ -14,7 +14,7 @@ void FullLimitOptimisationMenuScreen::printHead() {
 	print("\n");
 	print("Select the action you want to apply:\n");
 	print("   1: Pseudo-optimisation besedon lamda algoithm\n");
-	print("   2: Simulated annealing based on Hooke - Jeeves optimisation of input power\n");
+	print("   2: Hooke - Jeeves optimisation of input power\n");
 	print("   3: Simulated annealing based on Hooke - Jeeves multy-threads optimisation of input power\n");
 	print("   4: Simulated annealing based on Gradient optimisation of input power\n");
 	print("   5: Simulated annealing based on Gradient multy-threads optimisation of input power\n");
@@ -32,7 +32,7 @@ void FullLimitOptimisationMenuScreen::run() {
 			break;
 		}
 		case 2: {
-			FullLimitPowerOptimisationHGSAScreen();
+			FullLimitPowerOptimisationHGScreen();
 			break;
 		}
 		case 3: {

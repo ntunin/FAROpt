@@ -6,6 +6,18 @@ Utils::Utils()
 {
 }
 
+
+void Utils::push(double **stack, double *newVector, int stackSize, int vectorSize) {
+	for (int i = 0; i < stackSize - 1; i++) {
+		for (int j = 0; j < vectorSize; j++) {
+			stack[i][j] = stack[i + 1][j];
+		}
+	}
+	for (int j = 0; j < vectorSize; j++) {
+		stack[stackSize - 1][j] = newVector[j];
+	}
+}
+
 void Utils::inverse(int size, double **matrix, double **result) {
 	double **augmentedmatrix = new double*[size];
 	for (int i = 0; i < size; i++) {

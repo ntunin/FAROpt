@@ -24,7 +24,7 @@ PredefinedScanner::PredefinedScanner() {
 	this->results.push_back("100");
 	this->results.push_back("1");
 	this->results.push_back("1");
-	this->results.push_back("5000000");
+	this->results.push_back("500000");
 	this->results.push_back("4");
 	this->results.push_back("0");
 	this->results.push_back("0");

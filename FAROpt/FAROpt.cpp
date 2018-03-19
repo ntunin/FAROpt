@@ -15,8 +15,8 @@ int main(int argc, char **argv) {
 		file.close();
 		Log *log = new ConsoleLog();
 		//Scanner *scanner = new FileScanner("run-script.txt");
-		//Scanner *scanner = new ConsoleScanner;
-		Scanner *scanner = new PredefinedScanner;
+		Scanner *scanner = new ConsoleScanner;
+		//Scanner *scanner = new PredefinedScanner;
 		ProcessManager *processManager = new WindowsProcessManager();
 		CacheManager *cacheManager = new WindowsCacheManager("cache");
 		TaskManager *taskManager = new WindowsTaskManager();

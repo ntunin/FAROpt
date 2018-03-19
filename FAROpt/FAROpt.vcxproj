@@ -170,6 +170,8 @@
     <ClInclude Include="FullLimitMultyThreadPowerOptimisationGradientSAScreen.h" />
     <ClInclude Include="FullLimitMultyThreadPowerOptimisationHGSAAlgoritm.h" />
     <ClInclude Include="FullLimitMultyThreadPowerOptimisationHGSAScreen.h" />
+    <ClInclude Include="FullLimitPowerOptimisationHGAlgoritm.h" />
+    <ClInclude Include="FullLimitPowerOptimisationHGScreen.h" />
     <ClInclude Include="NecInWritter.h" />
     <ClInclude Include="PredefinedScanner.h" />
     <ClInclude Include="RandomGenerator.h" />
@@ -291,6 +293,8 @@
     <ClCompile Include="FullLimitMultyThreadPowerOptimisationGradientSAScreen.cpp" />
     <ClCompile Include="FullLimitMultyThreadPowerOptimisationHGSAAlgoritm.cpp" />
     <ClCompile Include="FullLimitMultyThreadPowerOptimisationHGSAScreen.cpp" />
+    <ClCompile Include="FullLimitPowerOptimisationHGAlgoritm.cpp" />
+    <ClCompile Include="FullLimitPowerOptimisationHGScreen.cpp" />
     <ClCompile Include="NecInWritter.cpp" />
     <ClCompile Include="PredefinedScanner.cpp" />
     <ClCompile Include="RandomGenerator.cpp" />

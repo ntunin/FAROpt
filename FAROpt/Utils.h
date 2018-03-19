@@ -10,6 +10,7 @@ public:
 	static void mul(int size, double **matrix, double *vector, double *result);
 	static void mul(int size, double *vector, double value, double *result);
 	static void fill(int size, double value, double *result);
+	static void push(double **stack, double *newVector, int stackSize, int vectorSize);
 	Utils();
 	~Utils();
 };

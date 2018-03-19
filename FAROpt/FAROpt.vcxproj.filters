@@ -412,6 +412,12 @@
     <Filter Include="Исходные файлы и файлы заголовков\LifeCycle\FARBuilderScreen">
       <UniqueIdentifier>{7e19b057-e7ff-44a7-a118-2e95cd926f6e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitPowerOptimisationHGAlgoritm">
+      <UniqueIdentifier>{b21ae5a0-c5f2-48c2-9391-bd91e6cc719b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitPowerOptimisationHGScreen">
+      <UniqueIdentifier>{37fd8011-cf41-4446-8b93-3cbbabe536ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -774,6 +780,12 @@
     <ClInclude Include="FARBuilderScreen.h">
       <Filter>Исходные файлы и файлы заголовков\LifeCycle\FARBuilderScreen</Filter>
     </ClInclude>
+    <ClInclude Include="FullLimitPowerOptimisationHGAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitPowerOptimisationHGAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="FullLimitPowerOptimisationHGScreen.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitPowerOptimisationHGScreen</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -1132,6 +1144,12 @@
     </ClCompile>
     <ClCompile Include="FARBuilderScreen.cpp">
       <Filter>Исходные файлы и файлы заголовков\LifeCycle\FARBuilderScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitPowerOptimisationHGAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitPowerOptimisationHGAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitPowerOptimisationHGScreen.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitPowerOptimisationHGScreen</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
