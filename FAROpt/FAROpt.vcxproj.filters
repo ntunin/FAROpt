@@ -418,6 +418,12 @@
     <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitPowerOptimisationHGScreen">
       <UniqueIdentifier>{37fd8011-cf41-4446-8b93-3cbbabe536ee}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitMultithreadPowerOptimisationHGAlgoritm">
+      <UniqueIdentifier>{9804886d-5f44-4f3e-ae61-5356e7bc92e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitMultyThreadPowerOptimisationHGScreen">
+      <UniqueIdentifier>{1c3a2fba-74db-4eba-9ed3-90a33dbb4dea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -786,6 +792,12 @@
     <ClInclude Include="FullLimitPowerOptimisationHGScreen.h">
       <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitPowerOptimisationHGScreen</Filter>
     </ClInclude>
+    <ClInclude Include="FullLimitMultithreadPowerOptimisationHGAlgoritm.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitMultithreadPowerOptimisationHGAlgoritm</Filter>
+    </ClInclude>
+    <ClInclude Include="FullLimitMultyThreadPowerOptimisationHGScreen.h">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitMultyThreadPowerOptimisationHGScreen</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -1150,6 +1162,12 @@
     </ClCompile>
     <ClCompile Include="FullLimitPowerOptimisationHGScreen.cpp">
       <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitPowerOptimisationHGScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitMultithreadPowerOptimisationHGAlgoritm.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitMultithreadPowerOptimisationHGAlgoritm</Filter>
+    </ClCompile>
+    <ClCompile Include="FullLimitMultyThreadPowerOptimisationHGScreen.cpp">
+      <Filter>Исходные файлы и файлы заголовков\Optimisations\FullLimit\HG\FullLimitMultyThreadPowerOptimisationHGScreen</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

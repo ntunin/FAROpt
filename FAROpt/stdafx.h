@@ -40,6 +40,8 @@
 #include "FullLimitMultyThreadPowerOptimisationHGSAScreen.h"
 #include "FullLimitMultyThreadPowerOptimisationGradienSAAlgoritm.h"
 #include "FullLimitMultyThreadPowerOptimisationGradientSAScreen.h"
+#include "FullLimitMultithreadPowerOptimisationHGAlgoritm.h"
+#include "FullLimitMultyThreadPowerOptimisationHGScreen.h"
 #include "FullLimitPowerOptimisationHGAlgoritm.h"
 #include "FullLimitPowerOptimisationHGScreen.h"
 #include "FARBuilder.h"

@@ -166,10 +166,12 @@
     <ClInclude Include="FileScanner.h" />
     <ClInclude Include="FullLimitDirectivityPseudoOptimisationAlgoritm.h" />
     <ClInclude Include="FullLimitDirectivityPseudoOptimisationScreen.h" />
+    <ClInclude Include="FullLimitMultithreadPowerOptimisationHGAlgoritm.h" />
     <ClInclude Include="FullLimitMultyThreadPowerOptimisationGradienSAAlgoritm.h" />
     <ClInclude Include="FullLimitMultyThreadPowerOptimisationGradientSAScreen.h" />
     <ClInclude Include="FullLimitMultyThreadPowerOptimisationHGSAAlgoritm.h" />
     <ClInclude Include="FullLimitMultyThreadPowerOptimisationHGSAScreen.h" />
+    <ClInclude Include="FullLimitMultyThreadPowerOptimisationHGScreen.h" />
     <ClInclude Include="FullLimitPowerOptimisationHGAlgoritm.h" />
     <ClInclude Include="FullLimitPowerOptimisationHGScreen.h" />
     <ClInclude Include="NecInWritter.h" />
@@ -289,10 +291,12 @@
     <ClCompile Include="FileScanner.cpp" />
     <ClCompile Include="FullLimitDirectivityPseudoOptimisationAlgoritm.cpp" />
     <ClCompile Include="FullLimitDirectivityPseudoOptimisationScreen.cpp" />
+    <ClCompile Include="FullLimitMultithreadPowerOptimisationHGAlgoritm.cpp" />
     <ClCompile Include="FullLimitMultyThreadPowerOptimisationGradientSAAlgoritm.cpp" />
     <ClCompile Include="FullLimitMultyThreadPowerOptimisationGradientSAScreen.cpp" />
     <ClCompile Include="FullLimitMultyThreadPowerOptimisationHGSAAlgoritm.cpp" />
     <ClCompile Include="FullLimitMultyThreadPowerOptimisationHGSAScreen.cpp" />
+    <ClCompile Include="FullLimitMultyThreadPowerOptimisationHGScreen.cpp" />
     <ClCompile Include="FullLimitPowerOptimisationHGAlgoritm.cpp" />
     <ClCompile Include="FullLimitPowerOptimisationHGScreen.cpp" />
     <ClCompile Include="NecInWritter.cpp" />

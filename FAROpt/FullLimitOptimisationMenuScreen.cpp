@@ -17,8 +17,9 @@ void FullLimitOptimisationMenuScreen::printHead() {
 	print("   2: Hooke - Jeeves optimisation of input power\n");
 	print("   3: Simulated annealing based on Hooke - Jeeves multy-threads optimisation of input power\n");
 	print("   4: Simulated annealing based on Gradient optimisation of input power\n");
-	print("   5: Simulated annealing based on Gradient multy-threads optimisation of input power\n");
-	print("   6: Check provided solution\n");
+	print("   5: Hooke - Jeeves multy-threads optimisation of input power\n");
+	print("   6: Simulated annealing based on Gradient multy-threads optimisation of input power\n");
+	print("   7: Check provided solution\n");
 	print("   0: exit\n\n");
 }
 
@@ -44,10 +45,14 @@ void FullLimitOptimisationMenuScreen::run() {
 			break;
 		}
 		case 5: {
-			FullLimitMultyThreadPowerOptimisationGradientSAScreen();
+			FullLimitMultyThreadPowerOptimisationHGScreen();
 			break;
 		}
 		case 6: {
+			FullLimitMultyThreadPowerOptimisationGradientSAScreen();
+			break;
+		}
+		case 7: {
 			CheckProvidedSolutionScreen();
 			break;
 		}
