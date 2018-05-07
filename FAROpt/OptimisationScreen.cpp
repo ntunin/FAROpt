@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "OptimisationScreen.h"
+#include <ctime>
 
 using namespace std;
 
@@ -23,27 +24,8 @@ void OptimisationScreen::apply() {
 	OptimisationEnvirounment *envirounment = new OptimisationEnvirounment(in, theta, phi, fileName);
 	this->Y = envirounment->getY();
 	FAROptimisationAlgoritm *algoritm = getAgoritm(envirounment);
+	printAlgoritmResult(algoritm, envirounment);
 	print("\n");
-	FileLog log("log.txt");
-	//ConsoleLog log = *(ConsoleLog *)Shared::bundle().log();
-	log.print(algoritm->get_uAu());
-	log.print("\t");
-	vector<double> *uBu = algoritm->get_uBu();
-	int size = uBu->size();
-	for (int i = 0; i < size; i++) {
-		log.print((*uBu)[i]);
-		log.print("\t");
-	}
-	log.print(*algoritm->getV());
-	for (int i = 0; i < size; i++) {
-		log.print(algoritm->start[i]);
-		log.print("\t");
-		log.print(algoritm->start[i + size]);
-		log.print("\t");
-	}
-	double *I = new double[2 * size];
-	Utils::mul(2 * size, envirounment->getY()->doubleExtend(), algoritm->getV()->extendDouble(), I);
-	log.print("\n");
 	print("working time: ");
 	print(workingTime*1.0 / 1000);
 	print("s\n\n");
@@ -65,17 +47,17 @@ void OptimisationScreen::apply() {
 void OptimisationScreen::printAlgoritmResult(FAROptimisationAlgoritm *algoritm, OptimisationEnvirounment *envirounment) {
 	FileLog log("log.txt");
 	//ConsoleLog log = *(ConsoleLog *)Shared::bundle().log();
-	//log.print(" uAu: "); 
+	log.print(" uAu: "); 
 	log.print(algoritm->get_uAu());
 	log.print("\t");
 	vector<double> *uBu = algoritm->get_uBu();
 	int size = uBu->size();
-	//log.print(" uBu: "); 
+	log.print(" uBu: "); 
 	for (int i = 0; i < size; i++) {
 		log.print((*uBu)[i]);
 		log.print("\t");
 	}
-	//log.print("\nvoltage: "); 
+	log.print("\nvoltage: "); 
 	log.print(*algoritm->getV());
 	double *I = new double[2 * size];
 	Utils::mul(2 * size, envirounment->getY()->doubleExtend(), algoritm->getV()->extendDouble(), I);
@@ -85,7 +67,7 @@ void OptimisationScreen::printAlgoritmResult(FAROptimisationAlgoritm *algoritm, 
 	print("working time: ");
 	print(workingTime*1.0/1000);
 	print("s\n\n");
-	//system("pause");
+	system("pause");
 }
 
 

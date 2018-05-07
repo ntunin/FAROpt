@@ -19,7 +19,7 @@ void HGAlgoritm::solve() {
 	double *xNext = new double[size];
 	double step = 1;
 
-	while (abs(lastF - f) > 1e-6) {
+	while (abs(lastF - f) > 1e-12) {
 		bool haveValidDirection = false;
 		lastF = f;
 		for (int i = 0; i < size; i++) {

@@ -3,8 +3,10 @@
 
 
 using namespace std;
+mutex logFileMtx;
 
 FullLimitMultithreadPowerOptimisationHGAlgoritm::FullLimitMultithreadPowerOptimisationHGAlgoritm(OptimisationEnvirounment *envirounment, vector<double> *P, double mulctMultiplier, double mulctDegree, int threadsCount, double randomStartRadius) {
+	this->threadsCount = threadsCount;
 	for (int i = 0; i < threadsCount; i++) {
 		SolutionTask *task = new SolutionTask(envirounment, P, mulctMultiplier, mulctDegree, randomStartRadius);
 		Shared::bundle().taskManager()->execute(task);
@@ -27,6 +29,7 @@ FullLimitMultithreadPowerOptimisationHGAlgoritm::FullLimitMultithreadPowerOptimi
 		}
 		delete[] v;
 	}
+	printResult();
 	int sourceCount = envirounment->getSourceCount();
 	if (algorithm) {
 		double *v = algorithm->getV()->extendDouble();
@@ -36,6 +39,8 @@ FullLimitMultithreadPowerOptimisationHGAlgoritm::FullLimitMultithreadPowerOptimi
 		delete[] v;
 	}
 }
+
+
 
 FullLimitMultithreadPowerOptimisationHGAlgoritm::SolutionTask::SolutionTask(OptimisationEnvirounment *envirounment, vector<double> *P, double mulctMultiplier, double mulctDegree, double randomStartRadius) {
 	this->P = P;
@@ -47,6 +52,75 @@ FullLimitMultithreadPowerOptimisationHGAlgoritm::SolutionTask::SolutionTask(Opti
 
 void FullLimitMultithreadPowerOptimisationHGAlgoritm::SolutionTask::execute() {
 	this->algorithm = new FullLimitPowerOptimisationHGAlgoritm(envirounment, P, mulctMultiplier, mulctDegree, randomStartRadius);
+	this->printResult();
+}
+
+void FullLimitMultithreadPowerOptimisationHGAlgoritm::printResult() {
+	FileLog log("log.txt");
+	log.print("\n");
+	int size = 2 * tasks[0]->getAlgorithm()->getV()->length();
+	double **normals = new double*[threadsCount];
+	for (int i = 0; i < threadsCount; i++) {
+		FAROptimisationAlgoritm *algoritm = tasks[i]->getAlgorithm();
+		ComplexVector *v = algoritm->getV();
+		normals[i] = new double[size];
+		Utils::normalize(v, normals[i]);
+		log.print(normals[i], size);
+		log.print("\n");
+	}
+	log.print("\n");
+
+
+	for (double epsilon = 1; epsilon > 1e-8; epsilon /= 10) {
+		vector<double *> differentSolutions;
+		for (int i = 0; i < threadsCount; i++) {
+			double *norma = normals[i];
+			boolean isUnique = true;
+			for (int j = 0; j < differentSolutions.size(); j++) {
+				double *templateNorma = differentSolutions[j];
+				if (Utils::equals(norma, templateNorma, size, epsilon)) {
+					isUnique = false;
+					break;
+				}
+			}
+			if (isUnique) {
+				differentSolutions.push_back(norma);
+			}
+		}
+		log.print(differentSolutions.size());
+		log.print("\t");
+
+	}
+	log.print("\n");
+
+}
+
+
+void FullLimitMultithreadPowerOptimisationHGAlgoritm::SolutionTask::printResult() {
+	unique_lock<mutex> lck(logFileMtx, defer_lock);
+	lck.lock();
+	FileLog log("log.txt");
+	//ConsoleLog log = *(ConsoleLog *)Shared::bundle().log();
+	log.print(this->algorithm->get_uAu());
+	log.print("\t");
+	vector<double> *uBu = this->algorithm->get_uBu();
+	int size = uBu->size();
+	for (int i = 0; i < size; i++) {
+		log.print((*uBu)[i]);
+		log.print("\t");
+	}
+	log.print(*this->algorithm->getV());
+	for (int i = 0; i < size; i++) {
+		log.print(this->algorithm->start[i]);
+		log.print("\t");
+		log.print(this->algorithm->start[i + size]);
+		log.print("\t");
+	}
+	double *I = new double[2 * size];
+	Utils::mul(2 * size, envirounment->getY()->doubleExtend(), this->algorithm->getV()->extendDouble(), I);
+	log.print("\n");
+	lck.unlock();
+
 }
 
 FullLimitPowerOptimisationHGAlgoritm *FullLimitMultithreadPowerOptimisationHGAlgoritm::SolutionTask::getAlgorithm() {

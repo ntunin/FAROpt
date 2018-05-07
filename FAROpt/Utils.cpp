@@ -148,6 +148,26 @@ void Utils::summ(int size, double *vector1, double *vector2, double *result) {
 	}
 }
 
+void Utils::normalize(ComplexVector *cv, double *result) {
+	ComplexVector v = *cv;
+	int size = v.length();
+	double rPhi = v[0].arg();
+	for (int i = 0; i < size; i++) {
+		result[2 * i] = v[i].abs();
+		result[2 * i + 1] = v[i].arg() - rPhi;
+	}
+
+}
+
+boolean Utils::equals(double *array1, double *array2, int size, double epsilon) {
+	for (int k = 0; k < size; k++) {
+		if (abs(array1[k] - array2[k]) > epsilon) {
+			return false;
+		}
+	}
+	return true;
+}
+
 Utils::~Utils()
 {
 }

@@ -22,12 +22,11 @@ FullLimitPowerOptimisationHGAlgoritm::FullLimitPowerOptimisationHGAlgoritm(Optim
 
 void FullLimitPowerOptimisationHGAlgoritm::solveOptimisationTask(OptimisationEnvirounment *envirounment) {
 	int sourceCount = envirounment->getSourceCount();
-	this->randomStartRadius = 100;
 	if (this->randomStartRadius) {
 		this->vEx = new double[sourceCount * 2];
 		for (int i = 0; i < sourceCount * 2; i++) {
 			int r = Shared::bundle().randomGenerator()->next();
-			double v = r % ((int)(2 * randomStartRadius * 1e2)) / 1e2 - randomStartRadius;
+			double v = r % (2 * (int)randomStartRadius) - randomStartRadius;
 			this->vEx[i] = v;
 			this->start.push_back(v);
 		}

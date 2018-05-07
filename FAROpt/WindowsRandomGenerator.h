@@ -11,6 +11,7 @@ private:
 	private:
 		std::mutex randMtx;
 		int value;
+		int squireIndex;
 		bool running;
 	public:
 		int next();

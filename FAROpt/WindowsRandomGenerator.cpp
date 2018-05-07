@@ -20,10 +20,12 @@ void WindowsRandomGenerator::GeneratorTask::execute() {
 	unique_lock<mutex> lck(randMtx, defer_lock);
 	lck.lock();
 	running = true;
+	squireIndex = rand() % 1000;
 	lck.unlock();
 	while (running) {
 		lck.lock();
-		value = rand();
+		squireIndex = (squireIndex*squireIndex) % 1000;
+		value = rand() * (time(NULL) % 100)/squireIndex;
 		lck.unlock();
 	}
 }
@@ -39,7 +41,7 @@ int WindowsRandomGenerator::GeneratorTask::next() {
 	unique_lock<mutex> lck(randMtx, defer_lock);
 	lck.lock();
 	int v = value;
-	value = rand();
+	value = rand() * (time(NULL) % 100);
 	lck.unlock();
 	return v;
 }

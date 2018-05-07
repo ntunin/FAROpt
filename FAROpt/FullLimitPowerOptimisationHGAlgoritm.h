@@ -11,6 +11,8 @@ private:
 	double randomStartRadius;
 	double *customStart;
 	bool inside;
+
+
 public:
 	FullLimitPowerOptimisationHGAlgoritm(OptimisationEnvirounment *envirounment, std::vector<double> *P,double mulctMultiplier, double mulctDegree);
 	FullLimitPowerOptimisationHGAlgoritm(OptimisationEnvirounment *envirounment, std::vector<double> *P, double mulctMultiplier, double mulctDegree, double randomStartRadius);
