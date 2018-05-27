@@ -17,7 +17,7 @@ public:
 	int length();
 
 	ComplexVectorT& operator*(ComplexMatrix);
-	Complex operator*(ComplexVector);
+	Complex& operator*(ComplexVector);
 
 
 };

@@ -73,8 +73,10 @@ void OptimisationEnvirounment::fillY() {
 		}
 
 	}
-	Shared::bundle().log()->print("Y matrix:\n");
-	Shared::bundle().log()->print(*Y);
+	FileLog log("log.txt");
+	log.print("Y matrix:\n");
+	log.print(*Y);
+	log.print("\n");
 }
 
 

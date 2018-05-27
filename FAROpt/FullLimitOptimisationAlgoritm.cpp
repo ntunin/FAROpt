@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "FullLimitOptimisationAlgoritm.h"
+#include "FileLog.h"
 
 using namespace std;
 
@@ -50,14 +51,29 @@ void FullLimitOptimisationAlgoritm::solveFullLimitOptimisationTask(OptimisationE
 	Bu = new double[size];
 	lastCheckedSolution = new double[size];
 	uBus = new vector<double>;
+
+	Log *log = new FileLog("mtrices.txt");
+	log->print(this->AEx, this->size);
+	log->print("\n");
+	for (int i = 0; i < sourceCount; i++) {
+		double **B = (*this->B)[i];
+		log->print("\n");
+		log->print(B, this->size);
+		log->print("\n");
+	}
+	log->print("\n");
+	delete log;
+
 	solveOptimisationTask(envirounment);
+
+
+
 
 	double uAu = calculate_uAu(vEx);
 	vector<double> *uBu = calculate_uBu(vEx);
 	this->set_uAu(uAu);
 	this->set_uBu(uBu);
 	this->setV(size, vEx);
-
 }
 
 double FullLimitOptimisationAlgoritm::calculate_uAu(double *vEx) {

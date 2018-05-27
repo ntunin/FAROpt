@@ -43,7 +43,7 @@ ComplexVectorT& ComplexVector::econj() {
 }
 
 ComplexVectorT& ComplexVector::T() {
-	return ComplexVectorT(this->_n, this->_ComplexVector);
+	return *(new ComplexVectorT(this->_n, this->_ComplexVector));
 }
 
 

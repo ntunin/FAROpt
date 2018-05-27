@@ -79,13 +79,16 @@ std::string NecCommand::toString(double value, int stringSize, bool exp) {
 		if (size < stringSize) {
 			stream << str;
 			int count = stringSize - (int)str.size();
-			if (value - (int)value == 0 && count >= 2) {
-				stream << ".0";		
-				count -= 2;
-			}			
-			for (int i = 0; i < count; i++) {
-				stream << "0";
+			if (count >= 2) {
+				if (value - (int)value == 0) {
+					stream << ".0";
+					count -= 2;
+				}
+				for (int i = 0; i < count; i++) {
+					stream << "0";
+				}
 			}
+			
 			str = stream.str();
 		}
 		else {

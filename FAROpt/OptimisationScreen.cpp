@@ -25,17 +25,13 @@ void OptimisationScreen::apply() {
 	this->Y = envirounment->getY();
 	FAROptimisationAlgoritm *algoritm = getAgoritm(envirounment);
 	printAlgoritmResult(algoritm, envirounment);
-	print("\n");
-	print("working time: ");
-	print(workingTime*1.0 / 1000);
-	print("s\n\n");
-	print("\n");
-	/*NecOut *out = new NecOut();
+	
+	NecOut *out = new NecOut();
 	string resultOutName = readString("Please provide the name of result nec file: > ");
 	AllSourceThread *thread = new AllSourceThread(envirounment->getIn(), algoritm->getV(), resultOutName.c_str(), out);
 	thread->wait();
 	NecOutPlotDrawer *drawer = new NecOutPlotDrawer(out, theta, phi);
-	drawer->wait();;*/
+	drawer->wait();
 	//system("pause");
 	delete in;
 	//delete out;
@@ -59,6 +55,18 @@ void OptimisationScreen::printAlgoritmResult(FAROptimisationAlgoritm *algoritm, 
 	}
 	log.print("\nvoltage: "); 
 	log.print(*algoritm->getV());
+
+
+	/*ComplexVector v = *algoritm->getV();
+	ComplexMatrix Y = *envirounment->getY();
+	ComplexMatrix Yplus = Y + *Y.econj();
+	ComplexVector Pv = Yplus * v;
+	ComplexVectorT vT = v.T();
+	Complex Pc = vT * Pv;
+	double P = Pc.Re()/4;
+	log.print("P: ");
+	log.print(P);
+	log.print("\n");*/
 	double *I = new double[2 * size];
 	Utils::mul(2 * size, envirounment->getY()->doubleExtend(), algoritm->getV()->extendDouble(), I);
 	//log.print("\ncurrents:\n");
@@ -67,7 +75,7 @@ void OptimisationScreen::printAlgoritmResult(FAROptimisationAlgoritm *algoritm, 
 	print("working time: ");
 	print(workingTime*1.0/1000);
 	print("s\n\n");
-	system("pause");
+	//system("pause");
 }
 
 

@@ -31,13 +31,13 @@ Complex& ComplexVectorT::operator[](int i) {
 	return this->_ComplexVector[i];
 }
 
-Complex ComplexVectorT::operator*(ComplexVector v) {
+Complex& ComplexVectorT::operator*(ComplexVector v) {
 	int length = (int)fmin(this->_n, v.length());
-	Complex a = Complex();
+	Complex *a = new Complex();
 	for (int i = 0; i < length; i++) {
-		a += this->_ComplexVector[i] * v[i];
+		*a += this->_ComplexVector[i] * v[i];
 	};
-	return a;
+	return *a;
 }
 
 
